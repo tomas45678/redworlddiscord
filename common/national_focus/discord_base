@@ -1,0 +1,38 @@
+focus_tree = {
+	id = discord_tree
+	country = {
+		factor = 0
+		#modifier = {
+			#add = 20
+			#tag = DIS
+		#}
+	}
+	shared_focus = DIS_deathofkaiser
+	continuous_focus_position = { x = 50 y = 5000 }
+	}
+	focus_tree = {
+	id = discord_otto_tree
+	country = {
+		factor = 0
+		#modifier = {
+			#add = 20
+			#tag = DIS
+		#}
+	}
+	shared_focus = DIS_deathofkaiser
+	shared_focus = DIS_ottochosen
+	continuous_focus_position = { x = 50 y = 5000 }
+	}
+	focus_tree = {
+	id=discord_fash_tree
+
+	country = {
+		factor = 0
+
+		#modifier = {
+				#add = 20
+				#tag = DIS
+		#}
+	shared_focus = DCF_holdthevictoryrally
+	}
+	}

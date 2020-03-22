@@ -1,0 +1,161 @@
+focus_tree = {
+	id = darwin
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = DRR
+		}
+	}
+	
+	continuous_focus_position = { x = 50 y = 5000 }
+	
+	focus = {
+		id = DRR_the_home_of_the_resistance
+		icon = ideology_fist
+		cost = 5
+		x = 8
+		y = 0
+		available = {
+		}
+		completion_reward = {
+		   country_event = darwin.2
+		}
+
+	}
+	focus = {
+		id = DRR_safeguard_capitalism
+		icon = investigate_industrial_corruption
+		cost = 5
+		x = 8
+		y = 1
+		prerequisite = { focus = DRR_the_home_of_the_resistance }
+		available = {
+		}
+		completion_reward = {
+		   country_event = darwin.3
+		}
+
+	}
+	focus = {
+		id = DRR_utilizing_our_connections
+		icon = generic_attack
+		cost = 5
+		x = 4
+		y = 1
+		prerequisite = {
+		focus = DRR_the_home_of_the_resistance
+		}
+		available = {
+		}
+		completion_reward = {
+		   add_political_power = 50
+		   add_popularity = {
+		   ideology = nationalist
+		   popularity = 0.05
+		   }
+		}
+
+	}
+	focus = {
+		id = DRR_contacts_in_the_drama_server
+		icon = intelligence_exchange
+		cost = 8
+		x = 3
+		y = 2
+		prerequisite = {
+		focus = DRR_utilizing_our_connections
+		}
+		available = {
+		}
+		completion_reward = {
+		  add_ideas = idea_drr_working_with_drama_server 
+		}
+
+	}
+	focus = {
+		id = DRR_freedom_of_speech
+		icon = focus_freedom_of_speech
+		cost = 8
+		x = 3
+		y = 3
+		prerequisite = {
+		focus = DRR_contacts_in_the_drama_server
+		}
+		available = {
+		}
+		completion_reward = {
+		  add_stability = 0.075
+		}
+
+	}
+	focus = {
+		id = DRR_welcome_coop_exiles
+		icon = concessions
+		cost = 8
+		x = 5
+		y = 2
+		prerequisite = {
+		focus = DRR_utilizing_our_connections
+		}
+		available = {
+		}
+		completion_reward = {
+		  add_manpower = 10000
+		  add_ideas = idea_drr_welcoming_exiles
+		}
+
+	}
+	focus = {
+		id = DRR_put_them_to_work
+		icon = construct_civilian
+		cost = 8
+		x = 5
+		y = 3
+		prerequisite = {
+		focus = DRR_welcome_coop_exiles
+		}
+		available = {
+		}
+		completion_reward = {
+		random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}  
+		}
+
+	}
+	focus = {
+		id = DRR_an_international_alliance
+		icon = focus_commonwealth_un_membership
+		cost = 8
+		x = 4
+		y = 4
+		prerequisite = {
+		focus = DRR_put_them_to_work
+		}
+		prerequisite = {
+		focus = DRR_freedom_of_speech
+		}
+		available = {
+		}
+		completion_reward = {
+		create_faction = DRR_Faction
+		add_war_support = 0.05
+		add_manpower = 5000
+
+	}
+}
+	

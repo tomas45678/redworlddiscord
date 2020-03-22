@@ -1,0 +1,139 @@
+﻿capital = 522
+
+oob = ""
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.8
+set_war_support = 0.4
+
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
+	paratroopers = 1 
+	marines = 1
+	early_destroyer = 1 
+	early_carrier = 1 
+	basic_heavy_tank = 1 
+	atomic_research = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+set_politics = {
+parties = {
+		fascist = {
+			popularity = 7
+		}
+		nationalist = {
+			popularity = 2
+		}
+		monarchist = {
+			popularity = 14
+		}
+		national_bolshevik = {
+			popularity = 13
+		}
+		national_conservative = {
+			popularity = 9
+		}
+		centrist = {
+			popularity = 0
+		}
+		liberal = {
+			popularity = 5
+		}
+		new_democrat = {
+			popularity = 10
+		}
+		moderate_socialist = {
+			popularity = 12
+		}
+		revolutionary_socialist = {
+			popularity = 16
+		}
+		communist = {
+			popularity = 12
+		}
+	}
+	
+	ruling_party = monarchist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+create_faction = Mod_Co-Op
+add_to_faction = DIS
+add_to_faction = TNO
+add_ideas = {
+	
+}
+
+create_country_leader = {
+	name = "Council of Modders"
+	picture = "Portrait_KAI_Council.dds"
+	ideology = monarchist_ideology
+}
+
+create_country_leader = {
+	name = "Comrade Tacti"
+	picture = "Portrait_DIS_Tacti.dds"
+	ideology = marxist
+}
+
+create_country_leader = {
+	name = "Jair Bolsonaro"
+	picture = "Portrait_BRA_Jair_Bolsonaro.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Alan Keyes"
+	picture = "Portrait_AMC_Alan_Keyes.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Bishop Otto"
+	picture = "Portrait_DIS_Otto.dds"
+	ideology = national_bolshevik_ideology
+}
+
+
+create_country_leader = {
+	name = "Randy Barnett"
+	picture = "Portrait_AMC_Randy_Barnett.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Owlgustus"
+	picture = "Portrait_DIS_Owlie.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Jack Reed"
+	picture = "Portrait_AMC_Jack_Reed.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Comrade Rain"
+	picture = "Portrait_DIS_Rain.dds"
+	ideology = revolutionary_socialist_ideology
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=395
+	name="STATE_395"
+
+	history={
+		owner = NEA
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 11
+			air_base = 3
+
+		}
+		add_core_of = NEA
+		victory_points = {
+			9450 20 
+		}
+
+	}
+
+	provinces={
+		9450 9682 12312 12368 
+	}
+	manpower=12430000
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

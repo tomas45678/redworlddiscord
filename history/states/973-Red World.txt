@@ -1,0 +1,29 @@
+state={
+	id=973
+	name="STATE_973"
+	history={
+		owner = DIS
+		add_core_of = DIS
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			dockyard = 1
+			air_base = 3
+		}
+		victory_points = { 10445 10 }
+		victory_points = { 7651 10 }
+		victory_points = { 10430 5 }
+		victory_points = { 12949 1 }
+		victory_points = { 4517 1 }
+		victory_points = { 4481 1 }
+		victory_points = { 7522 1 }
+		add_core_of = DIS
+
+	}
+	provinces={
+		1472 1570 2116 2221 4481 4502 4517 4530 4546 4632 5198 5227 7522 7535 7592 7610 7651 7666 10430 10445 10475 10487 10941 11006 12308 12451 12949 
+	}
+	manpower=4512000
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

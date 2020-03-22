@@ -1,0 +1,142 @@
+﻿capital = 972
+
+oob = ""
+
+set_research_slots = 4
+set_convoys = 500
+
+set_stability = 0.05 
+set_war_support = 0.05 
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+
+set_politics = {
+
+	parties = {
+		fascist = {
+			popularity = 0
+		}
+		nationalist = {
+			popularity = 0
+		}
+		monarchist = {
+			popularity = 0
+		}
+		national_bolshevik = {
+			popularity = 1
+		}
+		national_conservative = {
+			popularity = 2
+		}
+		centrist = {
+			popularity = 0
+		}
+		liberal = {
+			popularity = 2
+		}
+		new_democrat = {
+			popularity = 0
+		}
+		moderate_socialist = {
+			popularity = 3
+		}
+		revolutionary_socialist = {
+			popularity = 88
+		}
+		communist = {
+			popularity = 4
+		}
+	}
+	
+	ruling_party = revolutionary_socialist
+	last_election = "2009.3.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Jimmy Dore"
+	picture = "JimmyDore.dds"
+	ideology = doreism
+}
+
+create_country_leader = {
+	name = "Stefane Zamorano"
+	picture = "StefaneZamorano.dds"
+	ideology = trotskyist
+}
+
+create_country_leader = {
+	name = "Michael Woods"
+	picture = "MichaelWoods.dds"
+	ideology = jeffersonian
+}
+
+create_country_leader = {
+	name = "Cenk Uygur"
+	picture = "CenkUygur.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Keith Olbermann"
+	picture = "KeithOlbermann.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Matt Stone"
+	picture = "MattStone.dds"
+	ideology = right_libertarian
+}
+
+create_country_leader = {
+	name = "Steven Crowder"
+	picture = "StevenCrowder.dds"
+	ideology = reactionary
+}
+
+create_country_leader = {
+	name = "Larry Sanders"
+	picture = "LarrySanders.dds"
+	ideology = fraternism
+}
+
+create_country_leader = {
+	name = "Jesse Watters"
+	picture = "JesseWatters.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Aaron Klein"
+	picture = "AaronKlein.dds"
+	ideology = national_socialist
+}
+
+create_country_leader = {
+	name = "Richard Hilton"
+	picture = "RichardHilton.dds"
+	ideology = corperate_monarchism
+}
+
+
+

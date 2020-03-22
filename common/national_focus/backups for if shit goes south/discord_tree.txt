@@ -1,0 +1,3068 @@
+focus_tree = {
+	id = discord_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = DIS
+		}
+	}
+	
+	continuous_focus_position = { x = 50 y = 5000 }
+	default = no
+	focus = {
+		id = DIS_deathofkaiser
+		icon = focus_state_funeral_for_sanders
+		cost = 1
+		x = 20
+		y = 1
+		available = {
+		has_country_flag = kaiser_has_died
+		}
+		completion_reward = {
+		   add_ideas = idea_dis_political_turmoil
+		}
+
+	}
+	focus = {
+		id = DIS_thethotpatrolconvenesoncemore
+		icon = focus_emergency_party_convention
+		cost = 5
+		x = 20
+		y = 2
+		prerequisite = { focus = DIS_deathofkaiser }
+		completion_reward = {
+		   add_political_power = 50
+		}
+
+	}
+	focus = {
+		id = DIS_theeconomydebate
+		icon = industry_2
+		cost = 5
+		x = 19
+		y = 3
+		prerequisite = { focus = DIS_thethotpatrolconvenesoncemore }
+		completion_reward = {
+		   country_event = { id = discord.2 }
+		}
+
+	}
+	focus = {
+		id = DIS_thereligiondebate
+		icon = english_clergy
+		cost = 5
+		x = 21
+		y = 3
+		prerequisite = { focus = DIS_thethotpatrolconvenesoncemore }
+		completion_reward = {
+		   country_event = { id = discord.3 }
+		}
+
+	}
+	focus = {
+		id = DIS_thepoliticaldebate
+		icon = ethiopia_allow_autonomy
+		cost = 5
+		x = 17
+		y = 3
+		prerequisite = { focus = DIS_thethotpatrolconvenesoncemore }
+		completion_reward = {
+		   country_event = { id = discord.4 }
+		}
+
+	}
+	focus = {
+		id = DIS_thelegacydebate
+		icon = threaten_social_democrats
+		cost = 5
+		x = 23
+		y = 3
+		prerequisite = { focus = DIS_thethotpatrolconvenesoncemore }
+		completion_reward = {
+		   country_event = { id = discord.5 }
+		}
+
+	}
+	focus = {
+		id = DIS_asuccessorischosen
+		icon = ethiopia_allow_autonomy
+		cost = 3
+		x = 20
+		y = 4
+		prerequisite = { focus = DIS_thereligiondebate }
+		prerequisite = { focus = DIS_theeconomydebate }
+		prerequisite = { focus = DIS_thepoliticaldebate }
+		prerequisite = { focus = DIS_thelegacydebate }
+		completion_reward = {
+		   add_political_power = 55
+		   country_event = { id = discord.11 }
+		}
+
+	}
+	focus = {
+		id = DIS_tactichosen
+		icon = tacti
+		cost = 8
+		x = 7
+		y = 5
+		prerequisite = { focus = DIS_asuccessorischosen }
+		available = {
+		has_country_flag = tacti_chosen
+		}
+		completion_reward = {
+		    country_event = { id = discord.9 }
+		}
+
+	}
+	focus = {
+		id = DIS_restructurethethotpatrol
+		icon = one_coalition
+		cost = 8
+		x = 8
+		y = 6
+		prerequisite = { focus = DIS_tactichosen }
+		mutually_exclusive = { focus = DIS_apeoplesgovernment }
+		completion_reward = {
+		    add_political_power = 50
+		    add_stability = 0.05
+			add_popularity = {
+			    ideology = communist
+			    popularity = 0.06
+		    }
+		 country_event = { id = discord.101 }
+		}
+
+	}
+	focus = {
+		id = DIS_newsecurityagency
+		icon = focus_demand_assads_resignation
+		cost = 8
+		x = 7
+		y = 7
+		prerequisite = { focus = DIS_apeoplesgovernment focus = DIS_restructurethethotpatrol }
+		completion_reward = {
+		    add_ideas = idea_dis_secret_police
+		}
+
+	}
+	focus = {
+		id = DIS_rootoutfascists
+		icon = focus_italian_socialist_international
+		cost = 8
+		x = 7
+		y = 8
+		prerequisite = { focus = DIS_newsecurityagency }
+		completion_reward = {
+		  swap_ideas = {
+				remove_idea = idea_dis_fascist_underground
+				add_idea = idea_dis_fascist_underground2
+				} 
+		}
+
+	}
+	focus = {
+		id = DIS_raidthebases
+		icon = anti_fascist
+		cost = 8
+		x = 7
+		y = 9
+		prerequisite = { focus = DIS_rootoutfascists }
+		completion_reward = {
+		 remove_ideas = idea_dis_fascist_underground2
+		 country_event = { id = discord.104 }
+		}
+
+	}
+	focus = {
+		id = DIS_endthepurges
+		icon = communists_marching
+		cost = 5
+		x = 7
+		y = 10
+		prerequisite = { focus = DIS_ensurepoliticalpower focus = DIS_stabilization }
+		prerequisite = { focus = DIS_raidthebases }
+		completion_reward = {
+		 add_political_power = 100
+			add_popularity = {
+			    ideology = communist
+			    popularity = 0.07
+		    }
+		remove_ideas = idea_dis_political_turmoil
+		add_stability = 0.12   
+		}
+
+	}
+	focus = {
+		id = DIS_socialprogress
+		icon = focus_freedom_of_demonstration
+		cost = 5
+		x = 7
+		y = 12
+		prerequisite = { focus = DIS_dealwithpartybrocialists}
+		available = { 
+		has_country_leader = {
+			ruling_only = yes
+			name = "Comrade Tacti"
+		}
+		}
+		completion_reward = {
+		add_ideas = idea_dis_new_social_progress   
+		}
+
+	}
+	focus = {
+		id = DIS_liberateminorities
+		icon = focus_promote_gender_equality
+		cost = 5
+		x = 6
+		y = 13
+		prerequisite = { focus = DIS_socialprogress }
+		completion_reward = {
+		 add_political_power = 35
+			add_popularity = {
+			    ideology = communist
+			    popularity = 0.04
+		    }
+		add_stability = -0.05
+		}
+
+	}
+	focus = {
+		id = DIS_liberationeducation
+		icon = focus_socialist_propaganda
+		cost = 5
+		x = 8
+		y = 13
+		prerequisite = { focus = DIS_socialprogress }
+		completion_reward = {
+		add_ideas = idea_dis_liberation_education
+		}
+
+	}
+	focus = {
+		id = DIS_dealwithpartybrocialists
+		icon = focus_syria_socialist_support
+		cost = 5
+		x = 7
+		y = 11
+		prerequisite = { focus = DIS_endthepurges }
+		available = { has_country_leader = {
+			ruling_only = yes
+			name = "Comrade Tacti"
+		} }
+		completion_reward = {
+		country_event = { id = discord_flavor.400 }
+		add_political_power = 50
+		}
+
+	}
+	focus = {
+		id = DIS_assassinateoskar
+		icon = political_pressure
+		cost = 5
+		x = 9
+		y = 12
+		prerequisite = { focus = DIS_dealwithparytbrocialists}
+		available = { has_country_flag = otto_dead }
+		completion_reward = {
+		country_event = { id = discord.105 }
+		}
+
+	}
+	focus = {
+		id = DIS_censorship
+		icon =  focus_undermine_local_media
+		cost = 5
+		x = 5
+		y = 12
+		prerequisite = { focus = DIS_dealwithpartybrocialists }
+		completion_reward = {
+		add_political_power = 120
+		add_stability = 0.08
+		}
+
+	}
+	focus = {
+		id = DIS_sovietdemocracy
+		icon = pro_soviet_propaganda
+		cost = 5
+		x = 3
+		y = 12
+		prerequisite = { focus = DIS_dealwithpartybrocialists }
+		available = { OR = {
+		has_completed_focus = DIS_stabilization
+		has_country_leader = {
+			ruling_only = yes
+			name = "Comrade Merox"
+		}
+		}
+		}
+		
+		completion_reward = {
+		add_ideas = idea_dis_soviet_democracy
+		}
+
+	}
+	focus = {
+		id = DIS_strengthenthecoalition
+		icon = focus_enforce_1990_constitution
+		cost = 5
+		x = 11
+		y = 12
+		prerequisite = { focus = DIS_dealwithpartybrocialists }
+		available = { OR = {
+		has_completed_focus = DIS_ensurepoliticalpower
+		has_country_leader = {
+			ruling_only = yes
+			name = "Comrade Zandrax"
+		}
+		} }
+		completion_reward = {
+		 if = {
+			limit = { has_idea = idea_dis_the_grand_coalition }
+			 swap_ideas = {
+				remove_idea = idea_dis_the_grand_coalition
+				add_idea = idea_dis_strengthened_coalition
+				} 
+		}
+		if = {
+		limit = { NOT = { has_idea = idea_dis_the_grand_coalition } }
+		add_ideas = idea_dis_the_grand_coalition
+		}
+		}
+
+	}
+	focus = {
+		id = DIS_endorseliberationtheology
+		icon = focus_fund_christian_charities
+		cost = 8
+		x = 12
+		y = 13
+		prerequisite = { focus = DIS_strengthenthecoalition }
+		completion_reward = {
+		add_ideas = idea_dis_catholic_charity
+		}
+
+	}
+	focus = {
+		id = DIS_mothertactilovesherchildren
+		icon = socialism_through_peace
+		cost = 8
+		x = 11
+		y = 14
+		prerequisite = { focus = DIS_endorseindustrialdemocracy }
+		prerequisite = { focus = DIS_endorseliberationtheology }
+		completion_reward = {
+		add_stability = 0.11	
+		add_political_power = 150
+		}
+
+	}
+	focus = {
+		id = DIS_endorseindustrialdemocracy
+		icon = focus_reorganise_trade_councils
+		cost = 8
+		x = 10
+		y = 13
+		prerequisite = { focus = DIS_strengthenthecoalition }
+		completion_reward = {
+		random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = DIS_revolutionaryzeal
+		icon = focus_erect_portrait_of_lenin
+		cost = 8
+		x = 3
+		y = 14
+		prerequisite = { focus = DIS_endcapitalistindustry }
+		prerequisite = { focus = DIS_nationalizeinfastructure}
+		completion_reward = {
+		add_ideas = idea_dis_revolutionary_zeal
+		}
+
+	}
+	focus = {
+		id = DIS_preparetoliberateaustralia
+		icon = australia_attack
+		cost = 8
+		x = 7
+		y = 15
+		prerequisite = { focus = DIS_revolutionaryzeal focus = DIS_mothertactilovesherchildren }
+		completion_reward = {
+		add_war_support = 0.12
+		 add_political_power = 75
+			add_popularity = {
+			    ideology = communist
+			    popularity = 0.07
+		    }
+		}
+
+	}
+		focus = {
+		id = DIS_nationalizeinfastructure
+		icon = establish_nationalisation_ministry
+		cost = 8
+		x = 4
+		y = 13
+		prerequisite = { focus = DIS_sovietdemocracy }
+		completion_reward = {
+		random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+		focus = {
+		id = DIS_endcapitalistindustry
+		icon = soviet_investment
+		cost = 8
+		x = 2
+		y = 13
+		prerequisite = { focus = DIS_sovietdemocracy }
+		completion_reward = {
+		 random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = DIS_apeoplescoalition
+		icon = manipulate_swedish_banks
+		cost = 8
+		x = 10
+		y = 7
+		prerequisite = { focus = DIS_restructurethethotpatrol }
+		completion_reward = {
+		    add_political_power = 100
+			add_popularity = {
+			    ideology = communist
+			    popularity = 0.06
+		    }
+			add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = 0.04
+		    }
+			add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = 0.04
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_appeaseanarchists
+		icon = focus_uar_syndicalism
+		cost = 8
+		x = 9
+		y = 8
+		prerequisite = { focus = DIS_apeoplescoalition }
+		completion_reward = {
+		    add_popularity = {
+			    ideology = communist
+			    popularity = 0.06
+		    }
+		add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = 0.03
+		    }
+			add_ideas = idea_dis_appease_anarchists
+		}
+
+	}
+	focus = {
+		id = DIS_ensurepoliticalpower
+		icon = focus_commonwealth_president
+		cost = 8
+		x = 10
+		y = 9
+		prerequisite = { focus = DIS_appeaseanarchists }
+		prerequisite = { focus = DIS_appeasecathbols }
+		completion_reward = {
+		  remove_ideas = idea_dis_appease_anarchists
+		remove_ideas = idea_dis_appease_cathbols
+		add_ideas = idea_dis_the_grand_coalition
+		add_stability = 0.15
+		}
+
+	}
+	focus = {
+		id = DIS_appeasecathbols
+		icon = focus_meet_the_pope
+		cost = 8
+		x = 11
+		y = 8
+		prerequisite = { focus = DIS_apeoplescoalition }
+		completion_reward = {
+		    add_popularity = {
+			    ideology = communist
+			    popularity = 0.06
+		    }
+		add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = 0.03
+		    }
+			add_ideas = idea_dis_appease_cathbols
+		}
+
+	}
+	focus = {
+		id = DIS_apeoplesgovernment
+		icon = uk_federation
+		cost = 8
+		x = 6
+		y = 6
+		prerequisite = { focus = DIS_tactichosen }
+		mutually_exclusive = { focus = DIS_restructurethethotpatrol }
+		completion_reward = {
+		    add_political_power = 150
+		    add_stability = -0.1
+			add_popularity = {
+			    ideology = communist
+			    popularity = 0.12
+		    }
+		 country_event = { id = discord.100 }
+		}
+
+	}
+		focus = {
+		id = DIS_purgethethotpatrol
+		icon = gorbachevs_kgb
+		cost = 8
+		x = 4
+		y = 7
+		prerequisite = { focus = DIS_apeoplesgovernment }
+		completion_reward = {
+		    add_political_power = 150
+		  	  add_stability = -0.1
+			add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = -0.07
+		   	 }
+			add_popularity = {
+			    ideology = liberal
+			    popularity = -0.07
+		    	}
+			add_popularity = {
+			    ideology = monarchist
+			    popularity = -0.07
+		    	}
+		if = {
+			limit = {
+				SOV = { has_completed_focus = SOV_gorbachev }
+			}
+		hidden_effect = { country_event = { id = meroxflavor.1 days = 3 } } 
+		}
+		
+		}
+	}
+	focus = {
+		id = DIS_cutdownthecathbols
+		icon = political_pressure
+		cost = 8
+		x = 3
+		y = 8
+		prerequisite = { focus = DIS_purgethethotpatrol }
+		completion_reward = {
+		    add_political_power = 150
+		  	  add_stability = -0.05
+			add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = -0.15
+		   	 }
+		}
+	}
+	focus = {
+		id = DIS_ravagethereformists
+		icon = tear_treaty
+		cost = 8
+		x = 5
+		y = 8
+		prerequisite = { focus = DIS_purgethethotpatrol }
+		completion_reward = {
+		    add_political_power = 150
+		  	  add_stability = -0.05
+			add_popularity = {
+			    ideology = liberal
+			    popularity = -0.05
+		   	 }
+			add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = -0.05
+		   	 }
+			add_popularity = {
+			    ideology = new_democrat
+			    popularity = -0.05
+		   	 }
+		}
+	}
+	focus = {
+		id = DIS_stabilization
+		icon = focus_commonwealth_meet_communists
+		cost = 8
+		x = 4
+		y = 9
+		prerequisite = { focus = DIS_ravagethereformists }
+		prerequisite = { focus = DIS_cutdownthecathbols }
+		completion_reward = {
+			add_timed_idea = {
+				idea = idea_dis_stabilization
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = DIS_chaos
+		icon = the_nationalist
+		cost = 3
+		x = 20
+		y = 5
+		prerequisite = { focus = DIS_asuccessorischosen }
+		available = {
+		has_country_flag = chaos_chosen
+		}
+		completion_reward = {
+		    country_event = { id = discord.12 }
+		}
+
+	}
+	focus = {
+		id = DIS_aftermathofthebolsonarocoup
+		icon = army_marching_orange
+		cost = 3
+		x = 42
+		y = 1
+		available = {
+		has_country_flag = bolsonaro_coup_attempt
+		}
+		completion_reward = {
+		    add_political_power = -50
+		}
+
+	}
+	###OTTTTTTTTTTTTTTTTTTTTTTTTTTO TIME
+	focus = {
+		id = DIS_ottochosen
+		icon = otto
+		cost = 3
+		x = 16
+		y = 5
+		prerequisite = { focus = DIS_asuccessorischosen }
+		available = {
+		has_country_flag = otto_chosen
+		}
+		completion_reward = {
+		    country_event = { id = discord.7 }
+		}
+
+	}
+	focus = {
+		id = DIS_traditionalvalues
+		icon = traditional_values
+		cost = 10
+		x = 13
+		y = 6
+		prerequisite = { focus = DIS_ottochosen }
+		completion_reward = {
+		add_ideas = idea_usa_traditional_values
+		}
+
+	}
+	focus = {
+		id = DIS_christianeducation
+		icon = focus_support_christian_values
+		cost = 10
+		x = 13
+		y = 7
+		prerequisite = { focus = DIS_traditionalvalues }
+		completion_reward = {
+		add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = 0.1
+		    }
+		add_stability = 0.05
+		}
+
+	}
+	focus = {
+		id = DIS_expelchristcaps
+		icon = sabotage_conservative_leadership
+		cost = 10
+		x = 13
+		y = 8
+		prerequisite = { focus = DIS_christianeducation }
+		completion_reward = {
+		if = {
+				limit = {
+					has_idea = idea_dis_fascist_underground
+				}
+				swap_ideas = {
+				remove_idea = idea_dis_fascist_underground
+				add_idea = idea_dis_fascist_underground2
+				}
+			}
+		if = {
+				limit = {
+					has_idea = idea_dis_fascist_underground2
+				}
+				remove_ideas = idea_dis_fascist_underground2
+			}
+		}
+
+	}
+	focus = {
+		id = DIS_restructuretheeconomy
+		icon = five_year_plan
+		cost = 10
+		x = 16
+		y = 6
+		prerequisite = { focus = DIS_ottochosen }
+		completion_reward = {
+		add_political_power = 100
+		add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = 0.05
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_liquidatebourgies
+		icon = perestroika
+		cost = 10
+		x = 17
+		y = 7
+		prerequisite = { focus = DIS_restructuretheeconomy }
+		mutually_exclusive = { focus = DIS_stepbystep } 
+		completion_reward = {
+		 random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = 0.03
+		    }
+		add_stability = -0.1
+		custom_effect_tooltip = bolsonaro_threat_economy
+		if = {
+		limit = {
+			OR = {
+			has_idea = idea_dis_fascist_underground
+			has_idea = idea_dis_fascist_underground2
+			}
+			}
+		hidden_effect = { country_event = { id = discord.26 days = 14 } } 		
+		}
+
+	}
+	}
+	focus = {
+		id = DIS_nationalizationspree
+		icon = work_for_the_tsar
+		cost = 10
+		x = 17
+		y = 8
+		prerequisite = { focus = DIS_liquidatebourgies }
+		completion_reward = {
+		random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = 0.03
+		    }
+		add_stability = -0.05
+		}
+
+	}
+	focus = {
+		id = DIS_landforthepeople
+		icon = free_some_farms
+		cost = 10
+		x = 17
+		y = 9
+		prerequisite = { focus = DIS_nationalizationspree }
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.1
+			add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = 0.03
+		    }
+		}
+	}
+	focus = {
+		id = DIS_stepbystep
+		icon = chinese_economy
+		cost = 10
+		x = 15
+		y = 7
+		prerequisite = { focus = DIS_restructuretheeconomy }
+		mutually_exclusive = { focus =  DIS_liquidatebourgies }
+		completion_reward = {
+		add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = -0.03
+		    }
+		add_stability = 0.1
+		random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = DIS_workwithchristianelites
+		icon = queens_estates
+		cost = 10
+		x = 15
+		y = 8
+		prerequisite = { focus = DIS_stepbystep }
+		completion_reward = {
+		 add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		add_stability = 0.05
+		add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = 0.03
+		    }
+		add_popularity = {
+			    ideology = fascist
+			    popularity = 0.03
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_encouragecollectives
+		icon = focus_commonwealth_collectivisation
+		cost = 10
+		x = 15
+		y = 9
+		prerequisite = { focus = DIS_workwithchristianelites }
+		completion_reward = {
+		add_ideas = idea_apc_collectivisation
+		}
+
+	}
+	focus = {
+		id = DIS_endsecularism
+		icon = uk_ban_atheism
+		cost = 10
+		x = 19
+		y = 6
+		prerequisite = { focus = DIS_ottochosen }
+		completion_reward = {
+		   add_ideas = idea_eng_atheism_banned
+		}
+
+	}
+	focus = {
+		id = DIS_churchandstate
+		icon = review_the_separation
+		cost = 10
+		x = 19
+		y = 7
+		prerequisite = { focus = DIS_endsecularism }
+		completion_reward = {
+		add_ideas = idea_dis_church_and_state
+		}
+
+	}
+	focus = {
+		id = DIS_condemnpapalfascism
+		icon = tear_treaty
+		cost = 10
+		x = 19
+		y = 8
+		prerequisite = { focus = DIS_churchandstate }
+		completion_reward = {
+		if = {
+				limit = {
+					has_idea = idea_dis_fascist_underground
+				}
+				swap_ideas = {
+				remove_idea = idea_dis_fascist_underground
+				add_idea = idea_dis_fascist_underground2
+				}
+			}
+		if = {
+				limit = {
+					has_idea = idea_dis_fascist_underground2
+				}
+				remove_ideas = idea_dis_fascist_underground2
+			}
+		}
+
+	}
+	focus = {
+		id = DIS_legacyofromero
+		icon = focus_fund_christian_charities
+		cost = 10
+		x = 19
+		y = 9
+		prerequisite = { focus = DIS_condemnpapalfascism }
+		completion_reward = {
+		add_ideas = idea_dis_legacy_of_romero
+		}
+
+	}
+	focus = {
+		id = DIS_theredchurch
+		icon = focus_red_cardinals
+		cost = 10
+		x = 13
+		y = 9
+		prerequisite = { focus = DIS_expelchristcaps }
+		completion_reward = {
+		add_ideas = idea_eng_puppet_clergy
+		}
+
+	}
+	focus = {
+		id = DIS_anewgovernment
+		icon = focus_enforce_papal_rule
+		cost = 10
+		x = 16
+		y = 10
+		prerequisite = { focus = DIS_theredchurch }
+		prerequisite = { focus = DIS_legacyofromero }
+		prerequisite = { focus = DIS_encouragecollectives focus = DIS_landforthepeople }
+		completion_reward = {
+		add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = 0.15
+		    }
+		remove_ideas = idea_dis_political_turmoil
+		}
+
+	}
+	focus = {
+		id = DIS_expandthemonasteries
+		icon = anartards
+		cost = 5
+		x = 15
+		y = 11
+		prerequisite = { focus = DIS_anewgovernment }
+		completion_reward = {
+		add_ideas = idea_dis_expanded_monasteries
+		}
+
+	}
+	focus = {
+		id = DIS_bansugar
+		icon = focus_drug_honeypot
+		cost = 5
+		x = 14
+		y = 12
+		prerequisite = { focus = DIS_expandthemonasteries }
+		completion_reward = {
+		add_ideas = idea_dis_sugar_banned
+		add_political_power = -50
+		}
+
+	}
+	focus = {
+		id = DIS_iamthepope
+		icon = focus_appease_catholics
+		cost = 5
+		x = 18
+		y = 12
+		prerequisite = { focus = DIS_cathbolsinthecommissariat }
+		completion_reward = {
+		add_country_leader_trait = the_true_pope
+		}
+
+	}
+	focus = {
+		id = DIS_banalcohol
+		icon = parties
+		cost = 5
+		x = 15
+		y = 13
+		prerequisite = { focus = DIS_bansugar }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = idea_dis_sugar_banned
+		add_idea = idea_dis_sugar_and_alcohol_banned
+		}
+		}
+
+	}
+	focus = {
+		id = DIS_adistributiststate
+		icon = focus_fund_christian_charities
+		cost = 5
+		x = 16
+		y = 14
+		prerequisite = { focus = DIS_banalcohol }
+		prerequisite = { focus = DIS_agrarianism }
+		completion_reward = {
+		add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = 0.04
+		    }
+		add_stability = 0.075
+		random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = DIS_agrarianism
+		icon = focus_on_agriculture
+		cost = 5
+		x = 17
+		y = 13
+		prerequisite = { focus = DIS_iamthepope }
+		completion_reward = {
+		add_ideas = idea_csd_radical_environmentalism
+		}
+
+	}
+	focus = {
+		id = DIS_cathbolsinthecommissariat
+		icon = neutrality
+		cost = 5
+		x = 17
+		y = 11
+		prerequisite = { focus = DIS_anewgovernment }
+		completion_reward = {
+		add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = 0.07
+		    }
+		swap_ideas = {
+		remove_idea = idea_dis_the_discordian_oligarchy
+		add_idea = idea_dis_cathbol_control
+		}
+		}
+
+	}
+	focus = {
+		id = DIS_owliechosen
+		icon = owlie
+		cost = 3
+		x = 40
+		y = 5
+		prerequisite = { focus = DIS_asuccessorischosen }
+		available = {
+		has_country_flag = owlie_chosen
+		}
+		completion_reward = {
+		    country_event = { id = discord.8 }
+		}
+
+	}
+	focus = {
+		id = DIS_democracyofthecommissariat
+		icon = focus_american_house_bill
+		cost = 10
+		x = 39
+		y = 6
+		prerequisite = { focus = DIS_owliechosen }
+		mutually_exclusive = { focus = DIS_democracyofthepeople }
+		completion_reward = {
+		add_political_power = 100
+		add_popularity = {
+			    ideology = liberal
+			    popularity = 0.07
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_democracyofthepeople
+		icon = focus_enforce_1990_constitution
+		cost = 10
+		x = 41
+		y = 6
+		prerequisite = { focus = DIS_owliechosen }
+		mutually_exclusive = { focus = DIS_democracyofthecommissariat }
+		completion_reward = {
+		add_political_power = -100
+		add_popularity = {
+			    ideology = liberal
+			    popularity = 0.14
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_strengthenthejusticesystem
+		icon = focus_american_house_bill
+		cost = 10
+		x = 39
+		y = 7
+		prerequisite = { focus = DIS_democracyofthepeople focus = DIS_democracyofthecommissariat }
+		mutually_exclusive = { focus = DIS_unbanpoliticalprisoners }
+		completion_reward = {
+		add_political_power = 50
+		add_stability = 0.075
+		}
+
+	}
+	focus = {
+		id = DIS_unbanpoliticalprisoners
+		icon = focus_enforce_1990_constitution
+		cost = 10
+		x = 41
+		y = 7
+		prerequisite = { focus = DIS_democracyofthepeople focus = DIS_democracyofthecommissariat }
+		mutually_exclusive = { focus = DIS_strengthenthejusticesystem }
+		completion_reward = {
+		add_ideas = idea_dis_pink_name_support
+		add_stability = -0.075
+		}
+
+	}
+	focus = {
+		id = DIS_restorecivilrights
+		icon = focus_solidarity_front_government
+		cost = 10
+		x = 35
+		y = 7
+		prerequisite = { focus = DIS_restorefreedomofspeech}
+		completion_reward = {
+		add_ideas = idea_dis_civil_rights
+		}
+
+	}
+	focus = {
+		id = DIS_freeandopendebate
+		icon = focus_gain_support_of_governors
+		cost = 10
+		x = 37
+		y = 7
+		prerequisite = { focus = DIS_restorefreedomofspeech}
+		completion_reward = {
+		add_ideas = idea_dis_debates
+		}
+
+	}
+	focus = {
+		id = DIS_challengethecathbols
+		icon = abolish_workers_party
+		cost = 5
+		x = 45
+		y = 7
+		prerequisite = { focus = DIS_acoalitionofcommissars }
+		completion_reward = {
+		add_popularity = {
+			    ideology = monarchist
+			    popularity = -0.07
+		    }
+		add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = -0.07
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_challengetheextremists
+		icon = focus_spread_democracy
+		cost = 5
+		x = 43
+		y = 7
+		prerequisite = { focus = DIS_acoalitionofcommissars}
+		completion_reward = {
+		add_popularity = {
+			    ideology = communist
+			    popularity = -0.07
+		    }
+		add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = -0.07
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_abolishthethotpatrol
+		icon = laws
+		cost = 10
+		x = 40
+		y = 8
+		prerequisite = { focus = DIS_restorecivilrights }
+		prerequisite = { focus = DIS_freeandopendebate }
+		prerequisite = { focus = DIS_challengethecathbols }
+		prerequisite = { focus = DIS_challengetheextremists }
+		prerequisite = { focus = DIS_unbanpoliticalprisoners focus = DIS_strengthenthejusticesystem }
+		completion_reward = {
+		add_political_power = 100
+		 country_event = { id = discord.20 }
+		}
+
+	}
+	focus = {
+		id = DIS_restorefreedomofspeech
+		icon = focus_freedom_of_demonstration
+		cost = 10
+		x = 36
+		y = 6
+		prerequisite = { focus = DIS_owliechosen }
+		completion_reward = {
+		add_stability = 0.07
+		add_political_power = 100
+		}
+
+	}
+	focus = {
+		id = DIS_acoalitionofcommissars
+		icon = manipulate_swedish_banks
+		cost = 10
+		x = 44
+		y = 6
+		prerequisite = { focus = DIS_owliechosen }
+		completion_reward = {
+		add_popularity = {
+			    ideology = liberal
+			    popularity = 0.05
+		    }
+		add_popularity = {
+			    ideology = centrist
+			    popularity = 0.03
+		    }
+		add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = 0.02
+		    }
+		add_popularity = {
+			    ideology = new_democrat
+			    popularity = 0.02
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_holdthefirstelections
+		icon = focus_syria_local_elections
+		cost = 5
+		x = 40
+		y = 9
+		prerequisite = { focus = DIS_abolishthethotpatrol }
+		completion_reward = {
+		add_political_power = 45
+		 country_event = { id = discord.21 }
+		remove_ideas = idea_dis_political_turmoil
+		}
+
+	}
+	focus = {
+		id = DIS_legochielwins
+		icon = flags_blue
+		cost = 5
+		x = 34
+		y = 10
+		prerequisite = { focus = DIS_holdthefirstelections }
+		available = { has_government = national_conservative }
+		completion_reward = {
+		add_political_power = 45
+		 add_popularity = {
+			    ideology = national_conservative
+			    popularity = 0.07
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_takeoutbolsonaro
+		icon = kill_bolsonaro
+		cost = 8
+		x = 33
+		y = 11
+		prerequisite = { focus = DIS_legochielwins }
+		completion_reward = {
+		add_political_power = 50
+		remove_ideas = idea_dis_fascist_underground
+		}
+
+	}
+	focus = {
+		id = DIS_removeal
+		icon = kill_al
+		cost = 8
+		x = 32
+		y = 12
+		prerequisite = { focus = DIS_takeoutbolsonaro }
+		completion_reward = {
+		  remove_unit_leader = 9905
+		 add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = -0.07
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_stackthecourts
+		icon = neutrality
+		cost = 8
+		x = 35
+		y = 11
+		prerequisite = { focus = DIS_legochielwins }
+		completion_reward = {
+		add_political_power = 50
+		 add_popularity = {
+			    ideology = national_conservative
+			    popularity = 0.12
+		    }
+		}
+	}	
+	focus = {
+		id = DIS_reshufflethecommissariat
+		icon = ethiopia_allow_autonomy
+		cost = 8
+		x = 36
+		y = 12
+		prerequisite = { focus = DIS_stackthecourts }
+		completion_reward = {
+		add_political_power = 50
+		add_stability = 0.025
+		 add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = -0.05
+		    }
+		 add_popularity = {
+			    ideology = national_conservative
+			    popularity = 0.05
+		    }
+		}
+	}	
+	focus = {
+		id = DIS_assumemilitarycontrol
+		icon = army_marching_blue
+		cost = 8
+		x = 34
+		y = 12
+		available = {
+		custom_trigger_tooltip = {
+			tooltip = FBK_gradualism
+			has_completed_focus = DIS_reshufflethecommissariat
+		}
+		custom_trigger_tooltip = {
+			tooltip = FBK_gamerism
+			has_completed_focus = DIS_removeal
+		}
+		}
+		prerequisite = { focus = DIS_stackthecourts }
+		prerequisite = { focus = DIS_takeoutbolsonaro }
+		completion_reward = {
+		add_stability = -0.15
+		country_event = { id = discord.24 }
+		}
+
+	}	
+	focus = {
+		id = DIS_christiandemocracy
+		icon = focus_support_christian_values
+		cost = 8
+		x = 31
+		y = 13
+		prerequisite = { focus = DIS_assumemilitarycontrol }
+		completion_reward = {
+		add_ideas = idea_dis_christian_nation
+		}
+
+	}
+	focus = {
+		id = DIS_strengthenthemilitary
+		icon = military_salute
+		cost = 8
+		x = 33
+		y = 13
+		prerequisite = { focus = DIS_assumemilitarycontrol }
+		completion_reward = {
+		add_ideas = idea_strengthened_military
+		}
+
+	}	
+	focus = {
+		id = DIS_condemnkaiserism
+		icon = anti_monarchy
+		cost = 8
+		x = 35
+		y = 13
+		prerequisite = { focus = DIS_assumemilitarycontrol }
+		completion_reward = {
+		add_ideas = idea_dis_kaiserism_condemned
+		}
+
+	}	
+	focus = {
+		id = DIS_fiscalconservatism
+		icon = focus_freedom_for_the_top_hat
+		cost = 8
+		x = 35
+		y = 14
+		prerequisite = { focus = DIS_condemnkaiserism }
+		completion_reward = {
+		add_ideas = idea_egy_fiscal_conservatism
+		}
+
+	}	
+	focus = {
+		id = DIS_strengthenexecutivepower
+		icon = power_to_the_president
+		cost = 8
+		x = 37
+		y = 13
+		prerequisite = { focus = DIS_assumemilitarycontrol }
+		completion_reward = {
+		add_ideas = idea_egy_authoritarian_democracy
+		}
+
+	}	
+	focus = {
+		id = DIS_consolidatemilitaryrule
+		icon = military_deal
+		cost = 8
+		x = 37
+		y = 14
+		prerequisite = { focus = DIS_strengthenexecutivepower }
+		completion_reward = {
+		add_ideas = idea_egy_military_clique
+		}
+
+	}	
+	focus = {
+		id = DIS_privatizationspree
+		icon = self_management
+		cost = 8
+		x = 33
+		y = 14
+		prerequisite = { focus = DIS_strengthenthemilitary }
+		completion_reward = {
+		random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+
+	focus = {
+		id = DIS_cathbolsareheretics
+		icon = abolish_workers_party
+		cost = 8
+		x = 31
+		y = 14
+		prerequisite = { focus = DIS_christiandemocracy }
+		completion_reward = {
+		country_event = { id = discord.25 }
+		add_political_power = 50
+		 add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = -0.12
+		    }
+		}
+
+	}	
+	focus = {
+		id = DIS_moralityrestored
+		icon = state_of_america
+		cost = 8
+		x = 34
+		y = 15
+		prerequisite = { focus = DIS_cathbolsareheretics }
+		prerequisite = { focus = DIS_privatizationspree }
+		prerequisite = { focus = DIS_fiscalconservatism }
+		prerequisite = { focus = DIS_consolidatemilitaryrule }
+		completion_reward = {
+		add_political_power = 50
+		 add_popularity = {
+			    ideology = nationalist
+			    popularity = 0.07
+		    }
+		add_stability = 0.13
+		}
+
+	}	
+	focus = {
+		id = DIS_owliewins
+		icon = flags_yellow
+		cost = 5
+		x = 40
+		y = 10
+		prerequisite = { focus = DIS_holdthefirstelections }
+		available = {has_government = new_democrat}
+		completion_reward = {
+		add_political_power = 45
+		  add_popularity = {
+			    ideology = new_democrat
+			    popularity = 0.07
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_educationfunding
+		icon = generic_research
+		cost = 10
+		x = 39
+		y = 11
+		prerequisite = { focus = DIS_owliewins }
+		available = {has_government = new_democrat}
+		completion_reward = {
+		add_ideas = idea_dis_education_funding
+		}
+
+	}
+	focus = {
+		id = DIS_arepresentativecommissariat
+		icon = power_to_the_corporations
+		cost = 10
+		x = 37
+		y = 11
+		prerequisite = { focus = DIS_owliewins }
+		available = {has_government = new_democrat}
+		completion_reward = {
+		add_political_power = 50
+		add_stability = 0.05
+		}
+
+	}
+	focus = {
+		id = DIS_antianarchistrhetoric
+		icon = focus_impeach_president_chomsky
+		cost = 10
+		x = 38
+		y = 12
+		prerequisite = { focus = DIS_arepresentativecommissariat }
+		prerequisite = { focus = DIS_educationfunding }
+		available = {has_government = new_democrat}
+		completion_reward = {
+		add_ideas = idea_dis_anti_anarchism
+		}
+
+	}
+	focus = {
+		id = DIS_faithindemocracy
+		icon = focus_commonwealth_democratic_rule
+		cost = 10
+		x = 39
+		y = 13
+		prerequisite = { focus = DIS_antianarchistrhetoric }
+		prerequisite = { focus = DIS_protectourearth }
+		available = {has_government = new_democrat}
+		completion_reward = {
+		add_ideas = idea_dis_faith_in_democracy
+		}
+
+	}
+	focus = {
+		id = DIS_protectourearth
+		icon = focus_humanity_for_all
+		cost = 10
+		x = 40
+		y = 12
+		prerequisite = { focus = DIS_educationfunding }
+		prerequisite = { focus = DIS_spacetech }
+		available = {has_government = new_democrat}
+		completion_reward = {
+		add_ideas = idea_csd_radical_environmentalism
+		}
+
+	}
+	focus = {
+		id = DIS_spacetech
+		icon = research_rockets
+		cost = 10
+		x = 41
+		y = 11
+		prerequisite = { focus = DIS_owliewins }
+		available = {has_government = new_democrat}
+		completion_reward = {
+		add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 0.5
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+		}
+
+	}
+	focus = {
+		id = DIS_astabledemocracy
+		icon = democracy
+		cost = 10
+		x = 40
+		y = 14
+		prerequisite = { focus = DIS_newindustrialplan }
+		prerequisite = { focus = DIS_faithindemocracy }
+		prerequisite = { focus = DIS_arrestlegochiel }
+		available = {has_government = new_democrat}
+		completion_reward = {
+		add_stability = 0.15
+		remove_ideas = idea_dis_fascist_underground
+		remove_ideas = idea_dis_political_turmoil
+		 add_popularity = {
+			    ideology = new_democrat
+			    popularity = 0.07
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_limitednationalizations
+		icon = industry_1
+		cost = 10
+		x = 42
+		y = 12
+		prerequisite = { focus = DIS_infastructurefunding }
+		prerequisite = { focus = DIS_spacetech }
+		available = {has_government = new_democrat}
+		completion_reward = {
+		add_ideas = idea_soft_nationalisation
+			}
+		}
+	focus = {
+		id = DIS_investigatetheconservatives
+		icon = sabotage_conservative_leadership
+		cost = 10
+		x = 45
+		y = 11
+		prerequisite = { focus = DIS_owliewins focus = DIS_alwins }
+		completion_reward = {
+		country_event = discord.215
+			}
+		}
+	focus = {
+		id = DIS_investigatethemilitary
+		icon = military_academy
+		cost = 10
+		x = 45
+		y = 12
+		prerequisite = { focus = DIS_investigatetheconservatives }
+		completion_reward = {
+		country_event = discord.216
+			}
+		}
+	
+	focus = {
+		id = DIS_arrestlegochiel
+		icon = generic_strike
+		cost = 10
+		x = 45
+		y = 13
+		prerequisite = { focus = DIS_investigatethemilitary }
+		completion_reward = {
+		remove_unit_leader = 9900
+		add_ideas = discord.217
+		 add_popularity = {
+			    ideology = nationalist
+			    popularity = -0.07
+		    }
+		 add_popularity = {
+			    ideology = national_conservative
+			    popularity = -0.15
+		    }
+			}
+		}
+	focus = {
+		id = DIS_newindustrialplan
+		icon = industry_in_alabama
+		cost = 10
+		x = 41
+		y = 13
+		prerequisite = { focus = DIS_limitednationalizations }
+		prerequisite = { focus = DIS_protectourearth }
+		available = {has_government = new_democrat}
+		completion_reward = {
+		random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			}
+		}
+	
+	focus = {
+		id = DIS_infastructurefunding
+		icon = generic_construction
+		cost = 10
+		x = 43
+		y = 11
+		prerequisite = { focus = DIS_owliewins }
+		available = {has_government = new_democrat}
+		completion_reward = {
+	  random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = DIS_alwins
+		icon = flags_red
+		cost = 5
+		x = 50
+		y = 10
+		prerequisite = { focus = DIS_holdthefirstelections }
+		available = {has_government = moderate_socialist}
+		completion_reward = {
+		add_political_power = 45
+		  add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = 0.07
+		    }
+		 country_event = { id = discord.22 }
+		}
+
+	}	
+	focus = {
+		id = DIS_socialisteconomicplan
+		icon = focus_socialist_trading_network
+		cost = 10
+		x = 49
+		y = 11
+		prerequisite = { focus = DIS_alwins }
+		completion_reward = {
+		add_ideas = idea_dis_socialist_economy
+		}
+
+	}
+	focus = {
+		id = DIS_votesfornoroles
+		icon = uk_workers_revolution
+		cost = 10
+		x = 50
+		y = 12
+		prerequisite = { focus = DIS_socialistdemocracy }
+		prerequisite = { focus = DIS_socialisteconomicplan }
+		completion_reward = {
+		add_stability = -0.05
+		add_political_power = 50
+		  add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = 0.07
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_swayleftistradicals
+		icon = focus_reorganise_trade_councils
+		cost = 10
+		x = 52
+		y = 12
+		prerequisite = { focus = DIS_socialistdemocracy }
+		prerequisite = { focus = DIS_concessionstoanarchists }
+		completion_reward = {
+		add_political_power = 50
+		  add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = -0.07
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_strengthendebatesmoderation
+		icon = neutrality
+		cost = 10
+		x = 51
+		y = 13
+		prerequisite = { focus = DIS_votesfornoroles }
+		prerequisite = { focus = DIS_swayleftistradicals }
+		completion_reward = {
+		add_idea = idea_dis_strengthened_judiciary
+		}
+
+	}
+	focus = {
+		id = DIS_democracywithoutliberalism
+		icon = focus_commonwealth_president
+		cost = 10
+		x = 50
+		y = 14
+		prerequisite = { focus = DIS_infastructureprogram }
+		prerequisite = { focus = DIS_strengthendebatesmoderation }
+		prerequisite = { focus = DIS_arrestlegochiel }
+		completion_reward = {
+		remove_ideas = idea_dis_fascist_underground
+		add_stability = 0.15
+		  add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = 0.07
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_socialistdemocracy
+		icon = politburo_debate
+		cost = 10
+		x = 51
+		y = 11
+		prerequisite = { focus = DIS_alwins }
+		completion_reward = {
+		add_ideas = idea_dis_beacon_of_democracy
+		}
+
+	}
+	focus = {
+		id = DIS_concessionstoanarchists
+		icon = focus_syria_coalition_with_communists
+		cost = 10
+		x = 53
+		y = 11
+		prerequisite = { focus = DIS_alwins }
+		completion_reward = {
+		add_ideas = idea_dis_appease_anarchists
+		}
+
+	}
+	focus = {
+		id = DIS_encouragecooperatives
+		icon = focus_syria_workers_self_management
+		cost = 10
+		x = 47
+		y = 11
+		prerequisite = { focus = DIS_alwins }
+		completion_reward = {
+		random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+		}
+		}
+
+	}
+	focus = {
+		id = DIS_nationalizationprogram
+		icon = industry_2
+		cost = 10
+		x = 48
+		y = 12
+		prerequisite = { focus = DIS_socialisteconomicplan }
+		prerequisite = { focus = DIS_encouragecooperatives }
+		completion_reward = {
+		random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+		}
+
+	}
+	}
+	focus = {
+		id = DIS_infastructureprogram
+		icon = infrastructure
+		cost = 10
+		x = 49
+		y = 13
+		prerequisite = { focus = DIS_nationalizationprogram }
+		prerequisite = { focus = DIS_votesfornoroles }
+		completion_reward = {
+		 random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	
+	
+	
+	
+	focus = {
+		id = DIS_wilfchosen
+		icon = wilf
+		cost = 3
+		x = 25
+		y = 5
+		prerequisite = { focus = DIS_asuccessorischosen }
+		available = {
+		has_country_flag = wilf_chosen
+		}
+		completion_reward = {
+		   country_event = { id = discord.6 }
+		}
+
+	}
+	focus = {
+		id = DIS_redworldiiimperium
+		icon = cavalry
+		cost = 3
+		x = 24
+		y = 6
+		prerequisite = { focus = DIS_wilfchosen }
+		mutually_exclusive = { focus = DIS_kaiserism }
+		completion_reward = {
+		   custom_effect_tooltip = evil_wilf
+		}
+
+	}
+	focus = {
+		id = DIS_kaiserism
+		icon = kaiserreich
+		cost = 3
+		x = 26
+		y = 6
+		mutually_exclusive = { focus = DIS_redworldiiimperium }
+		prerequisite = { focus = DIS_wilfchosen }
+		completion_reward = {
+		  custom_effect_tooltip = good_wilf
+		}
+
+	}
+	focus = {
+		id = DIS_removeotto
+		icon = the_nationalist
+		cost = 5
+		x = 21
+		y = 7
+		prerequisite = { focus = DIS_redworldiiimperium }
+		completion_reward = {
+		add_political_power = 50
+		country_event = otto_death.1
+		}
+
+	}
+	focus = {
+		id = DIS_puppetthecathbols
+		icon = focus_meet_the_pope
+		cost = 5
+		x = 21
+		y = 8
+		prerequisite = { focus = DIS_removeotto }
+		completion_reward = {
+		add_ideas = idea_dis_christian_nation
+		add_popularity = {
+			   ideology = monarchist
+			   popularity = 0.04
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_purgethenavy
+		icon = anti_submarine
+		cost = 5
+		x = 23
+		y = 7
+		prerequisite = { focus = DIS_redworldiiimperium }
+		completion_reward = {
+		add_political_power = 50
+		add_popularity = {
+			   ideology = centrist
+			   popularity = -0.09
+		    }
+		add_timed_idea = { idea =  idea_dis_navy_purged days = 100 } 
+		}
+	}
+	focus = {
+		id = DIS_workwithlegochiel
+		icon = military_deal
+		cost = 5
+		x = 23
+		y = 8
+		prerequisite = { focus = DIS_purgethenavy }
+		completion_reward = {
+		add_political_power = 50
+		add_popularity = {
+			   ideology = national_conservative
+			   popularity = 0.05
+		    }
+		army_experience = 50
+		}
+
+	}
+	focus = {
+		id = DIS_promiseleftistreform
+		icon = focus_syria_coalition_with_communists
+		cost = 5
+		x = 25
+		y = 7
+		prerequisite = { focus = DIS_redworldiiimperium focus = DIS_kaiserism }
+		completion_reward = {
+		add_stability = 0.05
+		add_popularity = {
+			   ideology = monarchist
+			   popularity = 0.04
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_encouragelocalcooperatives
+		icon = focus_syria_workers_self_management
+		cost = 5
+		x = 25
+		y = 8
+		prerequisite = { focus = DIS_promiseleftistreform }
+		completion_reward = {
+		add_ideas = idea_dis_local_cooperatives
+		}
+
+	}
+	focus = {
+		id = DIS_cooperatewiththecommissariat
+		icon = neutrality
+		cost = 10
+		x = 27
+		y = 7
+		prerequisite = { focus = DIS_kaiserism }
+		completion_reward = {
+		add_political_power = 75
+		add_popularity = {
+			   ideology = revolutionary_socialist
+			   popularity = 0.05
+		    }
+		add_popularity = {
+			   ideology = moderate_socialist
+			   popularity = 0.05
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_coalitionwithanarchists
+		icon = focus_reorganise_trade_councils
+		cost = 10
+		x = 29
+		y = 7
+		prerequisite = { focus = DIS_kaiserism }
+		completion_reward = {
+		add_ideas = idea_dis_coalition_with_anarchists
+		add_popularity = {
+			   ideology = revolutionary_socialist
+			   popularity = 0.05
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_rallytheworkers
+		icon = support_workers
+		cost = 10
+		x = 29
+		y = 8
+		prerequisite = { focus = DIS_coalitionwithanarchists }
+		completion_reward = {
+		add_stability = 0.05
+		add_popularity = {
+			   ideology = monarchist
+			   popularity = 0.075
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_continuethemod
+		icon = torch_industry
+		cost = 10
+		x = 27
+		y = 8
+		prerequisite = { focus = DIS_cooperatewiththecommissariat }
+		completion_reward = {
+		add_stability = 0.075
+		add_political_power = 25
+		}
+
+	}
+	focus = {
+		id = DIS_crownwilfkaiser
+		icon =  focus_crown_the_new_king
+		cost = 10
+		x = 25
+		y = 9
+		prerequisite = { focus = DIS_encouragelocalcooperatives }
+		prerequisite = { focus = DIS_workwithlegochiel focus = DIS_continuethemod }
+		prerequisite = { focus = DIS_puppetthecathbols focus = DIS_rallytheworkers }
+		completion_reward = {
+		   country_event = { id = discord.10 }
+		}
+
+	}
+	focus = {
+		id = DIS_aleftistmonarchy
+		icon = focus_socialist_trading_network
+		cost = 10
+		x = 24
+		y = 12
+		mutually_exclusive = { focus = DIS_buildsocialism }
+		prerequisite = { focus = DIS_anauthoritarianmonarchy focus = DIS_strengthenthecommissariat }
+		completion_reward = {
+		  add_ideas = idea_dis_welfare_state 
+		}
+
+	}
+	focus = {
+		id = DIS_buildsocialism
+		icon = english_military_industry
+		cost = 10
+		x = 26
+		y = 12
+		mutually_exclusive = { focus = DIS_aleftistmonarchy }
+		prerequisite = { focus = DIS_strengthenthecommissariat focus = DIS_anauthoritarianmonarchy }
+		completion_reward = {
+		random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			} 
+		}
+
+	}
+	focus = {
+		id = DIS_anauthoritarianmonarchy
+		icon = red_gold_army
+		cost = 8
+		x = 24
+		y = 11
+		prerequisite = { focus = DIS_thewilfianconstitution }
+		mutually_exclusive = { focus = DIS_strengthenthecommissariat }
+		completion_reward = {
+		   add_ideas = idea_dis_loyalty_to_wilf
+		   hidden_effect = { country_event = { id = discord_flavor.503 days = 150 } } 
+		}
+
+	}
+	focus = {
+		id = DIS_strengthenthecommissariat
+		icon = neutrality
+		cost = 8
+		x = 26
+		y = 11
+		prerequisite = { focus = DIS_thewilfianconstitution }
+		mutually_exclusive = { focus = DIS_anauthoritarianmonarchy }
+		completion_reward = {
+		   add_ideas = idea_dis_strengthened_commissariat
+		}
+
+	}
+	focus = {
+		id = DIS_acatholicstate
+		icon = focus_support_christian_values
+		cost = 8
+		x = 23
+		y = 10
+		prerequisite = { focus = DIS_crownwilfkaiser }
+		completion_reward = {
+		  add_ideas = idea_dis_catholic_charity
+		}
+
+	}
+	focus = {
+		id = DIS_liberatetheminorities
+		icon = focus_syria_woman_fighters
+		cost = 8
+		x = 27
+		y = 10
+		prerequisite = { focus = DIS_crownwilfkaiser }
+		completion_reward = {
+		  add_stability = -0.03
+		  add_political_power = 50
+			add_popularity = {
+			   ideology = monarchist
+			   popularity = 0.075
+		    }
+		}
+	}
+	focus = {
+		id = DIS_aprogressivemonarch
+		icon = focus_freedom_of_demonstration
+		cost = 8
+		x = 28
+		y = 11
+		prerequisite = { focus = DIS_liberatetheminorities }
+		completion_reward = {
+		add_ideas = idea_dis_a_progressive_monarch
+		}
+
+	}
+	focus = {
+		id = DIS_norolecrackdown
+		icon = abolish_workers_party
+		cost = 8
+		x = 28
+		y = 12
+		prerequisite = { focus = DIS_aprogressivemonarch }
+		completion_reward = {
+		add_political_power = 50
+			add_popularity = {
+			   ideology = nationalist
+			   popularity = -0.075
+		    }
+			add_popularity = {
+			   ideology = new_democrat
+			   popularity = -0.075
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_thesuccessionissue
+		icon = prestige_of_the_royals
+		cost = 8
+		x = 22
+		y = 11
+		prerequisite = { focus = DIS_acatholicstate }
+		completion_reward = {
+		  country_event = discord_flavor.500
+		}
+
+	}
+	focus = {
+		id = DIS_huntdownbolsonaro
+		icon = sabotage_conservative_leadership
+		cost = 8
+		x = 22
+		y = 12
+		prerequisite = { focus = DIS_thesuccessionissue }
+		completion_reward = {
+		  remove_ideas = idea_dis_fascist_underground
+		}
+
+	}
+	focus = {
+		id = DIS_thewilfianconstitution
+		icon = laws
+		cost = 8
+		x = 25
+		y = 10
+		prerequisite = { focus = DIS_crownwilfkaiser }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = idea_dis_political_turmoil
+		add_idea = idea_dis_the_wilfian_constitution
+		}
+		}
+
+	}
+	focus = {
+		id = DIS_wilfsnewregime
+		icon = royal_institutions
+		cost = 8
+		x = 25
+		y = 13
+		prerequisite = { focus = DIS_huntdownbolsonaro }
+		prerequisite = { focus = DIS_aleftistmonarchy focus = DIS_buildsocialism }
+		prerequisite = { focus = DIS_norolecrackdown }
+		completion_reward = {
+		  add_political_power = 100
+		  if = {
+			limit =  { has_completed_focus = DIS_redworldiiimperium }
+			country_event = discord_flavor.501
+			}
+		  if = {
+			limit =  { has_completed_focus = DIS_kaiserism }
+			country_event = discord_flavor.502
+			}
+		}
+
+	}
+	focus = {
+		id = DIS_reaffirmthecoop
+		icon = focus_establish_embassies
+		cost = 7
+		x = 19
+		y = 16
+		mutually_exclusive = { focus = DIS_leavethecoop }
+		prerequisite = { focus = DIS_democracywithoutliberalism focus = DIS_adistributiststate focus = DIS_preparetoliberateaustralia focus = DIS_theonlylegalparty focus = DIS_freeandequalgovernment focus = DIS_wilfsnewregime focus = DIS_godlygovernment focus = DIS_moralityrestored focus = DIS_astabledemocracy }
+		available = {
+		is_in_faction = yes
+		}
+		completion_reward = {
+		add_political_power = 100
+		add_stability = 0.05
+		 TNO = {
+			    add_opinion_modifier = {
+					target = ROOT
+					modifier = declaration_of_friendship
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = DIS_pacifism
+		icon = socialism_through_peace
+		cost = 7
+		x = 20
+		y = 17
+		prerequisite = { focus = DIS_reaffirmthecoop focus = DIS_leavethecoop }
+		mutually_exclusive = { focus = DIS_expansionism }
+		mutually_exclusive = { focus = DIS_interventionism }
+		completion_reward = {
+		add_ideas = idea_dis_isolationism
+		}
+
+	}
+	focus = {
+		id = DIS_convertmilitaryfactories
+		icon = continuous_non_factory_construct
+		cost = 7
+		x = 19
+		y = 18
+		prerequisite = { focus = DIS_pacifism }
+		completion_reward = {
+		add_ideas = idea_dis_military_to_civilian
+		}
+
+	}
+	focus = {
+		id = DIS_defundthenavy
+		icon = anti_submarine
+		cost = 7
+		x = 19
+		y = 19
+		prerequisite = { focus = DIS_convertmilitaryfactories }
+		completion_reward = {
+		add_ideas = idea_dis_navy_defunded
+		}
+
+	}
+	focus = {
+		id = DIS_revitalizetheoutback
+		icon = infrastructure
+		cost = 7
+		x = 21
+		y = 18
+		prerequisite = { focus = DIS_pacifism }
+		completion_reward = {
+		 974 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = DIS_easeconscription
+		icon = military_academy
+		cost = 7
+		x = 21
+		y = 19
+		prerequisite = { focus = DIS_revitalizetheoutback }
+		completion_reward = {
+		add_ideas = volunteer_only
+		}
+
+	}
+	focus = {
+		id = DIS_industrialbeacon
+		icon = industry_1
+		cost = 7
+		x = 20
+		y = 20
+		prerequisite = { focus = DIS_easeconscription }
+		prerequisite = { focus = DIS_defundthenavy }
+		completion_reward = {
+		 random_owned_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = DIS_expansionism
+		icon = major_war
+		cost = 7
+		x = 25
+		y = 17
+		prerequisite = { focus = DIS_leavethecoop }
+		mutually_exclusive = { focus = DIS_pacifism }	
+		mutually_exclusive = { focus = DIS_interventionism }
+		completion_reward = {
+		add_ideas = idea_dis_expansionism
+		}
+
+	}
+	focus = {
+		id = DIS_interventionism
+		icon = army_marching_light_blue
+		cost = 7
+		x = 15
+		y = 17
+		prerequisite = { focus = DIS_reaffirmthecoop }
+		mutually_exclusive = { focus = DIS_pacifism }	
+		mutually_exclusive = { focus = DIS_expansionism }
+		
+		completion_reward = {
+		add_ideas = idea_dis_interventionism
+		}
+	}
+	focus = {
+		id = DIS_democraticdiplomacy
+		icon = democratic_league
+		cost = 7
+		x = 16
+		y = 18
+		prerequisite = { focus = DIS_interventionism }
+		completion_reward = {
+		add_stability = 0.05
+		 RAJ = {
+			    add_opinion_modifier = {
+					target = ROOT
+					modifier =  declaration_of_friendship
+				}
+			}
+			CAN = {
+			    add_opinion_modifier = {
+					target = ROOT
+					modifier =  declaration_of_friendship
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = DIS_warpropaganda
+		icon = propaganda
+		cost = 7
+		x = 14
+		y = 18
+		prerequisite = { focus = DIS_interventionism }
+		completion_reward = {
+		add_stability = 0.05
+		add_war_support = 0.075
+		}
+
+	}
+	focus = {
+		id = DIS_supportournavy
+		icon = glorious_british_navy
+		cost = 7
+		x = 16
+		y = 19
+		prerequisite = { focus = DIS_democraticdiplomacy }
+		completion_reward = {
+		random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			} 
+				add_popularity = {
+			   ideology = centrist
+			   popularity = 0.02
+		    }
+		}
+
+	}
+	focus = {
+		id = DIS_condemnthefascists
+		icon = anti_fascist
+		cost = 7
+		x = 14
+		y = 19
+		prerequisite = { focus = DIS_warpropaganda }
+		completion_reward = {
+		add_political_power = 50
+		add_war_support = 0.05
+		DRR = {
+			    add_opinion_modifier = {
+					target = ROOT
+					modifier =  declaration_of_hostility
+				}
+			}
+			YOU = {
+			    add_opinion_modifier = {
+					target = ROOT
+					modifier =  declaration_of_friendship
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = DIS_operationpurification
+		icon = focus_operation_coastal_menace
+		cost = 7
+		x = 15
+		y = 20
+		prerequisite = {  focus = DIS_condemnthefascists }
+		prerequisite = { focus = DIS_supportournavy }
+		completion_reward = {
+		create_wargoal = { 
+		type = annex_everything 
+		target = YOU
+		}
+		}
+	}
+	focus = {
+		id = DIS_operationeuthanasia
+		icon = focus_operation_looming_desert
+		cost = 7
+		x = 14
+		y = 21
+		prerequisite = {  focus = DIS_operationpurification }
+		completion_reward = {
+		create_wargoal = { 
+		type = annex_everything 
+		target = DRR
+		}
+		}
+	}
+	focus = {
+		id = DIS_operationredscare
+		icon = focus_operation_shining_star
+		cost = 7
+		x = 16
+		y = 21
+		prerequisite = {  focus = DIS_operationpurification }
+		completion_reward = {
+		create_wargoal = { 
+		type = annex_everything 
+		target = INS
+		}
+		create_wargoal = { 
+		type = annex_everything 
+		target = BOR
+		}
+		create_wargoal = { 
+		type = annex_everything 
+		target = PAP
+		}
+		}
+	}
+	focus = {
+		id = DIS_leavethecoop
+		icon = focus_commonwealth_un_membership
+		cost = 7
+		x = 21
+		y = 16
+		mutually_exclusive = { focus = DIS_reaffirmthecoop }
+		prerequisite = { focus = DIS_democracywithoutliberalism focus = DIS_adistributiststate focus = DIS_preparetoliberateaustralia focus = DIS_theonlylegalparty focus = DIS_freeandequalgovernment focus = DIS_wilfsnewregime focus = DIS_anewgodlygovernment focus = DIS_moralityrestored focus = DIS_astabledemocracy }
+		completion_reward = {
+		KAI = {
+			    remove_from_faction = DIS
+			}
+		 TNO = {
+			    add_opinion_modifier = {
+					target = ROOT
+					modifier =  declaration_of_hostility
+				}
+			}
+		add_stability = -0.05
+		}
+
+	}
+	focus = {
+		id = DIS_destroyaustralia
+		icon = focus_operation_blue_sky
+		cost = 8
+		x = 24
+		y = 18
+		prerequisite = { focus = DIS_expansionism }
+		available = { has_war = no }
+		completion_reward = {
+		create_wargoal = { 
+		type = annex_everything 
+		target = AST
+		}	
+		}
+	
+	}
+	focus = {
+		id = DIS_destroythecoop
+		icon = focus_operation_coastal_menace
+		cost = 8
+		x = 26
+		y = 18
+		prerequisite = { focus = DIS_expansionism }
+		available = { has_war = no }
+		completion_reward = {
+		create_wargoal = { 
+		type = annex_everything 
+		target = TNO
+		}	
+		}
+	
+	}
+	focus = {
+		id = DIS_destroythebronies
+		icon = focus_operation_northern_lights
+		cost = 8
+		x = 26
+		y = 19
+		prerequisite = { focus = DIS_destroythecoop }
+		available = { has_war = no }
+		completion_reward = {
+		create_wargoal = { 
+		type = annex_everything 
+		target = EQS
+		}	
+		}
+	
+	}
+	focus = {
+		id = DIS_destroythemememod
+		icon = focus_operation_looming_desert
+		cost = 8
+		x = 24
+		y = 19
+		prerequisite = { focus = DIS_destroyaustralia }
+		available = { has_war = no }
+		completion_reward = {
+		create_wargoal = { 
+		type = annex_everything 
+		target = DRR
+		}	
+		}
+	
+	}
+	focus = {
+		id = DIS_destroyyoutubancapitalism
+		icon = focus_operation_shining_star
+		cost = 8
+		x = 25
+		y = 20
+		prerequisite = { focus = DIS_destroythemememod }
+		prerequisite = { focus = DIS_destroythebronies }
+		available = { has_war = no }
+		completion_reward = {
+		create_wargoal = { 
+		type = annex_everything 
+		target = YOU
+		}	
+		}
+	
+	}
+	focus = {
+		id = DIS_integrateconqueredterritories
+		icon = forceful_treaty
+		cost = 8
+		x = 25
+		y = 21
+		prerequisite = { focus = DIS_destroyyoutubancapitalism }
+		available = { has_war = no }
+		completion_reward = {
+		add_political_power = 200
+		add_popularity = {
+			    ideology = national_conservative
+			    popularity = -0.04
+		    }	
+		add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = -0.04
+		    }	
+		add_popularity = {
+			    ideology = nationalist
+			    popularity = -0.04
+		    }	
+		add_popularity = {
+			    ideology = liberal
+			    popularity = -0.04
+		    }	
+		}
+	
+	}
+	focus = {
+		id = DCF_formthecoop
+		icon = coop
+		cost = 8
+		x = 20
+		y = 22
+		prerequisite = { focus = DIS_integrateconqueredterritories focus = DIS_operationeuthanasia focus = DIS_operationredscare }
+		available = { has_war = no }
+		completion_reward = {
+		set_cosmetic_tag = DIS_Coop	
+		}
+	
+	}
+}

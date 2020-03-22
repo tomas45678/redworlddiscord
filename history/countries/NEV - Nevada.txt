@@ -1,0 +1,145 @@
+﻿capital = 889
+
+oob = ""
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.05
+set_war_support = 0.05 
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+set_politics = {
+
+	parties = {
+		fascist = {
+			popularity = 0
+		}
+		nationalist = {
+			popularity = 3
+		}
+		monarchist = {
+			popularity = 0
+		}
+		national_bolshevik = {
+			popularity = 0
+		}
+		national_conservative = {
+			popularity = 31
+		}
+		centrist = {
+			popularity = 0
+		}
+		liberal = {
+			popularity = 36
+		}
+		new_democrat = {
+			popularity = 15
+		}
+		moderate_socialist = {
+			popularity = 5
+		}
+		revolutionary_socialist = {
+			popularity = 7
+		}
+		communist = {
+			popularity = 3
+		}
+	}
+	
+	ruling_party = liberal
+	last_election = "2008.1.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Harry Reid"
+	picture = "HarryReid.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "George Clooney"
+	picture = "GeorgeClooney.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Brian Sandoval"
+	picture = "BrianSandoval.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Joy Reid"
+	picture = "JoyReid.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Daniel Devito"
+	picture = "DanielDevito.dds"
+	ideology = democratic_socialist
+}
+
+create_country_leader = {
+	name = "Kevin McCarthy"
+	picture = "KevinMccarthy.dds"
+	ideology = right_libertarian
+}
+
+create_country_leader = {
+	name = "Naomi Karavani"
+	picture = "NaomiKaravani.dds"
+	ideology = anarcho_syndicalism
+}
+
+create_country_leader = {
+	name = "Larry Holmes"
+	picture = "LarryHolmes.dds"
+	ideology = trotskyist
+}
+
+create_country_leader = {
+	name = "Cresent Hardy"
+	picture = "CresentHardy.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Dinesh D'Souza"
+	picture = "Dinesh.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Andrew Anglin"
+	picture = "AndrewAnglin.dds"
+	ideology = national_bolshevik_ideology
+}
+
+
+
+
+
+
+
+

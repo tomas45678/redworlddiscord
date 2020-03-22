@@ -1,0 +1,368 @@
+focus_tree = {
+	id = florida
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = FLA
+		}
+	}
+	
+	continuous_focus_position = { x = 50 y = 5000 }
+	
+	focus = {
+		id = FLA_for_the_republic_and_democracy
+		icon = ideology_fist
+		cost = 8
+		x = 12
+		y = 0
+		available = {
+		}
+		completion_reward = {
+		  add_poitical_power = 100
+			add_war_suppport = 0.05
+		}
+
+	}
+	focus = {
+		id = FLA_nwrp
+		icon = communist_star
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite = { focus = FLA_for_the_republic_and_democracy }
+		available = {
+		has_government = national_bolshevik
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = FLA_fpp
+		icon = focus_uar_syndicalism
+		cost = 5
+		x = 6
+		y = 1
+		prerequisite = { focus = FLA_for_the_republic_and_democracy }
+		available = {
+		has_government = revolutionary_socialist
+		}
+		completion_reward = {
+		add_stability = 0.1
+		add_war_support = -0.05
+		add_popularity = {
+		ideology = revolutionary_socialist
+		popularity = 0.05
+		}
+		}
+    }
+    focus = {
+		id = FLA_environmentalism
+		icon = focus_uar_syndicalism
+		cost = 5
+		x = 5
+		y = 2
+		prerequisite = { focus = FLA_fpp }
+		available = {
+		has_government = revolutionary_socialist
+		}
+		completion_reward = {
+		add_ideas = idea_csd_radical_environmentalism
+		}
+    }
+    focus = {
+		id = FLA_political_centrism
+		icon = focus_uar_syndicalism
+		cost = 5
+		x = 7
+		y = 2
+		prerequisite = { focus = FLA_fpp }
+		available = {
+		has_government = revolutionary_socialist
+		}
+		completion_reward = {
+		add_stability = 0.05
+		add_political_power = 50
+		add_popularity = {
+		ideology = national_bolshevik
+		popularity = 0.025
+		}
+		add_popularity = {
+		ideology = moderate_socialist
+		popularity = 0.025
+		}
+		}
+    }
+	focus = {
+		id = FLA_spf
+		icon = labour_uk
+		cost = 5
+		x = 10
+		y = 1
+		prerequisite = { focus = FLA_for_the_republic_and_democracy }
+		available = {
+		has_government = moderate_socialist
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = FLA_united_dixie
+		icon = liberal_democrat_uk
+		cost = 5
+		x = 14
+		y = 1
+		prerequisite = { focus = FLA_for_the_republic_and_democracy }
+		available = {
+		has_government = centrist
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = FLA_national_republicans
+		icon = threaten_conservatives
+		cost = 5
+		x = 18
+		y = 1
+		prerequisite = { focus = FLA_for_the_republic_and_democracy }
+		available = {
+		OR = {
+		has_government = national_conservative
+		has_government = nationalist
+		}
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = FLA_nsup
+		icon = fascism_3
+		cost = 5
+		x = 22
+		y = 1
+		prerequisite = { focus = FLA_for_the_republic_and_democracy }
+		available = {
+		has_government = fascist
+		}
+		completion_reward = {
+		add_stability = -0.15
+		add_war_support = 0.05
+		add_popularity = {
+		ideology = fascist
+		popularity = 0.05
+		}
+		}
+	}
+	focus = {
+		id = FLA_women_are_objects_act
+		icon = traditional_values
+		cost = 8
+		x = 21
+		y = 2
+		prerequisite = { focus = FLA_nsup }
+		available = {
+		has_government = fascist
+		}
+		completion_reward = {
+		add_political_power = -100
+		add_stability = 0.05
+		add_ideas = idea_usa_traditional_values
+		}
+	}
+	focus = {
+		id = FLA_confederate_nationalism
+		icon = i_wish_i_was_in_dixie
+		cost = 5
+		x = 20
+		y = 3
+		prerequisite = { focus = FLA_women_are_objects_act }
+		available = {
+		OR = { 
+		has_government = fascist
+		has_government = nationalist
+		has_government = national_conservative
+		}
+		}
+		completion_reward = {
+		add_war_support = 0.075
+		}
+	}
+	focus = {
+		id = FLA_put_the_traitors_on_trial
+		icon = liberty_attack
+		cost = 5
+		x = 21
+		y = 4
+		prerequisite = { focus = FLA_confederate_nationalism }
+		prerequisite = { focus = FLA_a_strong_president }
+		available = {
+		OR = { 
+		has_government = fascist
+		has_government = nationalist
+		has_government = national_conservative
+		}
+		}
+		completion_reward = {
+		add_political_power = 25
+		add_popularity = {
+		ideology = national_bolshevik
+		popularity = -0.05
+		}
+		add_popularity = {
+		ideology = revolutionary_socialist
+		popularity = -0.05
+		}
+		add_popularity = {
+		ideology = moderate_socialist
+		popularity = -0.025
+		}
+		}
+	}
+	focus = {
+		id = FLA_a_strong_president
+		icon = power_to_the_president
+		cost = 8
+		x = 22
+		y = 3
+		prerequisite = { focus = FLA_women_are_objects_act }
+		prerequisite = { focus = FLA_corporatism }
+		available = {
+		has_government = fascist
+		}
+		completion_reward = {
+		add_ideas = idea_usa_total_authority
+		}
+	}
+	focus = {
+		id = FLA_anti_corruption_acts
+		icon = investigate_industrial_corruption
+		cost = 5
+		x = 23
+		y = 4
+		prerequisite = { focus = FLA_occupational_democracy }
+		prerequisite = { focus = FLA_a_strong_president }
+		available = {
+		has_government = fascist
+		}
+		completion_reward = {
+		add_political_power = -50
+		add_ideas = idea_nac_economic_corruption_eliminated
+		}
+	}
+	focus = {
+		id = FLA_corporatism
+		icon = focus_true_corporatism
+		cost = 8
+		x = 23
+		y = 2
+		prerequisite = { focus = FLA_nsup }
+		available = {
+		has_government = fascist
+		}
+		completion_reward = {
+		add_ideas = idea_ita_corporate_aid
+		}
+	}
+	focus = {
+		id = FLA_occupational_democracy
+		icon = power_to_the_corporations
+		cost = 5
+		x = 24
+		y = 3
+		prerequisite = { focus = FLA_corporatism }
+		available = {
+		has_government = fascist
+		}
+		completion_reward = {
+		add_stability = 0.05
+		add_popularity = {
+		ideology = fascist
+		popularity = 0.1
+		}
+		}
+	}
+	focus = {
+		id = FLA_strengthen_the_police
+		icon = political_pressure
+		cost = 5
+		x = 20
+		y = 5
+		prerequisite = { focus = FLA_confederate_nationalism }
+		prerequisite = { focus = FLA_put_the_traitors_on_trial }
+		available = {
+		has_government = fascist
+		}
+		completion_reward = {
+		add_ideas = idea_eng_increased_police_presence
+		}
+	}
+	focus = {
+		id = FLA_wealth_redistribution
+		icon = concessions
+		cost = 5
+		x = 24
+		y = 5
+		prerequisite = { focus = FLA_anti_corruption_acts }
+		prerequisite = { focus = FLA_occupational_democracy }
+		available = {
+		has_government = fascist
+		}
+		completion_reward = {
+		random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = FLA_it_can_happen_here
+		icon = focus_strong_identity
+		cost = 5
+		x = 22
+		y = 6
+		prerequisite = { focus = FLA_slander_the_father_of_the_republic }
+		prerequisite = { focus = FLA_wealth_redistribution }
+		prerequisite = { focus = FLA_strengthen_the_police }
+		available = {
+		has_government = fascist
+		}
+		completion_reward = {
+		add_political_power = 50
+		add_stability = 0.05
+		add_popularity = {
+		ideology = fascist
+		popularity = 0.1
+		}
+		}
+	}
+	focus = {
+		id = FLA_slander_the_father_of_the_republic
+		icon = no
+		cost = 5
+		x = 22
+		y = 5
+		prerequisite = { focus = FLA_put_the_traitors_on_trial }
+		prerequisite = { focus = FLA_anti_corruption_acts }
+		available = {
+		has_government = fascist
+		}
+		completion_reward = {
+		add_political_power = 50
+		add_stability = -0.05
+		add_popularity = {
+		ideology = national_bolshevik
+		popularity = -0.15
+		}
+		}
+	}
+}

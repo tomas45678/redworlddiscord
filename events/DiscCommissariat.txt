@@ -1,0 +1,1052 @@
+﻿add_namespace = comm
+add_namespace = darwin
+add_namespace = nnrp
+country_event = {
+	id = nnrp.1
+	title = nnrp.1.t
+	desc = nnrp.1.d
+	picture = india_com_nationalisation
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = nnrp.1.a
+		add_political_power = 50
+		random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+	}
+}
+country_event = {
+	id = nnrp.2
+	title = nnrp.2.t
+	desc = nnrp.2.d
+	picture = india_kashmir_prison_release
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = nnrp.2.a
+		add_political_power = 100
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.05
+		}
+	}
+}
+country_event = {
+	id = nnrp.3
+	title = nnrp.3.t
+	desc = nnrp.3.d
+	picture = assad_executed
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = nnrp.3.a
+		add_stability = -0.05
+		add_political_power = 100
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.05
+		}
+	}
+	option = { 
+		name = nnrp.3.b
+		add_stability = 0.025
+		add_political_power = 50
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = national_bolshevik
+			popularity = 0.02
+		}
+	}
+	option = { 
+		name = nnrp.3.c
+		add_political_power = 25
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.025
+		}
+	}
+}
+country_event = {
+	id = nnrp.4
+	title = nnrp.4.t
+	desc = nnrp.4.d
+	picture = syndicates_leader_election
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = nnrp.4.a
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = national_bolshevik
+			popularity = 0.05
+		}
+		create_country_leader = {
+	        name = "Crusade"
+	        picture = "Portrait_DIS_Crusade.dds"
+	        ideology = nationalist_ideology
+        		}
+	}
+	option = { 
+		name = nnrp.4.b
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.075
+		}
+		create_country_leader = {
+	        name = "Oswald"
+	        picture = "Portrait_DIS_Oswald.dds"
+	        ideology = nationalist_ideology
+        		}
+	}
+	option = { 
+		name = nnrp.4.c
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.075
+		}
+		create_country_leader = {
+	        name = "Flacsa"
+	        picture = "Portrait_DIS_Flacsa.dds"
+	        ideology = nationalist_ideology
+        		}
+	}
+	option = { 
+		name = nnrp.4.e
+		add_popularity = {
+			ideology = national_bolshevik
+			popularity = 0.075
+		}
+		set_politics = {
+ 		ruling_party = national_bolshevik
+		elections_allowed = no 
+		}
+		create_country_leader = {
+	        name = "No"
+	        picture = "Portrait_DIS_No.dds"
+	        ideology = national_bolshevik_ideology
+        		}
+		}
+	option = { 
+		name = nnrp.4.f
+		add_popularity = {
+			ideology = national_bolshevik
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		set_politics = {
+ 		ruling_party = national_bolshevik
+		elections_allowed = no 
+		}
+		create_country_leader = {
+	        name = "Jack Hoxha"
+	        picture = "Portrait_DIS_Jack_Hoxha.dds"
+	        ideology = national_bolshevik_ideology
+        		}
+		}
+	option = { 
+		name = nnrp.4.g
+		add_popularity = {
+			ideology = national_bolshevik
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		set_politics = {
+ 		ruling_party = national_bolshevik
+		elections_allowed = no 
+		}
+		create_country_leader = {
+	        name = "Moon"
+	        picture = "Portrait_DIS_Moon.dds"
+	        ideology = national_bolshevik_ideology
+        		}
+		}
+
+}
+country_event = {
+	id = nnrp.5
+	title = nnrp.5.t
+	desc = nnrp.5.d
+	picture = communists_purged_america
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = nnrp.5.a
+	}
+}
+country_event = {
+	id = nnrp.6
+	title = nnrp.6.t
+	desc = nnrp.6.d
+	picture = soviet_military_advisors_arrive
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = nnrp.6.a
+	}
+}
+country_event = {
+	id = nnrp.7
+	title = nnrp.7.t
+	desc = nnrp.7.d
+	picture = parliament_endorses_secularism_nac
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = nnrp.7.a
+	}
+}
+country_event = {
+	id = nnrp.8
+	title = nnrp.8.t
+	desc = nnrp.8.d
+	picture = al_gang
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = nnrp.8.a
+		add_political_power = -50
+		add_popularity = {
+			    ideology =  new_democrat
+			    popularity = -0.05
+		    }
+		add_stability = -0.025
+		hidden_effect = { country_event = { id = nnrp.9 days = 6 } }
+	}
+}
+country_event = {
+	id = nnrp.9
+	title = nnrp.9.t
+	desc = nnrp.9.d
+	picture = chomsky_questioned
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = nnrp.9.a
+		add_stability = 0.025
+		add_popularity = {
+			    ideology =  national_bolshevik
+			    popularity = 0.025
+		    }
+	}
+}
+country_event = {
+	id = nnrp.10
+	title = nnrp.10.t
+	desc = nnrp.10.d
+	picture = american_peace_act
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = nnrp.10.a
+		hidden_effect = { country_event = { id = nnrp.10 days = 150 } }
+	}
+}
+country_event = {
+	id = nnrp.11
+	title = nnrp.11.t
+	desc = nnrp.11.d
+	picture = italian_corporations_return
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = nnrp.11.a
+		
+	}
+}
+country_event = {
+	id = comm.1
+	title = comm.1.t
+	desc = comm.1.d
+	picture = generic_election_event
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.1.a
+	}
+}
+country_event = {
+	id = comm.2
+	title = comm.2.t
+	desc = comm.2.d
+	picture = nac_rally
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.2.a
+		custom_effect_tooltip = parties_reshuffled
+		hidden_effect = {
+		set_party_name = { ideology = communist name = DIS_communistnorole }
+		set_party_name = { ideology = revolutionary_socialist name = DIS_socialistfrontradical }
+		set_party_name = { ideology = moderate_socialist name = DIS_socialistfront}
+		set_party_name = { ideology = new_democrat name = DIS_dpsocdem }
+		set_party_name = { ideology = liberal name = DIS_dpliberal }
+		set_party_name = { ideology = centrist name = DIS_dpcentrist }	
+		set_party_name = { ideology = national_conservative name = DIS_nnrpmoderate }
+		set_party_name = { ideology = nationalist name = DIS_nnrp}
+		set_party_name = { ideology = fascist name = DIS_nnrpfascist }
+		set_party_name = { ideology = national_bolshevik name = DIS_cathbols }
+		set_party_name = { ideology = monarchist name = DIS_cathbolsmonarkiddie }
+		}
+	}
+}
+country_event = {
+	id = comm.3
+	title = comm.3.t
+	desc = comm.3.d
+	picture = generic_election_event
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.3.a
+		custom_effect_tooltip = parties_reshuffled
+		hidden_effect = {
+		set_party_name = { ideology = communist name = DIS_commc }
+		set_party_name = { ideology = revolutionary_socialist name = DIS_commrev }
+		set_party_name = { ideology = moderate_socialist name = DIS_commod }
+		set_party_name = { ideology = new_democrat name = DIS_comnew }
+		set_party_name = { ideology = liberal name = DIS_comlib }
+		set_party_name = { ideology = centrist name = DIS_comcen }	
+		set_party_name = { ideology = national_conservative name = DIS_comcon }
+		set_party_name = { ideology = nationalist name = DIS_comnat }
+		set_party_name = { ideology = fascist name = DIS_comfash }
+		set_party_name = { ideology = national_bolshevik name = DIS_comnaz }
+		set_party_name = { ideology = monarchist name = DIS_common}
+		}
+	}
+}
+country_event = {
+	id = comm.4
+	title = comm.4.t
+	desc = comm.4.d
+	picture = american_syndicates_convention
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.4.a
+		create_country_leader = {
+	        name = "Crusade"
+	        picture = "Portrait_DIS_Crusade.dds"
+	        ideology = nationalist_ideology
+        		}
+		hidden_effect = { country_event = { id = comm.5 days = 4 } }
+	}
+	option = { 
+		name = comm.4.b
+		create_country_leader = {
+	        name = "Moon"
+	        picture = "Portrait_DIS_Moon.dds"
+	        ideology = nationalist_ideology
+        		}
+		hidden_effect = { country_event = { id = comm.5 days = 4 } }
+	}
+}
+country_event = {
+	id = comm.5
+	title = comm.5.t
+	desc = comm.5.d
+	picture = revolutionary_socialist_elements
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.5.a
+		create_country_leader = {
+	        name = "Twiggierjet"
+	        picture = "Portrait_DIS_Twiggierjet.dds"
+	        ideology = progressive
+        		}
+		hidden_effect = { country_event = { id = comm.6 days = 4 } }
+	}
+	option = { 
+		name = comm.5.b
+		create_country_leader = {
+	        name = "Macklaus"
+	        picture = "Portrait_DIS_Macklaus.dds"
+	        ideology = progressive
+        		}
+		hidden_effect = { country_event = { id = comm.6 days = 4 } }
+	}
+	option = { 
+		name = comm.5.c
+		create_country_leader = {
+	        name = "Rob!"
+	        picture = "Portrait_DIS_Rob.dds"
+	        ideology = progressive
+        		}
+		hidden_effect = { country_event = { id = comm.6 days = 4 } }
+	}
+}
+country_event = {
+	id = comm.6
+	title = comm.6.t
+	desc = comm.6.d
+	picture = 2010_us_congressional_election
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.6.a
+		create_country_leader = {
+	        name = "MGM"
+	        picture = "Portrait_DIS_MGM.dds"
+	        ideology = new_democrat_ideology
+        		}
+		hidden_effect = { country_event = { id = comm.8 days = 4 } }
+		country_event = { id = comm.7 days = 2 }
+	}
+	option = { 
+		name = comm.6.b
+		create_country_leader = {
+	        name = "Shepard"
+	        picture = "Portrait_DIS_Shepard.dds"
+	        ideology = new_democrat_ideology
+        		}
+		hidden_effect = { country_event = { id = comm.8 days = 4 } }
+	}
+}
+country_event = {
+	id = comm.9
+	title = comm.9.t
+	desc = comm.9.d
+	picture = generic_election_event
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.9.a
+		trigger = {
+		NOT = { has_country_flag = unholy_alliance }
+		}
+		add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = 0.15
+		    }
+		set_politics = {
+ 		ruling_party = moderate_socialist
+		elections_allowed = no 
+		}
+	}
+	option = { 
+		name = comm.9.b
+		add_popularity = {
+			    ideology =  new_democrat
+			    popularity = 0.15
+		    }
+		set_politics = {
+ 		ruling_party = new_democrat
+		elections_allowed = no 
+		}
+	}
+	option = { 
+		name = comm.9.c
+		add_popularity = {
+			    ideology =  nationalist
+			    popularity = 0.15
+		    }
+		set_politics = {
+ 		ruling_party = nationalist
+		elections_allowed = no 
+		}
+		set_country_flag = nnrp_democratic
+		load_focus_tree = discord_nnrp_tree
+	}
+	option = { 
+		trigger = {
+		NOT = { has_country_flag = unholy_alliance }
+		}
+		name = comm.9.e
+		add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = 0.15
+		    }
+		set_politics = {
+ 		ruling_party = national_bolshevik
+		elections_allowed = no 
+		}
+		load_focus_tree = discord_otto_tree
+	}
+	option = { 
+		name = comm.9.f
+		add_popularity = {
+			    ideology = national_conservative
+			    popularity = 0.15
+		    }
+		set_politics = {
+ 		ruling_party = national_conservative
+		elections_allowed = no 
+		}
+		set_country_flag = nnrp_democratic
+		#load_focus_tree = discord_cringe_tree
+		hidden_effect = {
+		create_country_leader = {
+	        name = "Anthony03"
+	        picture = "Portrait_DIS_Anthony.dds"
+	        ideology = reactionary
+        		}
+		}
+	}
+}
+country_event = {
+	id = comm.8
+	title = comm.8.t
+	desc = comm.8.d
+	picture = church_and_state
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.8.a
+		create_country_leader = {
+	        name = "Gerbbro"
+	        picture = "Portrait_DIS_Gerbbro.dds"
+	        ideology = catholic_bolshevik
+        		}
+	}
+}
+country_event = {
+	id = comm.7
+	title = comm.7.t
+	desc = comm.7.d
+	picture = chomsky_meets_governors
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.7.a
+		add_political_power = 50
+		add_stability = -0.075
+			custom_effect_tooltip = unholy_alliance_desc
+		set_country_flag = unholy_alliance
+	}
+	option = { 
+		name = comm.7.b
+		add_stability = 0.075
+	}
+}
+country_event = {
+	id = comm.20
+	title = comm.20.t
+	desc = comm.20.d
+	picture = american_syndicates_convention
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.20.a
+		create_country_leader = {
+	        name = "Gerronuma"
+	        picture = "Portrait_DIS_Gerro.dds"
+	        ideology = centrist_ideology
+        		}
+		hidden_effect = { country_event = { id = comm.21 days = 4 } }
+	}
+	option = { 
+		name = comm.20.b
+		create_country_leader = {
+	        name = "Caesar"
+	        picture = "Portrait_DIS_Caesar.dds"
+	        ideology = centrist_ideology
+        		}
+		hidden_effect = { country_event = { id = comm.21 days = 4 } }
+	}
+	option = { 
+		name = comm.20.c
+		create_country_leader = {
+	        name = "Zerial"
+	        picture = "Portrait_DIS_Zerial.dds"
+	        ideology = centrist_ideology
+        		}
+		hidden_effect = { country_event = { id = comm.21 days = 4 } }
+	}
+}
+country_event = {
+	id = comm.21
+	title = comm.21.t
+	desc = comm.21.d
+	picture = american_syndicates_convention
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.21.a
+		add_political_power = 25
+		hidden_effect = { country_event = { id = comm.22 days = 4 } }
+	}
+	option = { 
+		name = comm.21.b
+		create_country_leader = {
+	        name = "Pheonix"
+	        picture = "Portrait_DIS_Pheonix.dds"
+	        ideology = democratic_socialist
+        		}
+		hidden_effect = { country_event = { id = comm.22 days = 4 } }
+	}
+}
+country_event = {
+	id = comm.22
+	title = comm.22.t
+	desc = comm.22.d
+	picture = american_syndicates_convention
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.22.a
+		create_country_leader = {
+	        name = "Jester"
+	        picture = "Portrait_DIS_Jester.dds"
+	        ideology = revolutionary_socialist_ideology
+        		}
+	}
+}
+country_event = {
+	id = comm.23
+	title = comm.23.t
+	desc = comm.23.d
+	picture = generic_election_event
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.23.a
+		add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = 0.15
+		    }
+		set_politics = {
+ 		ruling_party = moderate_socialist
+		elections_allowed = no 
+		}
+	}
+	option = { 
+		name = comm.23.b
+		add_popularity = {
+			    ideology =  centrist
+			    popularity = 0.15
+		    }
+		set_politics = {
+ 		ruling_party = centrist
+		elections_allowed = no 
+		}
+	}
+	option = { 
+		name = comm.23.c
+		add_popularity = {
+			    ideology =  national_bolshevik
+			    popularity = 0.15
+		    }
+		set_politics = {
+ 		ruling_party = national_bolshevik
+		elections_allowed = no 
+		}
+	}
+	option = { 
+		name = comm.23.e
+		add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = 0.15
+		    }
+		set_politics = {
+ 		ruling_party = revolutionary_socialist
+		elections_allowed = no 
+		}
+	}
+}
+country_event = {
+	id = comm.100
+	title = comm.100.t
+	desc = comm.100.d
+	picture = al_gang
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.100.a
+		add_stability = -0.075
+		add_political_power = 150
+		add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = -0.05
+		    }	
+		set_country_flag = comrade_al_bad
+	}
+	option = { 
+		name = comm.100.b
+		add_stability = 0.075
+		add_political_power = 50
+		add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = 0.05
+		    }	
+		set_country_flag = comrade_al_good
+	}
+}
+country_event = {
+	id = comm.101
+	title = comm.101.t
+	desc = comm.101.d
+	picture = pope_holy_war
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.101.a
+		add_popularity = {
+			    ideology = monarchist
+			    popularity = 0.15
+		    }	
+	}
+}
+country_event = {
+	id = comm.102
+	title = comm.102.t
+	desc = comm.102.d
+	picture = victor_emmanuel_iv_coronation
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.102.a
+		add_popularity = {
+			    ideology = monarchist
+			    popularity = 0.15
+		    }	
+		create_country_leader = {
+	        name = "Kaiser Legochiel I"
+	        picture = "Portrait_DIS_KaiserLegochiel.dds"
+	        ideology = absolute_monarchist
+        		}
+		set_politics = {
+ 		ruling_party = monarchist
+		elections_allowed = no 
+		}
+	}
+}
+country_event = {
+	id = comm.103
+	title = comm.103.t
+	desc = comm.103.d
+	picture = eugene_debs_day
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.103.a
+		add_popularity = {
+			    ideology = monarchist
+			    popularity = 0.15
+		    }	
+		add_stability = 0.05
+		
+	}
+}
+country_event = {
+	id = comm.104
+	title = comm.104.t
+	desc = comm.104.d
+	picture = ethiopian_parliament
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.104.a
+		add_popularity = {
+			    ideology = monarchist
+			    popularity = -0.03
+		    }	
+		add_political_power = -50
+		add_stability = 0.15
+		
+	}
+}
+country_event = {
+	id = comm.105
+	title = comm.105.t
+	desc = comm.105.d
+	picture = italian_opposition_executed
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.105.a
+		add_popularity = {
+			    ideology = monarchist
+			    popularity = 0.07
+		    }	
+		add_political_power = 75
+		add_stability = -0.075
+		
+	}
+}
+country_event = {
+	id = comm.106
+	title = comm.106.t
+	desc = comm.106.d
+	picture = kkk_arrest_celebration
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.106.a
+		add_political_power = 200
+	}
+}
+country_event = {
+	id = comm.107
+	title = comm.107.t
+	desc = comm.107.d
+	picture = police_receive_letter
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.107.a
+		add_stability = -0.025
+		hidden_effect = { country_event = { id = comm.108 days = 9 } }
+	}
+}
+country_event = {
+	id = comm.108
+	title = comm.108.t
+	desc = comm.108.d
+	picture = resumed_investigation_and_manhunt
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.108.a
+		add_political_power = 50
+		hidden_effect = { country_event = { id = comm.109 days = 4 } }
+	}
+}
+country_event = {
+	id = comm.109
+	title = comm.109.t
+	desc = comm.109.d
+	picture = italian_eu_president
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.109.a
+		hidden_effect = { country_event = { id = comm.110 days = 6 } }
+	}
+}
+country_event = {
+	id = comm.111
+	title = comm.111.t
+	desc = comm.111.d
+	picture = central_committee_hearing
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.111.a
+		set_country_flag = will_burned
+	}
+	option = { 
+		name = comm.111.b
+		set_country_flag = will_alive
+		set_country_flag = legochiel_peaceful
+	}
+}
+country_event = {
+	id = comm.110
+	title = comm.110.t
+	desc = comm.110.d
+	picture = india_dehli_tokyo_assassination
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.110.a
+		add_stability = 0.15
+	}
+}
+country_event = {
+	id = comm.112
+	title = comm.112.t
+	desc = comm.112.d
+	picture = duel
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.112.a
+		add_stability = 0.03
+		add_political_power = 20
+	}
+}
+country_event = {
+	id = comm.113
+	title = comm.113.t
+	desc = comm.113.d
+	picture = chomsky_questioned
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.113.a
+		add_popularity = {
+		ideology = moderate_socialist
+		popularity = 0.05
+		}
+		add_political_power = 50
+	}
+}
+country_event = {
+	id = comm.114
+	title = comm.114.t
+	desc = comm.114.d
+	picture = papal_conclave_event
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.114.a
+		add_popularity = {
+		ideology = national_bolshevik
+		popularity = 0.05
+		}
+	    add_stability = 0.05
+	}
+}
+country_event = {
+	id = comm.115
+	title = comm.115.t
+	desc = comm.115.d
+	picture = council_of_20
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.115.a
+		add_popularity = {
+		ideology = nationalist
+		popularity = 0.05
+		}
+	    add_war_support = 0.05
+	}
+}
+country_event = {
+	id = comm.116
+	title = comm.116.t
+	desc = comm.116.d
+	picture = pennsylvania_debate_begins
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.116.a
+	}
+}
+country_event = {
+	id = darwin.2
+	title = darwin.2.t
+	desc = darwin.2.d
+	picture = commonwealth_embassies
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = darwin.2.a
+		add_political_power = 200
+	}
+}
+country_event = {
+	id = darwin.3
+	title = darwin.3.t
+	desc = darwin.3.d
+	picture = syrian_economic_revival_act
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = darwin.3.a
+		add_stability = 0.03
+		   add_popularity = {
+		   ideology = nationalist
+		   popularity = 0.03
+		   }
+	}
+}
+country_event = {
+	id = comm.30
+	title = comm.30.t
+	desc = comm.30.d
+	picture = council_of_20
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.30.a
+		 add_popularity = {
+		   ideology = monarchist
+		   popularity = -0.07
+		   }
+		add_stability = -0.05
+	}
+}
+country_event = {
+	id = comm.31
+	title = comm.31.t
+	desc = comm.31.d
+	picture = egypt_meeting
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.31.a
+		 add_popularity = {
+		   ideology = nationalist
+		   popularity = 0.05
+		   }
+		add_political_power = 50
+	}
+}
+country_event = {
+	id = comm.32
+	title = comm.32.t
+	desc = comm.32.d
+	picture = chomsky_meets_generals
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.32.a
+		 add_political_power = 150
+	}
+}

@@ -1,0 +1,169 @@
+bookmarks = {
+	bookmark = {	#Red World
+		name = "RED_WORLD_NAME"
+		desc = "RED_WORLD_DESC"
+		date = 2010.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "SOV"
+		default = yes
+		
+		"SOV"={
+			history = "SOV_RED_WORLD_DESC"
+			ideology = communist
+			ideas = {
+			    idea_soviet_stagnating_economy
+				idea_soviet_rampant_corruption
+			}
+			focuses = {
+				SOV_in_with_capitalism
+				SOV_crown_putin_as_tsar
+				SOV_the_final_struggle
+			}
+		}
+		"DIS"={
+			history = "DIS_RED_WORLD_DESC"
+			ideology = monarchist
+			ideas={
+				idea_dis_popular_monarchy
+				idea_dis_the_discordian_oligarchy
+				idea_dis_fascist_underground
+			}
+			focuses = {
+				DCO_thenewkaiser
+				DCO_chancellorcrusade
+				DCF_quartz
+			}
+		}
+		"GER"={
+			history = "GER_RED_WORLD_DESC"
+			ideology = communist
+			ideas = {
+                idea_eu_member
+				idea_shield_and_sword
+			}
+		}
+		"PCA"={
+			history = "PCA_RED_WORLD_DESC"
+			ideology = communist
+			ideas = {
+				idea_cascadian_separatism
+				idea_failing_economy
+				idea_pca_immigration
+			}
+			focuses = {
+				PCA_back_in_business_baby
+				PCA_golden_gate_league
+				PCA_the_ssrs
+			}
+		}
+		"NEA"={
+			history = "NEA_RED_WORLD_DESC"
+			ideology = revolutionary_socialist
+			ideas = {
+                idea_standing_firm_commonwealth
+				idea_apc_political_deadlock
+				idea_apc_western_corruption
+				idea_apc_appalling_recognition
+			}
+			focuses = {
+				NEA_drug_honeypot
+				NEA_bernies_speech
+				NEA_slowly_abolish_wages
+			}
+		}
+		"USA"={
+			history = "USA_RED_WORLD_DESC"
+			ideology = nationalist
+			ideas = {
+			    idea_standing_firm_remnants
+				idea_usa_international_stigma
+				idea_usa_flight_of_the_executives
+			}
+			focuses = {
+				USA_i_wish_i_was_in_dixie
+				USA_the_united_states
+				USA_establish_the_council_of_princes
+			}
+		}
+		"ENG"={
+			history = "ENG_RED_WORLD_DESC"
+			ideology = liberal
+			ideas = {
+			    idea_queen_elizabeth_ii
+				idea_bastion_of_european_democracy
+				idea_scottish_tensions
+				idea_prime_minister_owen
+			}
+			focuses = {
+				ENG_the_phoenix_front_craze
+				ENG_storm_buckingham_palace
+				ENG_let_her_in
+			}
+		}
+		"---"={
+			history = "OTHER_RED_WORLD_DESC"
+		}
+		"ETH"={
+			minor = yes
+			history = "ETH_RED_WORLD_DESC"
+			ideology = communist
+			ideas={
+				idea_eth_possibility_of_famine
+				idea_eth_military_party_divide
+				idea_eth_the_eritrean_issue
+			}	
+            focuses = {
+			    ETH_restore_the_house_of_solomon
+				ETH_workers_of_africa_unite
+				ETH_legalise_cannabis
+			}			
+		}
+		"ITA"={
+			minor = yes
+			history = "ITA_RED_WORLD_DESC"
+			ideology = communist
+			ideas={
+				idea_ita_seamless_society
+				idea_ita_mafia_issue
+			}	
+            focuses = {
+			    ITA_a_roman_dictator
+				ITA_betray_the_savoys
+				ITA_host_the_papal_conclave
+			}			
+		}
+		"UAR"={
+			minor = yes
+			history = "UAR_RED_WORLD_DESC"
+			ideology = revolutionary_socialist
+			ideas={
+
+			}	
+            focuses = {
+			    UAR_syndicalism
+				UAR_legalise_the_baath_party
+				UAR_proclaim_an_islamic_republic
+			}			
+		}
+		"RAJ"={
+			minor = yes
+			history = "RAJ_RED_WORLD_DESC"
+			ideology = new_democrat
+			ideas={
+                idea_capitalism_with_indian_characteristics
+				idea_raj_naxalite_insurgency
+				idea_raj_kashmir_separatism
+				idea_raj_hindu_rate_of_growth
+			}	
+            focuses = {
+				RAJ_the_emergency
+				RAJ_ne_revolution_at_the_ballot
+				RAJ_em_emperor_gandhi
+			}			
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

@@ -1,0 +1,116 @@
+	focus_tree = {
+	id = discord_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = DIS
+		}
+	}
+	shared_focus = DIS_deathofkaiser
+	continuous_focus_position = { x = 50 y = 5000 }
+	}
+	focus_tree = {
+	id = discord_nnrp_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = DIS
+		}
+	}
+	shared_focus = DCO_longlivethennrp
+	continuous_focus_position = { x = 50 y = 5000 }
+	}
+	focus_tree = {
+	id = discord_commissar_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = DIS
+		}
+	}
+	shared_focus = DCO_callforelections
+	shared_focus = DCO_alstaysinpower
+	shared_focus = DCO_chancellormacklaus
+	shared_focus = DCO_chancellorhammy
+	shared_focus = DCO_chancellorpheonix
+	shared_focus = DCO_chancellortwiggierjet
+	shared_focus = DCO_chancellorshepard
+	shared_focus = DCO_chancellormgm
+	shared_focus = DCO_chancellorgerro
+	shared_focus = DCO_chancellorcaesar
+	shared_focus = DCO_chancellorjester
+	continuous_focus_position = { x = 50 y = 5000 }
+	}
+	focus_tree = {
+	id = discord_cringe_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = DIS
+		}
+	}
+	shared_focus = DCO_gang_of_three
+	continuous_focus_position = { x = 50 y = 5000 }
+	}
+	focus_tree = {
+	id = discord_otto_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = DIS
+		}
+	}
+	shared_focus = DIS_ottochosen
+	shared_focus = DCO_chancelloroskar
+	continuous_focus_position = { x = 50 y = 5000 }
+	}
+	focus_tree = {
+	id = discord_tacti_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 25
+			tag = DIS
+			has_government = communist
+		}
+	}
+	default = no
+	shared_focus = DIS_tactichosen
+	continuous_focus_position = { x = 50 y = 5000 }
+	}
+	focus_tree = {
+	id = discord_owlie_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 25
+			tag = DIS
+			OR = { 
+			has_government = liberal
+			has_country_flag = owlie_chosen
+			}
+		}
+	}
+	shared_focus = DIS_owliechosen
+	shared_focus = DIS_reaffirmthecoop
+	shared_focus = DIS_leavethecoop
+	continuous_focus_position = { x = 50 y = 5000 }
+	}
+	focus_tree = {
+	id = discord_kaiser_legochiel_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = DIS
+		}
+	}
+	shared_focus = DCO_purgeremaininganarchists
+	shared_focus = DCO_thepeacefultransition
+	continuous_focus_position = { x = 50 y = 5000 }
+	}

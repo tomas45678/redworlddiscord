@@ -1,0 +1,3028 @@
+ideas = {
+
+    country = {
+	idea_tno_extremists_banned = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				stability_factor = 0.12
+				national_bolshevik_drift = -0.03
+				communist_drift = -0.03
+				revolutionary_socialist_drift = -0.03
+				fascist_drift = -0.03
+				nationalist_drift = -0.03
+			}
+		}	
+		idea_dis_political_parties_banned = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				national_bolshevik_drift = 0.05
+				political_power_gain = 0.15
+			}
+		}	
+		idea_dis_law_and_order = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				political_power_gain = 0.15
+				mobilization_laws_cost_factor = -0.25
+			}
+		}	
+		idea_dis_gun_rights = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				training_time_factor = -0.1
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+			}
+		}	
+		idea_dis_repression = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				political_power_gain = 0.1
+				drift_defence_factor = 0.75
+			}
+		}	
+		idea_dis_democracy = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.1
+			}
+		}	
+		idea_dis_democracy_vip = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = -0.02
+				political_power_gain = 0.1
+			}
+		}	
+		idea_dis_democracy_no_role = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				political_power_gain = 0.1
+			}
+		}	
+		idea_dis_quartzian_nationalization = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.12
+				production_speed_arms_factory_factor = 0.12
+				consumer_goods_factor = 0.02
+			}
+		}	
+		idea_dis_to_the_countryside = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				conscription_factor = -0.2
+				stability_weekly = -0.01
+			}
+		}	
+
+		idea_dis_pink_name_support = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				political_power_gain = 0.1
+			}
+		}	
+		idea_dis_repression_vip = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.02
+				political_power_gain = 0.1
+				drift_defence_factor = 0.25
+			}
+		}	
+		idea_dis_repression_no_role = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				war_support_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				political_power_gain = 0.1
+				drift_defence_factor = 0.25
+			}
+		}	
+		idea_drr_working_with_drama_server = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}	
+		idea_drr_welcoming_exiles = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.25
+				fascist_drift = 0.01
+				national_bolshevik_drift = 0.01
+			}
+		}	
+		idea_dis_overhauled_healthcare_system = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.25
+				political_power_gain = 0.15
+			}
+		}	
+		idea_dis_rejecting_the_agrarian_platform = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				stability_factor = -0.035
+				production_speed_industrial_complex_factor = 0.15
+				global_building_slots_factor = 0.2
+			}
+		}	
+		idea_dis_athenian_democracy= {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				national_bolshevik_drift = 0.03
+				stability_weekly = 0.01
+			}
+		}	
+		idea_dis_the_regional_parliaments = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				political_power_gain = 0.1
+				drift_defence_factor = 0.25
+				stability_factor = 0.05
+			}
+		}
+		idea_dis_new_milita = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				conscription = 0.03
+				army_org_factor = -0.07
+				training_time_factor = -0.25
+				army_core_defence_factor = 0.15
+			}
+		}	
+		idea_dis_new_model_army = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				conscription = 0.015
+				army_org_factor = 0.07
+				training_time_factor = 0.25
+				army_attack_factor = 0.15
+			}
+		}		
+		idea_eqs_the_realpolitik = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				stability_factor = -0.07
+				war_support_factor = 0.04
+				political_power_gain = -0.1
+				nationalist_drift = 0.03
+				national_conservative_drift = 0.03
+			}
+		}
+		idea_dis_coalition_with_anarchists = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				monarchist_drift = 0.03
+				revolutionary_socialist_drift = 0.02
+				political_power_gain = 0.15
+			}
+		}	
+		idea_dis_local_cooperatives = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.07
+				consumer_goods_factor = -0.05
+			}
+		}
+		idea_dis_navy_purged = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				experience_gain_navy_factor = -0.25
+				production_speed_dockyard_factor = -0.2
+			}
+		}
+		idea_dis_navy_defunded = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				experience_gain_navy_factor = -0.25
+				production_speed_dockyard_factor = -0.2
+			}
+		}	
+		idea_dis_legacy_of_romero = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = the_war_to_end_all_wars
+			
+			modifier = {
+				stability_factor = 0.075
+				army_morale_factor = 0.05
+				national_bolshevik_drift = 0.03
+				
+			}
+		}
+		idea_dis_isolationism = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = the_war_to_end_all_wars
+			
+			modifier = {
+				justify_war_goal_time = 0.15
+				political_power_gain = 0.1
+				
+			}
+		}
+		idea_dis_puppet_commissariat = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = the_war_to_end_all_wars
+			
+			modifier = {
+				political_power_factor = 0.15
+				
+			}
+		}
+		idea_dis_debates_banned = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = the_war_to_end_all_wars
+			
+			modifier = {
+				war_support_factor = 0.03
+				political_power_gain = 0.01
+				drift_defence_factor = 0.2
+			}
+		}
+		idea_dis_strong_judicial_system = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = the_war_to_end_all_wars
+			
+			modifier = {
+				war_support_factor = 0.03
+				political_power_gain = 0.01
+				drift_defence_factor = 0.2
+			}
+		}
+		idea_dis_debates = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = the_war_to_end_all_wars
+			
+			modifier = {
+				political_power_factor = 0.1
+				drift_defence_factor = -0.25
+			}
+		}
+		idea_dis_expansionism = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = the_war_to_end_all_wars
+			
+			modifier = {
+				justify_war_goal_time = -0.15
+				monarchist_acceptance = -75
+				
+			}
+		}
+		idea_dis_interventionism = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = the_war_to_end_all_wars
+			
+			modifier = {
+				justify_war_goal_time = -0.05
+				send_volunteer_size = 2
+			}
+		}
+		idea_dis_education_overhaul = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = the_war_to_end_all_wars
+			
+			modifier = {
+				war_support_factor = 0.075
+				fascist_drift = 0.03
+				political_power_gain = 0.15
+				research_time_factor = 0.05
+			}
+		}
+		idea_dis_education_overhaul1 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = the_war_to_end_all_wars
+			
+			modifier = {
+				war_support_factor = 0.125
+				fascist_drift = 0.05
+				political_power_gain = 0.25
+				research_time_factor = 0.1
+			}
+		}
+		idea_drr_shunned_by_the_coop = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = the_war_to_end_all_wars
+			
+			modifier = {
+				trade_opinion_factor = -0.30
+				war_support_factor = 0.15
+				monarchist_acceptance = -85
+				justify_war_goal_time = -0.2
+			}
+		}
+		idea_dis_church_and_state = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = vittoria_mutilata
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.15
+				national_bolshevik_drift = 0.05
+				research_time_factor = 0.04
+			}
+		}
+		idea_eqs_russian_minorities = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = vittoria_mutilata
+			
+			modifier = {
+				stability_factor = -0.06
+				political_power_gain = -0.15
+				conscription_factor = -0.15
+			}
+		}
+		idea_dis_free_bibles = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = vittoria_mutilata
+			
+			modifier = {
+				stability_factor = 0.07
+				political_power_gain = 0.15
+				national_bolshevik_drift = 0.03
+			}
+		}
+		idea_dis_education_funding = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = vittoria_mutilata
+			
+			modifier = {
+				political_power_gain = -0.15
+				research_time_factor = -0.07
+			}
+		}
+		idea_dis_secret_police = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = vittoria_mutilata
+			
+			modifier = {
+				political_power_gain = 0.15
+				decryption = 1
+			}
+		}
+		idea_dis_political_turmoil = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.25
+				stability_factor = -0.1
+				
+			}
+		}
+		idea_dis_the_wilfian_constitution = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+				monarchist_drift = 0.05
+				
+			}
+		}
+		idea_dis_military_to_civilian = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+					conversion_cost_civ_to_mil_factor = -0.25
+			}
+		}
+		idea_dis_concessions_to_al = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.5
+				stability_factor = -0.15
+				moderate_socialist_drift = 0.03
+				industrial_capacity_factory = -0.15
+				
+			}
+		}
+		idea_dis_commissar_resistance = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.75
+				stability_factor = -0.2
+			}
+		}
+		bolsonaro_chaos = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.5
+				stability_factor = -0.5
+				industrial_capacity_factory = -0.25
+			}
+		}
+		idea_dis_anti_quartzist_resistance = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				national_bolshevik_drift = -0.03
+				political_power_gain = -0.55
+				stability_factor = -0.55
+				industrial_capacity_factory = -0.3
+			}
+		}
+		idea_dis_anti_quartzist_resistance2 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				national_bolshevik_drift = -0.02
+				political_power_gain = -0.45
+				stability_factor = -0.45
+				industrial_capacity_factory = -0.2
+			}
+		}
+		idea_dis_anti_quartzist_resistance3 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				national_bolshevik_drift = -0.015
+				political_power_gain = -0.35
+				stability_factor = -0.35
+				industrial_capacity_factory = -0.15
+			}
+		}
+		idea_dis_anti_quartzist_resistance4 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				national_bolshevik_drift = -0.01
+				political_power_gain = -0.25
+				stability_factor = -0.25
+				industrial_capacity_factory = -0.1
+			}
+		}
+		idea_dis_anti_quartzist_resistance5 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = -0.15
+				industrial_capacity_factory = -0.07
+			}
+		}
+		idea_dis_anti_quartzist_resistance6 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.1
+				industrial_capacity_factory = -0.04
+			}
+		}
+		bolsonaro_chaos1 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.35
+				stability_factor = -0.35
+				industrial_capacity_factory = -0.2
+			}
+		}
+		bolsonaro_chaos2 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.25
+				stability_factor = -0.25
+				industrial_capacity_factory = -0.12
+			}
+		}
+		idea_dis_commissar_resistance_violent1 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.50
+				stability_factor = -0.175
+			}
+		}
+		idea_dis_commissar_resistance_violent2 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.25
+				stability_factor = -0.15
+			}
+		}
+		idea_dis_commissar_resistance_violent3 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		idea_dis_commissar_resistance_pacifist1 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.60
+				stability_factor = -0.15
+			}
+		}
+		idea_dis_commissar_resistance_pacifist2 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.40
+				stability_factor = -0.1
+			}
+		}
+		idea_dis_commissar_resistance_pacifist3 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.20
+			}
+		}
+		idea_dis_civil_rights = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = 0.1
+				
+			}
+		}
+		idea_dis_civil_rights2 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.1
+				
+			}
+		}
+		idea_dis_civil_rights3 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.15
+				revolutionary_socialist_drift = -0.05
+			}
+		}
+		idea_dis_civil_rights4 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.25
+				revolutionary_socialist_drift = -0.05
+			}
+		}
+		idea_dis_authoritarianism = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = 0.25
+				moderate_socialist_drift = 0.1
+			}
+		}
+		idea_dis_conservatives_banned = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.15
+				national_conservative_drift = -0.05
+			}
+		}
+		idea_dis_appease_anarchists = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.05
+				revolutionary_socialist_drift = -0.01
+				industrial_capacity_factory = 0.05
+			}
+		}
+		idea_dis_appease_cathbols = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.05
+				national_bolshevik_drift = -0.01
+				MONTHLY_POPULATION = 0.15
+				conscription = 0.01 	
+			}
+		}
+		idea_dis_the_grand_coalition = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.15
+				communist_drift = 0.05
+				revolutionary_socialist_drift = 0.02
+				national_bolshevik_drift = 0.02
+				MONTHLY_POPULATION = 0.15
+				conscription = 0.01 	
+				industrial_capacity_factory = 0.05
+			}
+		}
+		idea_dis_strengthened_coalition = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = 0.15
+				communist_drift = 0.05
+				revolutionary_socialist_drift = 0.02
+				national_bolshevik_drift = 0.02
+				MONTHLY_POPULATION = 0.25
+				conscription = 0.015	
+				industrial_capacity_factory = 0.08
+			}
+		}		
+		idea_dis_direct_democracy = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				moderate_socialist_drift = 0.03
+				stability_factor = 0.07
+				
+			}
+		}
+		idea_dis_never_socialism = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				communist_drift = -0.05
+				revolutionary_socialist_drift = -0.05
+				industrial_capacity_factory = 0.06
+				production_factory_max_efficiency_factor = -0.03
+			}
+		}
+		idea_dis_christian_charity = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				consumer_goods_factor = -0.03
+				industrial_capacity_factory = 0.05
+			}
+		}
+		idea_dis_party_unity = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_factor = 0.15
+			}
+		}
+		idea_dis_strixes = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+			 	decryption = 1
+			 	encryption = 1
+			 	political_power_gain = 0.1
+			}
+		}
+		idea_dis_revolutionary_zeal = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				communist_drift = 0.03
+				war_support_factor = 0.07
+				
+			}
+		}
+		idea_dis_fascist_underground = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_spy_coup
+			
+			modifier = {
+				fascist_drift = 0.04
+				stability_factor = -0.15
+				
+			}
+		}
+		idea_dis_popular_monarchy = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				political_power_gain = 0.2
+				stability_factor = 0.07
+				war_support_factor = 0.07
+				industrial_capacity_factory = 0.05
+				}
+		}
+		idea_dis_the_discordian_oligarchy = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				monarchist_drift = 0.03
+				political_power_gain = 0.12
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.05
+				}
+		}
+		idea_dis_cathbol_control = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				national_bolshevik_drift = 0.05
+				political_power_gain = 0.15
+				MONTHY_POPULATION = 0.25
+				consumer_goods_factor = -0.03
+				industrial_capacity_factory = 0.05
+				}
+		}
+		idea_dis_expanded_monasteries = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				national_bolshevik_drift = 0.03
+				consumer_goods_factor = -0.03
+				}
+		}
+		idea_dis_sugar_banned = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.08
+				political_power_gain = 0.2
+				}
+		}
+		idea_dis_sugar_and_alcohol_banned = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				industrial_capacity_factory = 0.09
+				stability_factor = -0.12
+				political_power_gain = 0.2
+				army_org_factor = 0.05
+				}
+		}
+		idea_dis_the_discordian_oligarchy2 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_gain = 0.07
+				consumer_goods_factor = 0.02
+				industrial_capacity_factory = 0.03
+				}
+		}
+		idea_dis_tense_coop_relationship = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				justify_war_goal_time = 0.1
+				political_power_gain = -0.2
+				}
+		}
+		idea_dis_coop_reaffirmed = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				justify_war_goal_time = 0.25
+				industrial_capacity_factory = 0.05
+				}
+		}
+		idea_dis_radicalism = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				moderate_socialist_drift = 0.04
+				revolutionary_socialist_drift = 0.03
+				communist_drift = 0.02
+				political_power_gain = 0.15
+				stability_factor = -0.07
+				
+			}
+		}
+		idea_dis_beacon_of_democracy = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				moderate_socialist_drift = 0.05
+				new_democrat_drift = 0.03
+				centrist_drift = 0.02
+				liberal_drift = 0.02
+				stability_factor = 0.07
+				
+			}
+		}
+		idea_dis_fascist_underground2 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				fascist_drift = 0.02
+				stability_factor = -0.07
+				
+			}
+		}
+		idea_dis_welfare_state = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.025
+				industrial_capacity_factory = 0.1
+				political_power_gain = 0.05
+				
+			}
+		}
+		idea_dis_soviet_democracy = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.07
+				industrial_capacity_factory = 0.09
+				political_power_gain = -0.11
+				
+			}
+		}
+		idea_dis_socialist_economy = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+				political_power_gain = -0.12
+				
+			}
+		}
+		idea_dis_christian_nation = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.15
+				stability_factor = 0.05
+				political_power_gain = 0.07
+			}
+		}
+		idea_dis_red_world_families_act = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.25
+				political_power_gain = 0.05
+			}
+		}
+		idea_dis_loyalty_to_wilf = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_national_mobilization_focus
+			
+			modifier = {
+				stability_factor = 0.07
+				monarchist_drift = 0.03
+				
+			}
+		}
+		
+		
+		idea_dis_catholic_charity = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.06
+				industrial_capacity_factory = 0.05
+
+				
+			}
+		}
+		idea_dis_stabilization = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+			stability_weekly = 0.005	
+			}
+		}
+		
+		idea_ams_robertson_on_the_television = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_army_of_aggression_focus
+			
+			modifier = {
+				drift_defence_factor = 0.2
+				conscription = 0.01 
+			    army_morale_factor = 0.02
+				
+			}
+		}
+		
+		idea_ams_segregation_forever = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				conscription = -0.01 
+				army_morale_factor = 0.1
+				fascist_drift = 0.05
+				consumer_goods_factor = -0.05
+				
+			}
+		}
+		
+		idea_ams_domination_of_politics = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_gain = 0.25
+				justify_war_goal_time = -0.1 
+				training_time_army_factor = -0.035
+				
+			}
+		}
+		
+		idea_dis_protect_the_people = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				foreign_subversive_activites = -0.5
+				encryption = 1 
+				army_defence_factor = 0.05 
+			}
+		}
+		
+		idea_ams_common_scientific_efforts = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_time_factor = -0.1
+				
+			}
+		}
+		
+		idea_ams_john_difronzo = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.35 
+				
+				
+			}
+		}
+		
+		idea_ams_international_loansharking = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = idea_generic_foreign_capital
+			
+			modifier = {
+				consumer_goods_factor = -0.03
+				
+				
+			}
+		}
+		
+		idea_ams_corrupt_military = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = idea_generic_reserve_divisions
+			
+			modifier = {
+				army_org_factor = 0.05
+				training_time_army_factor = -0.15
+				army_morale_factor = -0.3
+				political_power_gain = 0.05
+				conscription = 0.01
+				
+				
+				
+			}
+		}
+		
+		idea_ams_pan_american_sex_ring = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_spy_political
+			
+			modifier = {
+				decryption = 1
+				foreign_subversive_activites = -0.1
+				political_power_gain = 0.05
+				
+				
+				
+				
+			}
+		}
+		
+		idea_dis_no_more_military = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				conscription = -0.003
+				army_morale_factor = -0.1
+				army_org_factor = -0.1 
+				war_support_factor = -0.1
+				army_defence_factor = -0.05
+				consumer_goods_factor = -0.15	
+			}
+		}
+		
+		idea_ams_watching_the_world = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_spy_intel
+			
+			modifier = {
+				encryption = 1
+				decryption = 1
+				subversive_activites_upkeep = -0.3
+				
+				
+				
+				
+			}
+		}
+		
+		idea_ams_propaganda_campaign = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				conscription = 0.01
+				
+				
+				
+				
+				
+			}
+		}
+		
+		idea_dis_spreadprogress = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_victors_of_ww1
+			
+			modifier = {
+				justify_war_goal_time = -0.45
+				army_morale_factor = 0.05
+			}
+		}
+		
+		idea_dis_popular_policies = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				industrial_capacity_factory = 0.08
+				stability_factor = 0.05
+				}
+		}
+		idea_dis_transition_to_anarchism = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				industrial_capacity_factory = -0.08
+				stability_factor = -0.15
+				political_power_gain = -0.15
+				}
+		}
+		idea_dis_transition_to_anarchism1 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				industrial_capacity_factory = -0.06
+				stability_factor = -0.13
+				political_power_gain = -0.1
+				}
+		}
+		idea_dis_transition_to_anarchism2 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				industrial_capacity_factory = -0.04
+				stability_factor = -0.07
+				political_power_gain = -0.05
+				}
+		}
+		idea_dis_mutual_aid = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.07
+				stability_factor = 0.05
+				}
+		}
+		idea_dis_liberty_and_bread = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				industrial_capacity_factory = 0.06
+				revolutionary_socialist_drift = 0.02
+				stability_factor = 0.05
+				}
+		}
+		idea_dis_new_social_progress = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				stability_factor = -0.05
+				communist_drift = 0.05
+				revolutionary_socialist_drift = 0.05
+				industrial_capacity_factory = 0.06
+				political_power_gain = 0.15
+				}
+		}
+		idea_dis_liberation_education = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				research_time_factor = -0.05
+				communist_drift = 0.03
+				}
+		}
+		idea_dis_shutupfeminists = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.075
+				}
+		}
+		minorities_angered = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.05
+				revolutionary_socialist_drift = -0.05
+				}
+		}
+		idea_dis_socialist_unity = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				revolutionary_socialist_drift = 0.03
+				war_support_factor = 0.075
+				stability_factor = 0.025
+				land_reinforce_rate = 0.1
+				}
+		}
+		idea_dis_rains_policies = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.05
+				MONTHLY_POPULATION = -0.15
+			
+		}
+		}
+		idea_dis_fullandcompleteliberation = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				stability_factor = -0.075
+				political_power_gain = 0.07
+				conscription = 0.02
+			
+		}
+		}
+		idea_dis_hate_speech_banned = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.12
+				revolutionary_socialist_drift = 0.02
+			
+		}
+		}
+		idea_dis_old_theories = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.125
+				political_power_gain = 0.15
+				production_speed_industrial_complex_factor = 0.07
+				consumer_goods_factor = 0.075
+		}
+		}	
+		idea_dis_new_ideals = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.075
+				production_factory_max_efficiency_factor = 0.03
+				line_change_production_efficiency_factor = 0.05
+				stability_factor = -0.125
+				revolutionary_socialist_drift = 0.02
+		}
+		}
+		idea_dis_productivity = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_industrial_complex_factor = 0.07
+		}
+		}
+		idea_dis_ubi = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.03
+				production_factory_max_efficiency_factor = 0.075
+				line_change_production_efficiency_factor = 0.075
+			}
+		}
+		idea_dis_rehabilitation_through_labor = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				political_power_gain = 0.15
+				industrial_capacity_factory = 0.125
+			}
+		}
+		idea_dis_young_socialists = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = idea_generic_agrarian_reform
+			
+			modifier = {
+				revolutionary_socialist_drift = 0.03
+				enemy_partisan_effect = -0.3 
+				land_reinforce_rate = 0.1
+				}
+		}
+		idea_dis_agrarian_workforce = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = idea_generic_agrarian_reform
+			
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.03	
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_industrial_complex_factor = -0.1
+				}
+		}
+	}
+
+second_in_command = {
+	    
+		discord_idea_pheonix = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+					
+				} 
+			}
+			
+			traits = { silent_workhorse }			
+		}
+		discord_idea_crusade = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+					has_government = nationalist
+					
+				} 
+			}
+			
+			traits = { religious_leader }			
+		}
+		discord_idea_merox_1 = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+				} 
+			}
+			
+			traits = { naive_optimist }			
+		}
+		discord_idea_zandrax_1 = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { isolationist }			
+		}
+		discord_idea_roberto = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_bolshevik
+				} 
+			}
+			
+			traits = { power_hungry_demagogue }			
+		}
+		discord_idea_oskar = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_bolshevik
+				} 
+			}
+			
+			traits = { religious_leader }			
+		}
+		
+	
+	}
+	foreign_minister = {
+	    discord_sic_twiggierjet = {
+		
+		  	allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+				} 
+			}
+			
+			traits = { progressive_patron }			
+		}
+		discord_idea_qing = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+				    	has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { isolationist }			
+		}
+		discord_idea_moon = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+				    	has_government = nationalist
+				} 
+			}
+			
+			traits = { iron_fisted_brute }			
+		}
+		discord_idea_xilizhra = {
+		
+		  	allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { revolution_spreader }			
+		}
+		discord_idea_zandrax_2 = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { driven_pacifist }			
+		}
+		discord_idea_merox_2 = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+				} 
+			}
+			
+			traits = { ideological_crusader }			
+		}
+	     discord_idea_gabi = {
+		
+		  	allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_bolshevik
+				} 
+			}
+			
+			traits = { ideological_crusader }			
+		}
+		discord_idea_snoekbaars = {
+		
+		  	allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_bolshevik
+				} 
+			}
+			
+			traits = { international_schemer }			
+		}
+		 discord_idea_macklaus = {
+		
+		  	allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { ideological_crusader }			
+		}
+	     }
+	industry_minister = {
+	    	
+		discord_idea_blackmesa = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+					has_government = communist
+				} 
+			}
+			
+			traits = { ambitious_union_boss }			
+		}
+		discord_idea_jack_hoxha = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+					has_completed_focus = DCO_economicministerjackhoxha
+					has_government = national_bolshevik
+					has_government = communist
+				} 
+			}
+			
+			traits = { administrative_genius }			
+		}
+	    discord_sic_megakiller = {
+		
+		  	allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+					has_government = nationalist
+					has_government = national_conservative
+				} 
+			}
+			
+			traits = { libertarian_capitalist }			
+		}
+	discord_idea_gerbbro = {
+		
+		  	allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_bolshevik
+					has_government = communist
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { extreme_regulator }			
+		}
+	}
+	national_security_minister = {
+	    discord_nsm_nightmare = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+				    	has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { bomb_throwing_brocialist }			
+		}
+	     discord_idea_thewolffate = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+				    	has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { novice_mastermind }			
+		}
+		
+	 discord_idea_mossy = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+				    	has_government = revolutionary_socialist
+					has_government = national_bolshevik
+					has_government = nationalist
+					has_government = new_democrat
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { prince_of_terror }			
+		}
+		 discord_idea_njv = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+				    	has_government = national_conservative
+					has_government = nationalist
+					has_government = fascist
+				} 
+			}
+			
+			traits = { efficient_sociopath }			
+		}
+		discord_idea_jc = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+				    	has_government = national_conservative
+					has_government = centrist
+					has_government = liberal
+				} 
+			}
+			
+			traits = { pompous_navy_admiral }			
+		}
+
+	}
+	intelligence_minister = {
+	discord_idea_flacsa = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { private_military_specialist }			
+		}
+	    discord_idea_no = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+				    	has_government = national_bolshevik
+				} 
+			}
+			
+			traits = { political_protege }			
+		}
+	 discord_idea_laserdude = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+				NOT = {
+			    OR = {
+				    	has_government = fascist
+					has_government = communist
+				} 
+					}
+			}
+			
+			traits = { intelligence_director }			
+		}
+	discord_idea_die = {
+		
+		  	allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { prince_of_terror }			
+		}
+	
+	}
+	}

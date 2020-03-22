@@ -1,0 +1,144 @@
+﻿capital = 992
+
+oob = ""
+
+set_research_slots = 4
+set_convoys = 500
+
+set_stability = 0.05 
+set_war_support = 0.05 
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+
+set_politics = {
+
+	parties = {
+		fascist = {
+			popularity = 5
+		}
+		nationalist = {
+			popularity = 50
+		}
+		monarchist = {
+			popularity = 0
+		}
+		national_bolshevik = {
+			popularity = 0
+		}
+		national_conservative = {
+			popularity = 5
+		}
+		centrist = {
+			popularity = 10
+		}
+		liberal = {
+			popularity = 10
+		}
+		new_democrat = {
+			popularity = 5
+		}
+		moderate_socialist = {
+			popularity = 5
+		}
+		revolutionary_socialist = {
+			popularity = 10
+		}
+		communist = {
+			popularity = 0
+		}
+	}
+	
+	ruling_party = nationalist
+	last_election = "2009.7.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Jon Ritzheimer"
+	picture = "JonRitzheimer.dds"
+	ideology = militia
+}
+
+create_country_leader = {
+	name = "Michael Revere"
+	picture = "MikeCernovich.dds"
+	ideology = american_cultism
+}
+
+create_country_leader = {
+	name = "Miriam Simos"
+	picture = "MiriamSimos.dds"
+	ideology = anti_fascism
+}
+
+create_country_leader = {
+	name = "David Pakman"
+	picture = "DavidPakman.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Empress Debbie Wasserman Schultz"
+	picture = "Debbie.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Joe Pollak"
+	picture = "JoePollak.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Maxine Waters"
+	picture = "MaxineWaters.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Megyn Kelly"
+	picture = "MegynKelly.dds"
+	ideology = right_libertarian
+}
+
+create_country_leader = {
+	name = "Mimi Walters"
+	picture = "MimiWalters.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Nina Turner"
+	picture = "NinaTurner.dds"
+	ideology = jeffersonian
+}
+
+create_country_leader = {
+	name = "Suzanne Collins"
+	picture = "SuzanneCollins.dds"
+	ideology = marxist
+}
+
+
+
+
+

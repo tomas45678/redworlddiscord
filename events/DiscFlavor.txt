@@ -1,0 +1,592 @@
+﻿add_namespace = discord_flavor
+add_namespace = otto_death
+#A DAY IN DEBATES
+country_event = {
+	id = discord_flavor.1
+	title = discord_flavor.1.t
+	desc = discord_flavor.1.d
+	picture = a_day_in_debates
+	is_triggered_only = yes
+	fire_only_once = yes
+	#QUARTZ RENOUNCES CROMPROTSOC
+	option = { 
+		name = discord_flavor.1.a
+		add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = -0.01
+		    }
+		set_country_flag = quartz_renounced
+	}
+	#MY RESOLVE HAS NEVER BEEN STRONGER
+	option = { 
+		name = discord_flavor.1.b
+		add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = 0.01
+		    }
+		set_country_flag = quartz_stays_cromprotsoc
+	}
+}
+country_event = {
+	id = discord_flavor.2
+	title = discord_flavor.2.t
+	desc = discord_flavor.2.d
+	picture = italy_protest_crackdown
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = discord_flavor.2.a
+	}
+}
+country_event = {
+	id = discord_flavor.300
+	title = discord_flavor.300.t
+	desc = discord_flavor.300.d
+	picture = central_committee_hearing
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = discord_flavor.300.a
+	}
+}
+country_event = {
+	id = discord_flavor.400
+	title = discord_flavor.400.t
+	desc = discord_flavor.400.d
+	picture = american_convention_decision
+	is_triggered_only = yes
+	
+	option = {  
+		name =  discord_flavor.400.a
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = { country_event = { id = discord_flavor.401 days = 7 } } 
+		}
+	option = {  
+		name =  discord_flavor.400.b
+		ai_chance = {
+			factor = 100
+		}
+		if = { 
+			limit = { has_completed_focus = DIS_purgethethotpatrol }
+		hidden_effect = { country_event = { id = discord_flavor.403 days = 7 } } 
+		}
+	}
+}
+country_event = {
+	id = discord_flavor.401
+	title = discord_flavor.401.t
+	desc = discord_flavor.401.d
+	picture = trial_of_the_committee
+	is_triggered_only = yes
+	
+	option = {  
+		name =  discord_flavor.401.a
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = { country_event = { id = discord_flavor.402 days = 21 } } 
+		}
+}
+country_event = {
+	id = discord_flavor.402
+	title = discord_flavor.402.t
+	desc = discord_flavor.402.d
+	picture = orecorp_factory
+	is_triggered_only = yes
+	
+	option = {  
+		name =  discord_flavor.402.a
+		ai_chance = {
+			factor = 100
+		}
+		add_stability = 0.05
+		}
+		
+}
+country_event = {
+	id = discord_flavor.403
+	title = discord_flavor.403.t
+	desc = discord_flavor.403.d
+	picture = council_of_20
+	is_triggered_only = yes
+	
+	option = {  
+		name =  discord_flavor.403.a
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = { country_event = { id = discord_flavor.404 days = 5 } } 
+		}
+}
+country_event = {
+	id = discord_flavor.404
+	title = discord_flavor.404.t
+	desc = discord_flavor.404.d
+	picture = philadelphia_constitution
+	is_triggered_only = yes
+	
+	option = {  
+		name =  discord_flavor.404.a
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = { country_event = { id = discord_flavor.405 days = 5 } } 
+		}
+	option = {  
+		name =  discord_flavor.404.b
+		ai_chance = {
+			factor = 100
+		}
+		#stuff and shit
+		}
+}
+country_event = {
+	id = discord_flavor.405
+	title = discord_flavor.405.t
+	desc = discord_flavor.405.d
+	picture = american_peace_act
+	is_triggered_only = yes
+	
+	option = {  
+		name =  discord_flavor.405.a
+		ai_chance = {
+			factor = 100
+		}
+		add_stability = -0.05
+		add_political_power = -100
+create_country_leader = {
+	        name = "Comrade Merox"
+	        picture = "Portrait_DIS_Merox.dds"
+	        ideology = leninist
+        		}
+		}
+}
+country_event = {
+	id = discord_flavor.500
+	title = discord_flavor.500.t
+	desc = discord_flavor.500.d
+	picture = american_convention_decision
+	is_triggered_only = yes
+	
+	option = {  
+		name =  discord_flavor.500.a
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = 50
+		add_stability = 0.05
+		}
+	option = {  
+		name =  discord_flavor.500.b
+		ai_chance = {
+			factor = 100
+		}
+		add_popularity = {
+			    ideology = monarchist
+			    popularity = 0.15
+		    }
+	}
+}
+country_event = {
+	id = discord_flavor.501
+	title = discord_flavor.501.t
+	desc = discord_flavor.501.d
+	picture = windsor_general_election
+	is_triggered_only = yes
+	
+	option = {  
+		name =  discord_flavor.501.a
+		ai_chance = {
+			factor = 100
+		}
+		add_popularity = {
+			    ideology = monarchist
+			    popularity = 0.07
+		    }
+		add_stability = 0.05
+		}
+}
+country_event = {
+	id = discord_flavor.502
+	title = discord_flavor.502.t
+	desc = discord_flavor.502.d
+	picture = windsor_general_election
+	is_triggered_only = yes
+	
+	option = {  
+		name =  discord_flavor.502.a
+		ai_chance = {
+			factor = 100
+		}
+		add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = 0.07
+		    }
+		create_country_leader = {
+	        name = "Prime Minister Chomskyphile"
+	        picture = "Portrait_DIS_Chomskyphile.dds"
+	        ideology = absolute_monarchist
+        		}
+		add_stability = 0.05
+		}
+	option = {  
+		name =  discord_flavor.502.b
+		ai_chance = {
+			factor = 100
+		}
+		add_popularity = {
+			    ideology = centrist
+			    popularity = 0.07
+		    }
+		create_country_leader = {
+	        name = "Prime Minister Gerronuma"
+	        picture = "Portrait_DIS_Gerro.dds"
+	        ideology = absolute_monarchist
+        		}
+		add_stability = 0.05
+	}
+	option = {  
+		name =  discord_flavor.502.c
+		ai_chance = {
+			factor = 100
+		}
+		add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = 0.07
+		    }
+		create_country_leader = {
+	        name = "Prime Minister Blackmesa"
+	        picture = "Portrait_DIS_Blackmesa.dds"
+	        ideology = absolute_monarchist
+        		}
+		add_stability = 0.05
+	}
+	option = {  
+		name =  discord_flavor.502.e
+		ai_chance = {
+			factor = 100
+		}
+		add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = 0.04
+		    }
+		add_popularity = {
+			    ideology = monarchist
+			    popularity = 0.03
+		    }
+		create_country_leader = {
+	        name = "Prime Minister Jester"
+	        picture = "Portrait_DIS_Jester.dds"
+	        ideology = absolute_monarchist
+        		}
+		add_stability = 0.05
+	}
+	option = {  
+		name =  discord_flavor.502.f
+		ai_chance = {
+			factor = 100
+		}
+		add_popularity = {
+			    ideology = national_conservative
+			    popularity = 0.07
+		}
+		create_country_leader = {
+	        name = "Prime Minister Legochiel"
+	        picture = "Portrait_DIS_Lego.dds"
+	        ideology = absolute_monarchist
+        		}
+		add_stability = 0.05
+	}
+	option = {  
+		name =  discord_flavor.502.g
+		ai_chance = {
+			factor = 100
+		}
+		add_popularity = {
+			    ideology = nationalist
+			    popularity = 0.07
+		}
+		create_country_leader = {
+	        name = "Prime Minister Crusade"
+	        picture = "Portrait_DIS_Crusade.dds"
+	        ideology = absolute_monarchist
+        		}
+		add_stability = 0.05
+	}
+}
+country_event = {
+	id = discord_flavor.503
+	title = discord_flavor.503.t
+	desc = discord_flavor.503.d
+	picture = funeral_service_detroit
+	is_triggered_only = yes
+	
+	option = {  
+		name =  discord_flavor.503.a
+		ai_chance = {
+			factor = 100
+		}
+		add_stability = -0.05
+		if = {
+			limit = { has_completed_focus = DIS_redworldiiimperium }
+		create_country_leader = {
+	        name = "Kaiserin Zerial"
+	        picture = "Portrait_DIS_Zerial.dds"
+	        ideology = absolute_monarchist
+        		}
+		}
+	}
+}
+country_event = {
+	id = discord_flavor.504
+	title = discord_flavor.504.t
+	desc = discord_flavor.504.d
+	picture = chomsky_meets_governors
+	is_triggered_only = yes
+	
+	option = {  
+		name =  discord_flavor.504.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = discord_flavor.200
+	title = discord_flavor.200.t
+	desc = discord_flavor.200.d
+	picture = india_union_action
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = discord_flavor.200.a
+	}
+}
+country_event = {
+	id = discord_flavor.201
+	title = discord_flavor.201.t
+	desc = discord_flavor.201.d
+	picture = india_dem_for_tibet_exile
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = discord_flavor.201.a
+	add_stability = -0.02
+	add_popularity = {
+			    ideology = nationalist
+			    popularity = -0.07
+		    }
+	}
+}
+country_event = {
+	id = discord_flavor.204
+	title = discord_flavor.204.t
+	desc = discord_flavor.204.d
+	picture = bolsonaro_plane
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = discord_flavor.204.a
+	add_stability = -0.15
+	add_political_power = -250
+	kill_country_leader = yes
+	create_country_leader = {
+	        name = "Chancellor"
+	        picture = "Portrait_DIS_Chancellor.dds"
+	        ideology = fascist_ideology
+        		}
+	}
+}
+country_event = {
+	id = discord_flavor.250
+	title = discord_flavor.250.t
+	desc = discord_flavor.250.d
+	picture = india_com_pakistan_civil_war
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = discord_flavor.250.a
+	add_stability = 0.05
+	add_political_power = 50
+	add_popularity = {
+			    ideology = nationalist
+			    popularity = -0.07
+		    }
+	}
+}
+country_event = {
+	id = otto_death.1
+	title = otto_death.1.t
+	desc = otto_death.1.d
+	picture = christian_charities_funded
+	is_triggered_only = yes
+	
+	option = {  
+		name =  otto_death.1.a
+		ai_chance = {
+			factor = 100
+		}		
+		add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = -0.07
+		    }
+		create_country_leader = {
+	        name = "Bishop Oskar"
+	        picture = "Portrait_DIS_Oskar.dds"
+	        ideology = national_bolshevik_ideology
+        		}
+		}
+
+	}
+country_event = {
+	id = discord_flavor.700
+	title = discord_flavor.700.t
+	desc = discord_flavor.700.d
+	picture = british_communist_support
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = discord_flavor.700.a
+		hidden_effect = { country_event = { id = discord_flavor.701 days = 14} } 
+	add_popularity = {
+			    ideology = communist
+			    popularity = 0.03
+		    }
+	}
+}
+country_event = {
+	id = discord_flavor.701
+	title = discord_flavor.701.t
+	desc = discord_flavor.701.d
+	picture = chomsky_dies
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = discord_flavor.701.a
+		add_political_power = -50
+		add_popularity = {
+			    ideology = national_conservative
+			    popularity = -0.03
+		    }
+		hidden_effect = { country_event = { id = discord_flavor.702 days = 20 } } 
+	}
+}
+country_event = {
+	id = discord_flavor.702
+	title = discord_flavor.702.t
+	desc = discord_flavor.702.d
+	picture = egypt_meeting
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = discord_flavor.702.a
+		add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = 0.03
+		    }
+		add_popularity = {
+			    ideology = liberal
+			    popularity = 0.03
+		    } 
+		add_popularity = {
+			    ideology = national_conservative
+			    popularity = 0.03
+		    } 
+	}
+}
+country_event = {
+	id = discord_flavor.703
+	title = discord_flavor.703.t
+	desc = discord_flavor.703.d
+	picture = russia_coronation
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = discord_flavor.703.a
+	}
+}
+country_event = {
+	id = discord_flavor.704
+	title = discord_flavor.704.t
+	desc = discord_flavor.704.d
+	picture = egypt_meeting
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = discord_flavor.704.a
+		create_faction = DIS_free_modders_faction
+		add_to_faction = DRR
+		DRR = {
+		create_wargoal = { 
+		type = annex_everything 
+		target = EQS
+		}	
+		}
+	}
+}
+country_event = {
+	id = discord_flavor.705
+	title = discord_flavor.705.t
+	desc = discord_flavor.705.d
+	picture = quartz_event
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = discord_flavor.705.a
+		
+		}
+	}
+country_event = {
+	id = discord_flavor.706
+	title = discord_flavor.706.t
+	desc = discord_flavor.706.d
+	picture = charleston_church_shooting
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = discord_flavor.706.a
+		
+		}
+	}
+country_event = {
+	id = discord_flavor.707
+	title = discord_flavor.707.t
+	desc = discord_flavor.707.d
+	picture = italy_albania_refuses
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { 
+		name = discord_flavor.707.a
+		add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = 0.05
+		   	 }
+		 add_popularity = {
+			    ideology = nationalist
+			    popularity = -0.05
+		   	 }
+	     add_popularity = {
+			    ideology = communist
+			    popularity = 0.025
+		   	 }
+		   	add_political_power = 50
+		}
+	option = { 
+		name = discord_flavor.707.b
+		add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = -0.05
+		   	 }
+		 add_popularity = {
+			    ideology = nationalist
+			    popularity = -0.05
+		   	 }
+	     add_popularity = {
+			    ideology = communist
+			    popularity = 0.05
+		   	 }
+		add_stability = 0.05
+	}
+}

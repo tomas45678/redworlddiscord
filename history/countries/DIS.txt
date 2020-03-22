@@ -1,0 +1,43 @@
+﻿
+create_field_marshal = {
+	name = "Marshal Legochiel"
+	picture = "Portrait_DIS_Lego.dds"
+	traits = { old_guard thorough_planner offensive_doctrine}
+	id = 9900
+	skill = 5
+}
+create_field_marshal = {
+	name = "Marshal Al"
+	picture = "Portrait_DIS_Albert.dds"
+	traits = { old_guard }
+	id = 9905
+	skill = 1
+}
+create_corps_commander = {
+	name = "Captain Decimus"
+	picture = "Portrait_DIS_Decimus.dds"
+	traits = { trickster }
+	id = 9901
+	skill = 3
+}
+create_corps_commander = {
+	name = "No"
+	picture = "Portrait_DIS_No.dds"
+	traits = { trickster }
+	id = 9902
+	skill = 1
+}
+create_corps_commander = {
+	name = "Zerial"
+	picture = "Portrait_DIS_Zerial.dds"
+	traits = { winter_specialist }
+	id = 9903
+	skill = 2
+}
+create_corps_commander = {
+	name = "Mossy"
+	picture = "Portrait_DIS_Mossy.dds"
+	traits = { fortress_buster hill_fighter }
+	id = 9904
+	skill = 2
+}
