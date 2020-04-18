@@ -27,7 +27,7 @@
 	country = {
 		factor = 0
 		modifier = {
-			add = 20
+			add = 21
 			tag = DIS
 		}
 	}
@@ -74,9 +74,8 @@
 	country = {
 		factor = 0
 		modifier = {
-			add = 25
+			add = 21
 			tag = DIS
-			has_government = communist
 		}
 	}
 	default = no
@@ -88,12 +87,8 @@
 	country = {
 		factor = 0
 		modifier = {
-			add = 25
+			add = 20
 			tag = DIS
-			OR = { 
-			has_government = liberal
-			has_country_flag = owlie_chosen
-			}
 		}
 	}
 	shared_focus = DIS_owliechosen

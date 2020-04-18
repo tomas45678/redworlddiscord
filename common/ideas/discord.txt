@@ -1409,6 +1409,45 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.03
 			}
 		}
+		idea_dis_bureaucracy = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = -0.25
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		idea_dis_nazbol_economy = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				consumer_goods_factor = 0.03
+				industrial_capacity_factory = 0.1
+				production_speed_industrial_complex_factor = 0.15
+			}
+		}
 		idea_dis_christian_charity = {
 			allowed = {
 				always = no
@@ -2037,7 +2076,7 @@ ideas = {
 			}
 		}
 		
-		idea_ams_corrupt_military = {
+		idea_dis_military_primacy = {
 			allowed = {
 				always = no
 			}
@@ -2053,12 +2092,27 @@ ideas = {
 			modifier = {
 				army_org_factor = 0.05
 				training_time_army_factor = -0.15
-				army_morale_factor = -0.3
-				political_power_gain = 0.05
-				conscription = 0.01
-				
-				
-				
+				conscription = 0.01	
+			}
+		}
+
+		idea_dis_service_guarantees_citizenship = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = idea_generic_reserve_divisions
+			
+			modifier = {
+				conscription = 0.02
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
 			}
 		}
 		
@@ -2484,6 +2538,25 @@ ideas = {
 				line_change_production_efficiency_factor = 0.05
 				stability_factor = -0.125
 				revolutionary_socialist_drift = 0.02
+		}
+		}
+		idea_dis_state_and_people = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				political_power_factor = -0.15
+				local_resources_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
 		}
 		}
 		idea_dis_productivity = {

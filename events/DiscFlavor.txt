@@ -68,11 +68,8 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		if = { 
-			limit = { has_completed_focus = DIS_purgethethotpatrol }
 		hidden_effect = { country_event = { id = discord_flavor.403 days = 7 } } 
 		}
-	}
 }
 country_event = {
 	id = discord_flavor.401
@@ -102,6 +99,7 @@ country_event = {
 			factor = 100
 		}
 		add_stability = 0.05
+		set_country_flag = tacti_rule_assured
 		}
 		
 }
@@ -128,19 +126,19 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {  
-		name =  discord_flavor.404.a
+		name =  discord_flavor.404.b
 		ai_chance = {
 			factor = 100
 		}
 		hidden_effect = { country_event = { id = discord_flavor.405 days = 5 } } 
 		}
-	option = {  
-		name =  discord_flavor.404.b
-		ai_chance = {
-			factor = 100
-		}
-		#stuff and shit
-		}
+	#option = {  
+	#	name =  discord_flavor.404.a
+	#	ai_chance = {
+	#		factor = 100
+	#	}
+	#	custom_effect_tooltip = DIS_WIP
+	#	}
 }
 country_event = {
 	id = discord_flavor.405
@@ -161,6 +159,29 @@ create_country_leader = {
 	        picture = "Portrait_DIS_Merox.dds"
 	        ideology = leninist
         		}
+		}
+}
+country_event = {
+	id = discord_flavor.406
+	title = discord_flavor.406.t
+	desc = discord_flavor.406.d
+	picture = american_peace_act
+	is_triggered_only = yes
+	
+	option = {  
+		name =  discord_flavor.406.a
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = 50
+		add_popularity = {
+		ideology = moderate_socialist
+		popularity = -0.05
+		}
+		add_popularity = {
+		ideology = revolutionary_socialist
+		popularity = -0.05
+		}
 		}
 }
 country_event = {

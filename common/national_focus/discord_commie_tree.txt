@@ -5,7 +5,7 @@ focus_tree = {
 		factor = 0
 
 		modifier = {
-				add = 21
+				add = 20
 				tag = DIS
 			}
 	}

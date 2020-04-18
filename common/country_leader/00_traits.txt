@@ -2667,4 +2667,15 @@ leader_traits = {
 			factor = 3
 		}
 	}
+	
+	hero_of_the_revolution = {
+		random = no
+		stability_factor = 0.1
+		drift_defence_factor = 0.05
+		political_power_gain = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

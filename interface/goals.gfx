@@ -4739,6 +4739,10 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/DIS/tacti.dds"			
 	}
 	SpriteType = {
+	name = "merox"
+	texturefile = "gfx/interface/goals/DIS/merox.dds"			
+	}
+	SpriteType = {
 	name = "wilf"
 	texturefile = "gfx/interface/goals/DIS/wilf.dds"			
 	}
