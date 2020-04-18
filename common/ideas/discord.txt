@@ -664,6 +664,25 @@ ideas = {
 				research_time_factor = 0.05
 			}
 		}
+		idea_dis_moon_education = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = the_war_to_end_all_wars
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.15
+				research_time_factor = -0.1
+			}
+		}
 		idea_dis_education_overhaul1 = {
 			allowed = {
 				always = no

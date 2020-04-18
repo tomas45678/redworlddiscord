@@ -286,12 +286,25 @@ country_event = {
 	id = nnrp.12
 	title = nnrp.12.t
 	desc = nnrp.12.d
-	picture =new_secret_police_egypt
+	picture = new_secret_police_egypt
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { 
 		name = nnrp.12.a
+		
+	}
+}
+country_event = {
+	id = nnrp.13
+	title = nnrp.13.t
+	desc = nnrp.13.d
+	picture = ross_wagner_alliance
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = nnrp.13.a
 		
 	}
 }
