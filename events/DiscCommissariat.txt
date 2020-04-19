@@ -96,34 +96,46 @@ country_event = {
 			ideology = national_bolshevik
 			popularity = 0.05
 		}
+		set_politics = {
+ 		ruling_party = national_bolshevik
+		elections_allowed = no 
+		}
 		create_country_leader = {
 	        name = "Crusade"
 	        picture = "Portrait_DIS_Crusade.dds"
-	        ideology = nationalist_ideology
+	        ideology = national_bolshevik_ideology
         		}
 	}
 	option = { 
 		name = nnrp.4.b
 		add_popularity = {
-			ideology = nationalist
+			ideology = national_bolshevik
 			popularity = 0.075
+		}
+		set_politics = {
+ 		ruling_party = national_bolshevik
+		elections_allowed = no 
 		}
 		create_country_leader = {
 	        name = "Oswald"
 	        picture = "Portrait_DIS_Oswald.dds"
-	        ideology = nationalist_ideology
-        		}
-	}
+	        ideology = national_bolshevik_ideology
+        	}
+		}
 	option = { 
 		name = nnrp.4.c
 		add_popularity = {
-			ideology = nationalist
+			ideology = fascist
 			popularity = 0.075
+		}
+		set_politics = {
+ 		ruling_party = fascist
+		elections_allowed = no 
 		}
 		create_country_leader = {
 	        name = "Flacsa"
 	        picture = "Portrait_DIS_Flacsa.dds"
-	        ideology = nationalist_ideology
+	        ideology = fascist_ideology
         		}
 	}
 	option = { 
@@ -339,8 +351,8 @@ country_event = {
 		set_party_name = { ideology = liberal name = DIS_dpliberal }
 		set_party_name = { ideology = centrist name = DIS_dpcentrist }	
 		set_party_name = { ideology = national_conservative name = DIS_nnrpmoderate }
-		set_party_name = { ideology = nationalist name = DIS_nnrp}
-		set_party_name = { ideology = fascist name = DIS_nnrpfascist }
+		set_party_name = { ideology = nationalist name = DIS_nnrp long_name = DIS_nnrp_long }
+		set_party_name = { ideology = fascist name = DIS_nnrpfascist long_name = DIS_nnrpfascist_long }
 		set_party_name = { ideology = national_bolshevik name = DIS_cathbols }
 		set_party_name = { ideology = monarchist name = DIS_cathbolsmonarkiddie }
 		}

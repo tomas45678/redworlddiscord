@@ -4933,6 +4933,10 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/DIS/duel_wilf.dds"
 	}
 	SpriteType = {
+	name = "lim"
+	texturefile = "gfx/interface/goals/DIS/lim.dds"
+	}
+	SpriteType = {
 	name = "focus_aint_that_a_kick_in_the_head"
 	texturefile = "gfx/interface/goals/uapr/focus_aint_that_a_kick_in_the_head.dds"			
 	}

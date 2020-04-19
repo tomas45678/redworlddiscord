@@ -15,7 +15,7 @@
 	country = {
 		factor = 0
 		modifier = {
-			add = 21
+			add = 20
 			tag = DIS
 		}
 	}
@@ -27,7 +27,7 @@
 	country = {
 		factor = 0
 		modifier = {
-			add = 20
+			add = 21
 			tag = DIS
 		}
 	}
@@ -38,6 +38,7 @@
 	shared_focus = DCO_chancellorpheonix
 	shared_focus = DCO_chancellortwiggierjet
 	shared_focus = DCO_chancellorshepard
+	shared_focus = DCO_chancellorlim
 	shared_focus = DCO_chancellormgm
 	shared_focus = DCO_chancellorgerro
 	shared_focus = DCO_chancellorcaesar
