@@ -59,6 +59,24 @@ ideas = {
 				mobilization_laws_cost_factor = -0.25
 			}
 		}	
+		idea_dis_strengthened_commissariat = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				war_support_factor = 0.05
+				political_power_gain = 0.25
+			}
+		}	
 		idea_dis_gun_rights = {
 			allowed = {
 				always = no
@@ -2475,7 +2493,26 @@ ideas = {
 				political_power_gain = 0.05
 				MONTHLY_POPULATION = -0.15
 			
+			}
 		}
+		idea_dis_a_progressive_monarch = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				conscription_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.03
+			}
 		}
 		idea_dis_fullandcompleteliberation = {
 			allowed = {
@@ -2652,6 +2689,25 @@ ideas = {
 				land_reinforce_rate = 0.1
 				}
 		}
+		idea_dis_porn_banned = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = idea_generic_agrarian_reform
+			
+			modifier = {
+				stability_factor = 0.025
+				political_power_gain = 0.15
+				monthly_population = 0.15
+				}
+		}
 		idea_dis_agrarian_workforce = {
 			allowed = {
 				always = no
@@ -2666,10 +2722,29 @@ ideas = {
 			picture = idea_generic_agrarian_reform
 			
 			modifier = {
-				stability_factor = 0.05
 				consumer_goods_factor = -0.03	
 				production_factory_max_efficiency_factor = 0.1
 				production_speed_industrial_complex_factor = -0.1
+				}
+		}
+		idea_dis_minimum_wage = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = idea_generic_agrarian_reform
+			
+			modifier = {
+				consumer_goods_factor = 0.03
+				production_speed_industrial_complex_factor = -0.05				
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.1
 				}
 		}
 	}

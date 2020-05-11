@@ -1,0 +1,83 @@
+﻿add_namespace = equestria_news
+add_namespace = equestria
+news_event = {
+	id = equestria_news.1 #psody's return
+	title = equestria_news.1.t
+	desc = equestria_news.1.d
+	picture = news_gorbachev_dissolves_union
+	fire_only_once = yes
+	
+	option = { 
+		name = equestria_news.1.a
+
+		
+	}
+}
+news_event = {
+	id = equestria_news.2 #rise of Featherus
+	title = equestria_news.2.t
+	desc = equestria_news.2.d
+	picture = news_northern_ireland_negotiations
+	fire_only_once = yes
+	
+	option = { 
+		name = equestria_news.2.a
+
+		
+	}
+}
+news_event = {
+	id = equestria_news.3 #cyrus takes the stand
+	title = equestria_news.3.t
+	desc = equestria_news.3.d
+	picture = news_piedmont_rebellion
+	fire_only_once = yes
+	
+	option = { 
+		name = equestria_news.3.a
+
+		
+	}
+}
+news_event = {
+	id = equestria_news.4 #yard takes control
+	title = equestria_news.4.t
+	desc = equestria_news.4.d
+	picture = news_provisional_congress_dissolved
+	fire_only_once = yes
+	
+	option = { 
+		name = equestria_news.4.a
+
+		
+	}
+}
+news_event = {
+	id = equestria_news.5 #jaspy
+	title = equestria_news.5.t
+	desc = equestria_news.5.d
+	picture = news_african_court
+	fire_only_once = yes
+	
+	option = { 
+		name = equestria_news.5.a
+
+		
+	}
+}
+country_event = {
+	id = equestria.5 
+	title = equestria.5.t
+	desc = equestria.5.d
+	picture = african_court
+	fire_only_once = yes
+	
+	option = { 
+		name = equestria.5.a
+		create_country_leader = {
+	        name = "Jaspy"
+	        picture = "Portrait_EQS_Jaspy.dds"
+	        ideology = absolute_monarchist
+        		}
+	}
+}

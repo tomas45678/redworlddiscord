@@ -78,19 +78,19 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "Scroup I"
+	name = "Scroup"
 	picture = "Portrait_EQS_Scroup.dds"
 	ideology = absolute_monarchist
 }
 
 create_country_leader = {
-	name = "Comrade Tacti"
-	picture = "Portrait_DIS_Tacti.dds"
+	name = "Psody"
+	picture = "Portrait_EQS_Psody.dds"
 	ideology = marxist
 }
 
 create_country_leader = {
-	name = "Jair Bolsonaro"
+	name = ""
 	picture = "Portrait_BRA_Jair_Bolsonaro.dds"
 	ideology = fascist_ideology
 }

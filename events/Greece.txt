@@ -82,6 +82,34 @@ country_event = {
 		}
 }
 country_event = {
+	id  = libtard.3
+	title = libtard.3.t
+	desc = libtard.3.d
+	picture = communists_purged_america
+	is_triggered_only = yes
+	
+	option = {  
+		name =  libtard.3.a
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = 50
+		add_stability = 0.05
+		add_popularity = {
+		ideology = communist
+		popularity = -0.05
+		}
+		add_popularity = {
+		ideology = revolutionary_socialist
+		popularity = -0.05
+		}
+		add_popularity = {
+		ideology = moderate_socialist
+		popularity = -0.05
+		}
+		}
+}
+country_event = {
 	id = commiechat.2
 	title = commiechat.2.t
 	desc = commiechat.2.d
@@ -1931,7 +1959,7 @@ country_event = {
 	desc = discord.114.d
 	picture = india_com_sov_arb_n
 	is_triggered_only = yes
-	
+	hidden = yes
 	option = {  
 		name =  discord.114.a
 		ai_chance = {
@@ -1947,7 +1975,7 @@ country_event = {
 	desc = discord.115.d
 	picture = president_supports_christian_values
 	is_triggered_only = yes
-	
+	hidden = yes
 	option = {  
 		name =  discord.115.a
 		ai_chance = {
@@ -1961,8 +1989,8 @@ country_event = {
 	title = discord.116.t
 	desc = discord.116.d
 	picture = temporary_democracy_in_italy
+	hidden = yes
 	is_triggered_only = yes
-	
 	option = {  
 		name =  discord.116.a
 		ai_chance = {
@@ -1977,7 +2005,7 @@ country_event = {
 	desc = discord.117.d
 	picture = kkk_arrest_celebration
 	is_triggered_only = yes
-	
+	hidden = yes
 	option = {  
 		name =  discord.117.a
 		ai_chance = {
