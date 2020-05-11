@@ -1215,6 +1215,9 @@ country_event = {
 		}
 	option = {  
 		name =  discord.17.b
+		trigger = {
+		has_country_flag = nnrp_supports_bolsonaro
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -1223,16 +1226,8 @@ country_event = {
 			    ideology = fascist
 			    popularity = 0.15
 		    }
-		    if = {
-		    limit = { has_country_flag = nnrp_supports_bolslonaro }
-		    hidden_effect = { country_event = { id = discord.190 days = 2 } } 
-			set_country_flag = bolsonaro_coup_attempt
-		    }
-			if = {
-		    limit = { NOT = { has_country_flag = nnrp_supports_bolslonaro } }
-		    hidden_effect = { country_event = { id = discord.19 days = 2 } } 
-			set_country_flag = bolsonaro_coup_attempt
-		    }
+		hidden_effect = { country_event = { id = discord.190 days = 2 } } 
+		set_country_flag = bolsonaro_coup_attempt
 		}
 
 	}
