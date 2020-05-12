@@ -533,6 +533,25 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 			}
 		}
+		idea_dis_rural_collectives = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.02
+				local_resources_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
 		idea_dis_local_cooperatives2 = {
 			allowed = {
 				always = no
@@ -721,6 +740,25 @@ ideas = {
 			}
 		}
 		idea_dis_strong_judicial_system = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = the_war_to_end_all_wars
+			
+			modifier = {
+				war_support_factor = 0.03
+				political_power_gain = 0.01
+				drift_defence_factor = 0.2
+			}
+		}
+		idea_dis_traitors_on_trial = {
 			allowed = {
 				always = no
 			}
@@ -1712,6 +1750,25 @@ ideas = {
 				political_power_factor = 0.15
 			}
 		}
+		idea_dis_power_expanded = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_factor = 0.15
+			}
+		}
 		idea_dis_strixes = {
 			allowed = {
 				always = no
@@ -1884,6 +1941,26 @@ ideas = {
 				industrial_capacity_factory = 0.09
 				stability_factor = -0.12
 				political_power_gain = 0.2
+				army_org_factor = 0.05
+				}
+		}
+		idea_dis_moon_addiction_reform = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.05
+				industrial_capacity_factory = 0.05
 				army_org_factor = 0.05
 				}
 		}
@@ -2140,6 +2217,25 @@ ideas = {
 			modifier = {
 				MONTHLY_POPULATION = 0.25
 				political_power_gain = 0.05
+			}
+		}
+		idea_dis_anti_horny_platform = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.15
+				political_power_gain = 0.15
+				national_bolshevik_drift = 0.02
 			}
 		}
 		idea_dis_loyalty_to_wilf = {
