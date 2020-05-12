@@ -15,7 +15,7 @@
 	country = {
 		factor = 0
 		modifier = {
-			add = 21
+			add = 20
 			tag = DIS
 		}
 	}
@@ -28,7 +28,7 @@
 	country = {
 		factor = 0
 		modifier = {
-			add = 20
+			add = 21
 			tag = DIS
 		}
 	}
@@ -72,7 +72,10 @@
 		}
 	}
 	shared_focus = DIS_ottochosen
-	shared_focus = DCO_chancelloroskar
+	shared_focus = DIS_democratic_transition
+	shared_focus = DIS_reaffirmthecoop
+	shared_focus = DIS_leavethecoop
+	
 	continuous_focus_position = { x = 50 y = 5000 }
 	}
 	focus_tree = {
@@ -86,6 +89,8 @@
 	}
 	default = no
 	shared_focus = DIS_tactichosen
+	shared_focus = DIS_reaffirmthecoop
+	shared_focus = DIS_leavethecoop
 	continuous_focus_position = { x = 50 y = 5000 }
 	}
 	focus_tree = {
@@ -99,6 +104,8 @@
 	}
 	default = no
 	shared_focus = DIS_wilfchosen
+	shared_focus = DIS_reaffirmthecoop
+	shared_focus = DIS_leavethecoop
 	continuous_focus_position = { x = 50 y = 5000 }
 	}
 	focus_tree = {

@@ -1,6 +1,6 @@
 ﻿capital = 522
 
-oob = ""
+oob = "YOU_2000"
 
 set_research_slots = 4
 set_convoys = 500

@@ -96,7 +96,7 @@ units = {
 	division = {
 		name = "1st Armor"
 		location = 7564
-		division_template = "Infantry Division"
+		division_template = "Armored Division"
 		start_experience_factor = 0.4
 	}
 }

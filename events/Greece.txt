@@ -1880,10 +1880,10 @@ country_event = {
 			set_country_flag = tacti_chosen
 			custom_effect_tooltip = tacti_leads
 			country_event = { id = discord.114 days = 1 }
-			else = {
+		}
+					else = {
 			set_country_flag = chaos1
 			}
-		}
 		if = {
 			limit = {
 				has_country_flag = religion_good
@@ -1893,10 +1893,10 @@ country_event = {
 			set_country_flag = otto_chosen
 			custom_effect_tooltip = otto_leads
 			country_event = { id = discord.115 days = 1 }
-			else = {
+		}
+		else = {
 			set_country_flag = chaos2
 			}
-		}
 		if = {
 			limit = {
 				has_country_flag = political_monarchism
@@ -1905,10 +1905,10 @@ country_event = {
 			set_country_flag = wilf_chosen
 			custom_effect_tooltip = wilf_leads
 			country_event = { id = discord.116 days = 1 }
-			else = {
+		}
+		else = {
 			set_country_flag = chaos3
 			}
-		}
 		if = {
 			limit = {
 				has_country_flag = political_democracy
@@ -1916,11 +1916,11 @@ country_event = {
 			}
 			set_country_flag = owlie_chosen
 			custom_effect_tooltip = owlie_leads
-			country_event = { id = discord.117 days = 1 }
-			else = {
+			country_event = { id = discord.117 days = 1 }	
+		}
+		else = {
 			set_country_flag = chaos4
 			}
-		}
 		if = {
 			limit = {
 				has_country_flag = chaos1
@@ -1930,6 +1930,7 @@ country_event = {
 			}
 			set_country_flag = chaos_chosen
 			custom_effect_tooltip = chaos_leads
+			country_event = { id = discord.12 days = 1 }
 		}
 		}
 }
@@ -2006,7 +2007,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 			}
-		load_focus_tree = discord_wilf_tree
+		load_focus_tree = discord_winona_tree
 		}
 	}
 country_event = {

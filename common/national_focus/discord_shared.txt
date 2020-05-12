@@ -159,6 +159,47 @@
 		   add_political_power = 55
 		   country_event = { id = discord.11 }
 		   custom_effect_tooltip = new_focus_tree
+		   if = {
+			limit = {
+				has_country_flag = religion_bad
+				has_country_flag = political_communism
+			}
+			set_country_flag = tacti_chosen
+		}
+		else = {
+			set_country_flag = chaos1
+		}
+		if = {
+			limit = {
+				has_country_flag = religion_good
+				has_country_flag = state_economy
+				NOT = { has_country_flag = political_monarchism }	
+			}
+			set_country_flag = otto_chosen
+		}
+		else = {
+			set_country_flag = chaos2
+			}
+		if = {
+			limit = {
+				has_country_flag = political_monarchism
+				has_country_flag = kaiser_loved
+			}
+			set_country_flag = wilf_chosen
+		}
+		else = {
+			set_country_flag = chaos3
+			}
+		if = {
+			limit = {
+				has_country_flag = political_democracy
+				has_country_flag = liberal_economy	
+			}
+			set_country_flag = owlie_chosen
+		}
+		else = {
+			set_country_flag = chaos4
+			}
 		}
 
 	}
@@ -246,9 +287,10 @@
 		id = DIS_meroxtakeover
 		icon = merox
 		cost = 5
-		x = 4
+		x = 7
 		y = 8
 		prerequisite = { focus = DIS_dealwithpartybrocialists}
+		mutually_exclusive = { focus = DIS_socialprogress }
 		available = { 
 		has_country_leader = {
 			ruling_only = yes
@@ -267,28 +309,108 @@
 	}
 	shared_focus = {
 		id = DIS_thosewhomustdie
-		icon = tacti
+		icon = army_marching_red
 		cost = 5
-		x = 4
+		x = 7
 		y = 9
 		prerequisite = { focus = DIS_meroxtakeover}
 		available = { 
-		has_country_leader = {
-			ruling_only = yes
-			name = "Comrade Merox"
-		}
 		}
 		completion_reward = {
-		
+		add_war_support = 0.05
+		add_popularity = {
+		ideology = communist
+		popularity = -0.05
+		}
+		}
+	}
+	shared_focus = {
+		id =  DIS_shatter_the_coalition
+		icon = tear_treaty
+		cost = 5
+		x = 6
+		y = 10
+		prerequisite = { focus = DIS_endcapitalistindustry }
+		prerequisite = { focus = DIS_thosewhomustdie }
+		prerequisite = { focus = DIS_revolutionaryzeal }
+		available = {
+		has_completed_focus = DIS_ensurepoliticalpower
+		}
+		mutually_exclusive = {
+		focus = DIS_intra_party_purges
+		}
+		completion_reward = {
+		add_political_power = 100
+		remove_ideas = idea_dis_the_grand_coalition
+		add_popularity = {
+		ideology = national_bolshevik
+		popularity = -0.05
+		}
+		add_popularity = {
+		ideology = revolutionary_socialist
+		popularity = -0.05
+		}
+		}
+	}
+	shared_focus = {
+		id =  DIS_intra_party_purges
+		icon = gorbachevs_kgb
+		cost = 5
+		x = 8
+		y = 10
+		prerequisite = { focus = DIS_endcapitalistindustry }
+		prerequisite = { focus = DIS_thosewhomustdie }
+		prerequisite = { focus = DIS_revolutionaryzeal }
+		available = {
+		has_completed_focus = DIS_ensurepoliticalpower
+		}
+		mutually_exclusive = {
+		focus = DIS_shatter_the_coalition
+		}
+		completion_reward = {
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_popularity = {
+		ideology = communist
+		popularity = -0.025
+		}
+		add_popularity = {
+		ideology = revolutionary_socialist
+		popularity = -0.05
+		}
+		}
+	}
+	shared_focus = {
+		id =  DIS_an_end_to_the_moderates
+		icon = focus_commonwealth_communist_party_ban
+		cost = 5
+		x = 7
+		y = 11
+		prerequisite = { focus = DIS_intra_party_purges focus = DIS_shatter_the_coalition }
+		completion_reward = {
+		add_political_power = 50
+		add_popularity = {
+		ideology = communist
+		popularity = 0.05
+		}
+		add_popularity = {
+		ideology = new_democrat
+		popularity = -0.05
+		}
+		add_popularity = {
+		ideology = liberal
+		popularity = -0.05
+		}
 		}
 	}
 	shared_focus = {
 		id = DIS_socialprogress
 		icon = tacti
 		cost = 5
-		x = 10
+		x = 13
 		y = 8
 		prerequisite = { focus = DIS_dealwithpartybrocialists}
+		mutually_exclusive = { focus = DIS_meroxtakeover }
 		available = { 
 		has_country_leader = {
 			ruling_only = yes
@@ -304,7 +426,7 @@
 		id = DIS_liberateminorities
 		icon = focus_promote_gender_equality
 		cost = 5
-		x = 8
+		x = 11
 		y = 11
 		prerequisite = { focus = DIS_censorship}
 		completion_reward = {
@@ -321,7 +443,7 @@
 		id = DIS_liberationeducation
 		icon = focus_socialist_propaganda
 		cost = 5
-		x = 12
+		x = 15
 		y = 9
 		prerequisite = { focus = DIS_socialprogress }
 		completion_reward = {
@@ -350,7 +472,7 @@
 		id = DIS_assassinateoskar
 		icon = political_pressure
 		cost = 5
-		x = 11
+		x = 14
 		y = 14
 		prerequisite = { focus = DIS_dealwithparytbrocialists}
 		available = { has_country_flag = otto_dead }
@@ -363,7 +485,7 @@
 		id = DIS_censorship
 		icon =  focus_undermine_local_media
 		cost = 5
-		x = 8
+		x = 11
 		y = 9
 		prerequisite = { focus = DIS_socialprogress }
 		completion_reward = {
@@ -376,7 +498,7 @@
 		id = DIS_sovietdemocracy
 		icon = focus_syria_seek_soviet_funding
 		cost = 5
-		x = 9
+		x = 12
 		y = 10
 		prerequisite = { focus = DIS_liberationeducation}
 		prerequisite = { focus = DIS_endorseliberationtheology}
@@ -396,7 +518,7 @@
 		id = DIS_strengthenthecoalition
 		icon = focus_enforce_1990_constitution
 		cost = 5
-		x = 11
+		x = 14
 		y = 10
 		prerequisite = { focus = DIS_liberationeducation}
 		prerequisite = { focus = DIS_endorseliberationtheology}
@@ -426,7 +548,7 @@
 		id = DIS_endorseliberationtheology
 		icon = focus_fund_christian_charities
 		cost = 8
-		x = 10
+		x = 13
 		y = 9
 		prerequisite = { focus = DIS_socialprogress }
 		completion_reward = {
@@ -438,10 +560,11 @@
 		id = DIS_mothertactilovesherchildren
 		icon = socialism_through_peace
 		cost = 8
-		x = 10
+		x = 13
 		y = 12
 		prerequisite = { focus = DIS_endorseindustrialdemocracy }
 		prerequisite = { focus = DIS_liberateminorities }
+		prerequisite = { focus = DIS_nationalizeinfastructure }
 		completion_reward = {
 		add_stability = 0.13	
 		add_political_power = 150
@@ -452,7 +575,7 @@
 		id = DIS_endorseindustrialdemocracy
 		icon = focus_syria_workers_self_management
 		cost = 8
-		x = 12
+		x = 15
 		y = 11
 		prerequisite = { focus = DIS_liberationeducation }
 		completion_reward = {
@@ -487,12 +610,23 @@
 		id = DIS_revolutionaryzeal
 		icon = focus_erect_portrait_of_lenin
 		cost = 8
-		x = 5
-		y = 14
-		prerequisite = { focus = DIS_endcapitalistindustry }
-		prerequisite = { focus = DIS_nationalizeinfastructure}
+		x = 9
+		y = 9
+		prerequisite = { focus = DIS_meroxtakeover }
 		completion_reward = {
 		add_ideas = idea_dis_revolutionary_zeal
+		}
+
+	}
+	shared_focus = {
+		id =  DIS_a_cult_of_personality
+		icon = embrace_the_revolution
+		cost = 8
+		x = 9
+		y = 11
+		prerequisite = { focus = DIS_revolutionaryzeal }
+		completion_reward = {
+		add_country_leader_trait = hero_of_the_revolution
 		}
 
 	}
@@ -500,9 +634,11 @@
 		id = DIS_preparetoliberateaustralia
 		icon = australia_attack
 		cost = 8
-		x = 9
-		y = 15
-		prerequisite = { focus = DIS_revolutionaryzeal focus = DIS_mothertactilovesherchildren }
+		x = 7
+		y = 12
+		prerequisite = { focus = DIS_a_byzantine_bureaucracy }
+		prerequisite = { focus = DIS_an_end_to_the_moderates }
+		prerequisite = { focus = DIS_a_cult_of_personality }
 		completion_reward = {
 		add_war_support = 0.14
 		 add_political_power = 75
@@ -517,7 +653,7 @@
 		id = DIS_nationalizeinfastructure
 		icon = establish_nationalisation_ministry
 		cost = 8
-		x = 10
+		x = 13
 		y = 11
 		prerequisite = { focus = DIS_sovietdemocracy focus = DIS_strengthenthecoalition}
 		completion_reward = {
@@ -580,13 +716,13 @@
 		}
 
 	}
-		shared_focus = {
+	shared_focus = {
 		id = DIS_endcapitalistindustry
 		icon = soviet_investment
 		cost = 8
-		x = 4
-		y = 13
-		prerequisite = { focus = DIS_sovietdemocracy }
+		x = 5
+		y = 9
+		prerequisite = { focus = DIS_meroxtakeover }
 		completion_reward = {
 		 random_owned_state = {
 				add_extra_state_shared_building_slots = 1
@@ -613,7 +749,17 @@
 				}
 			}
 		}
-
+	}
+	shared_focus = {
+		id = DIS_a_byzantine_bureaucracy
+		icon = communism_2
+		cost = 8
+		x = 5
+		y = 11
+		prerequisite = { focus = DIS_endcapitalistindustry }
+		completion_reward = {
+		add_ideas =  idea_dis_bureaucracy
+		}
 	}
 	shared_focus = {
 		id = DIS_apeoplescoalition
@@ -888,7 +1034,7 @@
 		id = DIS_ottochosen
 		icon = otto
 		cost = 3
-		x = 6
+		x = 5
 		y = 0
 		available = {
 		has_country_flag = otto_chosen
@@ -899,12 +1045,30 @@
 
 	}
 	shared_focus = {
+		id = DIS_democratic_transition
+		icon = flags_orange
+		cost = 3
+		x = 7
+		y = 0
+		available = {
+		NOT = { has_country_flag = otto_chosen }
+		}
+		completion_reward = {
+		    add_stability = 0.05
+			add_popularity = {
+			ideology = national_bolshevik
+			popularity = 0.05
+			}
+		}
+
+	}
+	shared_focus = {
 		id = DIS_traditionalvalues
 		icon = traditional_values
 		cost = 5
 		x = 10
 		y = 1
-		prerequisite = { focus = DIS_ottochosen }
+		prerequisite = { focus = DIS_ottochosen focus = DIS_democratic_transition  }
 		completion_reward = {
 		add_ideas = idea_usa_traditional_values
 		}
@@ -960,10 +1124,10 @@
 		id = DIS_restructuretheeconomy
 		icon = five_year_plan
 		cost = 5
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = DIS_ottochosen
-		prerequisite = { focus = DIS_ottochosen }
+		prerequisite = { focus = DIS_ottochosen focus = DIS_democratic_transition  }
 		completion_reward = {
 		add_political_power = 100
 		add_popularity = {
@@ -977,7 +1141,7 @@
 		id = DIS_liquidatebourgies
 		icon = perestroika
 		cost = 5
-		x = 1
+		x = 2
 		y = 2
 		relative_position_id = DIS_ottochosen
 		prerequisite = { focus = DIS_restructuretheeconomy }
@@ -1031,7 +1195,7 @@
 		id = DIS_nationalizationspree
 		icon = common_african_judiciary
 		cost = 5
-		x = 2
+		x = 3
 		y = 3
 		relative_position_id = DIS_ottochosen
 		prerequisite = { focus = DIS_liquidatebourgies }
@@ -1064,7 +1228,7 @@
 		id = DIS_landforthepeople
 		icon = position_armies
 		cost = 5
-		x = -1
+		x = 0
 		y = 4
 		relative_position_id = DIS_ottochosen
 		prerequisite = { focus = DIS_encouragecollectives }
@@ -1137,7 +1301,7 @@
 		id = DIS_allywithcooperatives
 		icon = pheonix
 		cost = 5
-		x = 1
+		x = 2
 		y = 4
 		relative_position_id = DIS_ottochosen
 		prerequisite = { focus = DIS_encouragecollectives }
@@ -1170,7 +1334,7 @@
 		id = DIS_christian_charity
 		icon = concessions
 		cost = 5
-		x = 0
+		x = 1
 		y = 5
 		relative_position_id = DIS_ottochosen
 		prerequisite = { focus = DIS_allywithcooperatives }
@@ -1183,7 +1347,7 @@
 		id = DIS_stepbystep
 		icon = chinese_economy
 		cost = 5
-		x = -1
+		x = 0
 		y = 2
 		relative_position_id = DIS_ottochosen
 		prerequisite = { focus = DIS_restructuretheeconomy }
@@ -1242,7 +1406,7 @@
 		id = DIS_encouragecollectives
 		icon = focus_commonwealth_collectivisation
 		cost = 5
-		x = 0
+		x =1
 		y = 3
 		relative_position_id = DIS_ottochosen
 		prerequisite = { focus = DIS_stepbystep focus = DIS_liquidatebourgies}
@@ -1312,7 +1476,7 @@
 		cost = 5
 		x = 2
 		y = 1
-		prerequisite = { focus = DIS_ottochosen }
+		prerequisite = { focus = DIS_ottochosen focus = DIS_democratic_transition  }
 		completion_reward = {
 		add_ideas = idea_dis_legacy_of_romero
 		}
@@ -1419,10 +1583,10 @@
 		id = DIS_adistributiststate
 		icon = torch_industry
 		cost = 5
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = DIS_ottochosen
-		prerequisite = { focus = DIS_ottochosen }
+		prerequisite = { focus = DIS_ottochosen focus = DIS_democratic_transition  }
 		completion_reward = {
 		add_popularity = {
 			    ideology = national_bolshevik
@@ -1452,10 +1616,10 @@
 		id = DIS_agrarianism
 		icon = focus_on_agriculture
 		cost = 5
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = DIS_ottochosen
-		prerequisite = { focus = DIS_ottochosen }
+		prerequisite = { focus = DIS_ottochosen focus = DIS_democratic_transition  }
 		completion_reward = {
 		add_ideas = idea_csd_radical_environmentalism
 		}
@@ -3021,6 +3185,7 @@
 		cost = 7
 		x = 16
 		y = 12
+		
 		offset = {
 		x = -4
 		y = -1
@@ -3029,10 +3194,32 @@
 		}
 		}
 		offset = {
+		x = -9
+		y = -3
+		trigger = {
+			has_focus_tree = discord_winona_tree
+		}
+		}
+		offset = {
 		x = -8
 		y = -1
 		trigger = {
 			has_focus_tree = discord_nnrp_tree
+		}
+		}
+		offset = {
+		x = -8
+		y = 1
+		trigger = {
+			has_focus_tree = discord_tacti_tree
+		}
+		}
+
+		offset = {
+		x = -12
+		y = -6
+		trigger = {
+			has_focus_tree = discord_otto_tree
 		}
 		}
 		mutually_exclusive = { focus = DIS_leavethecoop }
@@ -3416,6 +3603,27 @@
 			has_focus_tree = discord_nnrp_tree
 		}
 		}
+		offset = {
+		x = -8
+		y = 1
+		trigger = {
+			has_focus_tree = discord_tacti_tree
+		}
+		}
+		offset = {
+		x = -9
+		y = -3
+		trigger = {
+			has_focus_tree = discord_winona_tree
+		}
+		}
+		offset = {
+		x = -12
+		y = -6
+		trigger = {
+			has_focus_tree = discord_otto_tree
+		}
+		}
 		mutually_exclusive = { focus = DIS_reaffirmthecoop }
 		available = {
 		date > 2012.1.1
@@ -3570,11 +3778,33 @@
 			has_focus_tree = discord_nnrp_tree
 		}
 		}
+		offset = {
+		x = -9
+		y = -3
+		trigger = {
+			has_focus_tree = discord_winona_tree
+		}
+		}
+		offset = {
+		x = -9
+		y = 1
+		trigger = {
+			has_focus_tree = discord_tacti_tree
+		}
+		}
+		offset = {
+		x = -12
+		y = -6
+		trigger = {
+			has_focus_tree = discord_otto_tree
+		}
+		}
 		prerequisite = { focus = DIS_integrateconqueredterritories focus = DIS_operationeuthanasia focus = DIS_operationredscare }
 		available = { has_war = no }
 		completion_reward = {
 		add_war_support = 0.1
 		add_stability = 0.1
+		
 		}
 	
 	}

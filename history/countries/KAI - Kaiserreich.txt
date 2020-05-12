@@ -1,6 +1,6 @@
 ﻿capital = 522
 
-oob = ""
+oob = "KAI_2000"
 
 set_research_slots = 4
 set_convoys = 500
@@ -86,7 +86,7 @@ add_ideas = {
 create_country_leader = {
 	name = "Council of Modders"
 	picture = "Portrait_KAI_Council.dds"
-	ideology = monarchist_ideology
+	ideology = absolute_monarchist
 }
 
 create_country_leader = {

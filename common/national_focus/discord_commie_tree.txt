@@ -212,7 +212,7 @@ focus_tree = {
 	focus = {
 		id = DCM_propagandabroadcasts
 		icon = establish_nationalisation_ministry
-		cost = 15
+		cost = 5
 		x = 10
 		y = 3
 		prerequisite = { focus = DCM_swaymoderatesocialists }
@@ -257,7 +257,7 @@ focus_tree = {
 	focus = {
 		id = DCM_congressofprogress
 		icon = focus_philadelphia_constitution
-		cost = 10
+		cost = 5
 		x = 8
 		y = 6
 		prerequisite = { focus = DCM_summitwiththecommissars  focus = DCM_assaultonmaryborough}
@@ -266,104 +266,15 @@ focus_tree = {
 		}
 	
 	}
-	focus = {
-		id = DCM_chomsky
-		icon = chomsky
-		cost = 5
-		x = 3
-		y = 7
-		prerequisite = { focus = DCM_congressofprogress}
-		available = {
-		has_country_flag = chomsky_chosen
-		}
-		completion_reward = {
-			
-		}
 	
-	}
-	focus = {
-		id = DCM_rain
-		icon = rain
-		cost = 5
-		x = 5
-		y = 7
-		prerequisite = { focus = DCM_congressofprogress}
-		available = {
-		has_country_flag = chomsky_chosen
-		}
-		completion_reward = {
-			
-		}
-	
-	}
-	focus = {
-		id = DCM_qing
-		icon = qing
-		cost = 5
-		x = 7
-		y = 7
-		prerequisite = { focus = DCM_congressofprogress}
-		available = {
-		has_country_flag = qing_chosen
-		}
-		completion_reward = {
-			
-		}
-	
-	}
-	focus = {
-		id = DCM_thewolffate
-		icon = thewolffate
-		cost = 5
-		x = 9
-		y = 7
-		prerequisite = { focus = DCM_congressofprogress}
-		available = {
-		has_country_flag = thewolffate_chosen
-		}
-		completion_reward = {
-			
-		}
-	
-	}
-	focus = {
-		id = DCM_xie
-		icon = xie
-		cost = 5
-		x = 11
-		y = 7
-		prerequisite = { focus = DCM_congressofprogress}
-		available = {
-		has_country_flag = xie_chosen
-		}
-		completion_reward = {
-			
-		}
-	
-	}
-	focus = {
-		id = DCM_blackmesa
-		icon = blackmesa
-		cost = 5
-		x = 13
-		y = 7
-		prerequisite = { focus = DCM_congressofprogress}
-		available = {
-		has_country_flag = blackmesa_chosen
-		}
-		completion_reward = {
-			
-		}
-	
-	}
 	
 	focus = {
 		id = DCM_socialprogress
 		icon = socialprogress
 		cost = 1
-		x = 4
-		y = 9
-		prerequisite = { focus = DCM_newideals focus = DCM_oldtheories }
+		x = 3
+		y = 7
+		prerequisite = { focus = DCM_congressofprogress}
 		completion_reward = {
 			add_political_power = 10
 			add_popularity = {
@@ -377,9 +288,9 @@ focus_tree = {
 		id = DCM_politicalprogress
 		icon = politicalprogress
 		cost = 1
-		x = 11
-		y = 8
-		prerequisite = { focus = DCM_newideals focus = DCM_oldtheories }
+		x = 8
+		y = 7
+		prerequisite = { focus = DCM_congressofprogress }
 		completion_reward = {
 			add_political_power = 10
 			add_popularity = {
@@ -393,9 +304,9 @@ focus_tree = {
 		id = DCM_questionofspreadingprogress
 		icon = spreadingprogress
 		cost = 1
-		x = 13
-		y = 13
-		prerequisite = { focus = DCM_newideals focus = DCM_oldtheories }
+		x = 8
+		y = 12
+		prerequisite = { focus = DCM_thepeoplesdreamscometrue }
 		completion_reward = {
 			add_political_power = 10
 			add_popularity = {
@@ -409,8 +320,8 @@ focus_tree = {
 		id = DCM_seeyacoop
 		icon = focus_commonwealth_un_membership
 		cost = 5
-		x = 13
-		y = 14
+		x = 8
+		y = 13
 		prerequisite = { focus = DCM_questionofspreadingprogress }
 		completion_reward = {
 			KAI = {
@@ -435,9 +346,9 @@ focus_tree = {
 	focus = {
 		id = DCM_pacifistideals
 		icon = socialism_through_peace
-		cost = 10
-		x = 11
-		y = 15
+		cost = 5
+		x = 6
+		y = 14
 		prerequisite = { focus = DCM_seeyacoop }
 		mutually_exclusive = { focus = DCM_spreadprogress }
 		completion_reward = {
@@ -449,9 +360,9 @@ focus_tree = {
 	focus = {
 		id = DCM_militaryfordefense
 		icon = ethiopia_allow_autonomy
-		cost = 10
-		x = 11
-		y = 16
+		cost = 5
+		x = 6
+		y = 15
 		prerequisite = { focus = DCM_pacifistideals }
 		completion_reward = {
 		add_stability = 0.075
@@ -466,9 +377,9 @@ focus_tree = {
 	focus = {
 		id = DCM_socialismislove
 		icon = focus_love_syria
-		cost = 10
-		x = 11
-		y = 17
+		cost = 5
+		x = 6
+		y = 16
 		prerequisite = { focus = DCM_militaryfordefense }
 		completion_reward = {
 		add_stability = 0.075
@@ -479,9 +390,9 @@ focus_tree = {
 	focus = {
 		id = DCM_fulldisarment
 		icon = english_military_industry
-		cost = 10
-		x = 11
-		y = 18
+		cost = 5
+		x = 6
+		y = 17
 		prerequisite = { focus = DCM_socialismislove }
 		completion_reward = {
 		add_ideas = disarmed_nation
@@ -492,9 +403,9 @@ focus_tree = {
 	focus = {
 		id = DCM_spreadprogress
 		icon = army_marching_red
-		cost = 10
-		x = 15
-		y = 15
+		cost = 5
+		x = 10
+		y = 14
 		prerequisite = { focus = DCM_seeyacoop }
 		mutually_exclusive = { focus = DCM_pacifistideals }
 		completion_reward = {
@@ -506,9 +417,9 @@ focus_tree = {
 	focus = {
 		id = DCM_preparetheeconomy
 		icon = industry_2
-		cost = 10
-		x = 14
-		y = 16
+		cost = 5
+		x = 9
+		y = 15
 		prerequisite = { focus = DCM_spreadprogress }
 		completion_reward = {
 		random_owned_state = {
@@ -533,9 +444,9 @@ focus_tree = {
 	focus = {
 		id = DCM_reassurepacifists
 		icon = shaking_hands_1
-		cost = 10
-		x = 16
-		y = 16
+		cost = 5
+		x = 11
+		y = 15
 		prerequisite = { focus = DCM_spreadprogress }
 		completion_reward = {
 		add_stability = 0.075
@@ -549,9 +460,9 @@ focus_tree = {
 	focus = {
 		id = DCM_strikethebrisbanepretenders
 		icon = australia_attack
-		cost = 10
-		x = 17
-		y = 17
+		cost = 5
+		x = 12
+		y = 16
 		prerequisite = { focus = DCM_reassurepacifists }
 		prerequisite = { focus = DCM_preparetheeconomy }
 		available = {has_war = no}
@@ -566,9 +477,9 @@ focus_tree = {
 		focus = {
 		id = DCM_pingpanzer
 		icon = focus_operation_mountain_ridge
-		cost = 10
-		x = 15
-		y = 17
+		cost = 5
+		x = 10
+		y = 16
 		prerequisite = { focus = DCM_reassurepacifists }
 		prerequisite = { focus = DCM_preparetheeconomy }
 		available = {has_war = no}
@@ -583,9 +494,9 @@ focus_tree = {
 	focus = {
 		id = DCM_endthekaiserboos
 		icon = focus_operation_coastal_menace
-		cost = 10
-		x = 13
-		y = 17
+		cost = 5
+		x = 8
+		y = 16
 		prerequisite = { focus = DCM_reassurepacifists }
 		prerequisite = { focus = DCM_preparetheeconomy }
 		available = {has_war = no}
@@ -600,9 +511,9 @@ focus_tree = {
 	focus = {
 		id = DCM_thepitofsatan
 		icon = focus_operation_shining_star
-		cost = 10
-		x = 15
-		y = 18
+		cost = 5
+		x = 10
+		y = 17
 		prerequisite = { focus = DCM_strikethebrisbanepretenders }
 		prerequisite = { focus = DCM_pingpanzer }
 		prerequisite = { focus = DCM_endthekaiserboos }
@@ -619,9 +530,9 @@ focus_tree = {
 		id = DCM_economicprogress
 		icon = economicprogress
 		cost = 1
-		x = 5
-		y = 13
-			prerequisite = { focus = DCM_newideals focus = DCM_oldtheories }
+		x = 13
+		y = 7
+			prerequisite = { focus = DCM_congressofprogress }
 		completion_reward = {
 			add_political_power = 10
 			add_popularity = {
@@ -633,10 +544,10 @@ focus_tree = {
 	}
 	focus = {
 		id = DCM_marketsocialism
-		icon = focus_begin_investigation
-		cost = 10
-		x = 3
-		y = 15
+		icon = focus_syria_workers_self_management
+		cost = 5
+		x = 11
+		y = 8
 		prerequisite = { focus = DCM_economicprogress}
 		mutually_exclusive = { focus = DCM_syndicalism }
 		completion_reward = {
@@ -662,9 +573,9 @@ focus_tree = {
 	focus = {
 		id = DCM_newcooperatives
 		icon = industry_1
-		cost = 10
-		x = 2
-		y = 16
+		cost = 5
+		x = 10
+		y = 9
 		prerequisite = { focus = DCM_marketsocialism }
 		completion_reward = {
 			random_owned_state = {
@@ -689,9 +600,9 @@ focus_tree = {
 	focus = {
 		id = DCM_rapidnationalization
 		icon = focus_enforce_1990_constitution
-		cost = 10
-		x = 4
-		y = 16
+		cost = 5
+		x = 12
+		y = 9
 		prerequisite = { focus = DCM_marketsocialism }
 		completion_reward = {
 		add_ideas = idea_dis_mutual_aid
@@ -701,10 +612,11 @@ focus_tree = {
 	focus = {
 		id = DCM_encouragecollectives
 		icon = focus_commonwealth_collectivisation
-		cost = 10
-		x = 1
-		y = 17
+		cost = 5
+		x = 10
+		y = 11
 		prerequisite = { focus = DCM_newcooperatives }
+		prerequisite = { focus = DCM_tradewithsocialists }
 		completion_reward = {
 		add_ideas = idea_apc_collectivisation
 		}
@@ -713,9 +625,9 @@ focus_tree = {
 	focus = {
 		id = DCM_tradewithsocialists
 		icon = focus_socialist_trading_network
-		cost = 10
-		x = 3
-		y = 17
+		cost = 5
+		x = 11
+		y = 10
 		prerequisite = { focus = DCM_newcooperatives }
 		prerequisite = { focus = DCM_rapidnationalization }
 		completion_reward = {
@@ -726,11 +638,11 @@ focus_tree = {
 	focus = {
 		id = DCM_neweconomictheory
 		icon = focus_trade_council_influence
-		cost = 10
-		x = 3
-		y = 18
-		prerequisite = { focus = DCM_encouragecollectives }
+		cost = 5
+		x = 12
+		y = 11
 		prerequisite = { focus = DCM_industrialdemocracy }
+		prerequisite = { focus = DCM_rapidnationalization }
 		prerequisite = { focus = DCM_tradewithsocialists }
 		completion_reward = {
 			add_political_power = 50
@@ -752,9 +664,9 @@ focus_tree = {
 	focus = {
 		id = DCM_syndicalism
 		icon = support_workers
-		cost = 10
-		x = 7
-		y = 15
+		cost = 5
+		x = 15
+		y = 8
 		prerequisite = { focus = DCM_economicprogress}
 		mutually_exclusive = { focus = DCM_marketsocialism }
 		completion_reward = {
@@ -779,9 +691,9 @@ focus_tree = {
 	focus = {
 		id = DCM_unionization
 		icon = generic_construction
-		cost = 10
-		x = 8
-		y = 16
+		cost = 5
+		x = 16
+		y = 9
 		prerequisite = { focus = DCM_syndicalism }
 		completion_reward = {
 			add_ideas = idea_strengthened_unions
@@ -790,9 +702,10 @@ focus_tree = {
 	focus = {
 		id = DCM_lessmilitaryspending
 		icon = allies_infantry
-		cost = 10
-		x = 9
-		y = 17
+		cost = 5
+		x = 16
+		y = 11
+		prerequisite = { focus = DCM_rennovatekaiserpalace }
 		prerequisite = { focus = DCM_unionization }
 		completion_reward = {
 			add_ideas = idea_eng_decreased_military_spending	
@@ -801,9 +714,9 @@ focus_tree = {
 	focus = {
 		id = DCM_rennovatekaiserspalace
 		icon = construct_civilian
-		cost = 10
-		x = 7
-		y = 17
+		cost = 5
+		x = 15
+		y = 10
 		prerequisite = { focus = DCM_unionization }
 		prerequisite = { focus = DCM_decentralizedeconomy }
 		completion_reward = {
@@ -828,9 +741,9 @@ focus_tree = {
 	focus = {
 		id = DCM_industrialdemocracy
 		icon = focus_reorganise_trade_councils
-		cost = 10
-		x = 5
-		y = 17
+		cost = 5
+		x = 13
+		y = 10
 		prerequisite = { focus = DCM_decentralizedeconomy focus = DCM_rapidnationalization }
 		completion_reward = {
 			add_ideas = idea_apc_workers_self_management	
@@ -839,11 +752,11 @@ focus_tree = {
 	focus = {
 		id = DCM_endwageslavery
 		icon = focus_abolish_wages
-		cost = 10
-		x = 7
-		y = 18
+		cost = 5
+		x = 14
+		y = 11
 		prerequisite = { focus = DCM_industrialdemocracy }
-		prerequisite = { focus = DCM_lessmilitaryspending }
+		prerequisite = { focus = DCM_decentralizedeconomy }
 		prerequisite = { focus = DCM_rennovatekaiserspalace }
 		completion_reward = {
 			add_ideas = idea_apc_wage_abolition	
@@ -852,9 +765,9 @@ focus_tree = {
 	focus = {
 		id = DCM_decentralizedeconomy
 		icon = torch_industry
-		cost = 10
-		x = 6
-		y = 16
+		cost = 5
+		x = 14
+		y = 9
 		prerequisite = { focus = DCM_syndicalism }
 		completion_reward = {
 		random_owned_state = {
@@ -918,9 +831,9 @@ focus_tree = {
 	focus = {
 		id = DCM_communaldemocracy
 		icon = focus_uar_syndicalism
-		cost = 10
-		x = 11
-		y = 9
+		cost = 5
+		x = 7
+		y = 8
 		prerequisite = { focus = DCM_politicalprogress }
 		completion_reward = {
 		add_ideas = idea_dis_transition_to_anarchism
@@ -935,10 +848,10 @@ focus_tree = {
 	focus = {
 		id = DCM_directdemocracy
 		icon = focus_direct_democracy
-		cost = 10
-		x = 12
-		y = 10
-		prerequisite = { focus = DCM_communaldemocracy }
+		cost = 5
+		x = 9
+		y = 8
+		prerequisite = { focus = DCM_politicalprogress}
 		completion_reward = {
 		add_ideas = idea_apc_direct_democracy
 		}
@@ -947,10 +860,11 @@ focus_tree = {
 	focus = {
 		id = DCM_decentralization
 		icon = uk_confederation
-		cost = 10
-		x = 10
-		y = 10
+		cost = 5
+		x = 8
+		y = 9
 		prerequisite = { focus = DCM_communaldemocracy }
+		prerequisite = { focus = DCM_directdemocracy }
 		completion_reward = {
 		swap_ideas = {
 		remove_idea = idea_dis_transition_to_anarchism
@@ -963,9 +877,9 @@ focus_tree = {
 	focus = {
 		id = DCM_ananarchistconstitution
 		icon = laws
-		cost = 10
-		x = 9
-		y = 11
+		cost = 5
+		x = 7
+		y = 10
 		prerequisite = { focus = DCM_decentralization }
 		completion_reward = {
 		swap_ideas = {
@@ -979,10 +893,10 @@ focus_tree = {
 	focus = {
 		id = DCM_libertyandbread
 		icon = support_workers
-		cost = 10
-		x = 11
-		y = 11
-		prerequisite = { focus = DCM_directdemocracy focus = DCM_decentralization }
+		cost = 5
+		x = 9
+		y = 10
+		prerequisite = { focus = DCM_decentralization }
 		completion_reward = {
 		add_ideas = idea_dis_liberty_and_bread
 		}
@@ -991,37 +905,13 @@ focus_tree = {
 	focus = {
 		id = DCM_thepeoplesdreamscometrue
 		icon = focus_italian_socialist_international
-		cost = 10
-		x = 11
-		y = 12
-		prerequisite = { focus = DCM_ananarchistconstitution focus = DCM_libertyandbread focus = DCM_freeassociation  }
+		cost = 5
+		x = 8
+		y = 11
+		prerequisite = { focus = DCM_ananarchistconstitution }
+		prerequisite = { focus = DCM_libertyandbread }
 		completion_reward = {
 		remove_ideas = idea_dis_transition_to_anarchism2
-		}
-	
-	}
-	focus = {
-		id = DCM_freeassociation
-		icon = focus_freedom_of_demonstration
-		cost = 10
-		x = 13
-		y = 11
-		prerequisite = { focus = DCM_directdemocracy }
-		completion_reward = {
-		add_stability = -0.1
-		add_popularity = {
-			    ideology = revolutionary_socialist
-			    popularity = 0.12
-		    }
-		add_popularity = {
-			    ideology = moderate_socialist
-			    popularity = 0.03
-		    }
-		add_popularity = {
-			    ideology = new_democrat
-			    popularity = 0.03
-		    }
-		add_political_power = 100
 		}
 	
 	}
@@ -1030,11 +920,12 @@ focus_tree = {
 		id = DCM_middleground
 		icon = ensure_shengo_loyalty
 		cost = 5
-		x = 2
-		y = 10
+		x = 1
+		y = 8
 		prerequisite = { focus = DCM_socialprogress }
 		mutually_exclusive = { focus = DCM_fullandcompleteliberation }
 		completion_reward = {
+			add_stability = 0.05
 			add_political_power = -100
 		}
 	
@@ -1043,13 +934,12 @@ focus_tree = {
 		id = DCM_adividedworkingclass
 		icon = uk_federation
 		cost = 5
-		x = 1
-		y = 11
+		x = 0
+		y = 9
 		prerequisite = { focus = DCM_middleground }
 		completion_reward = {
 			add_war_support = 0.05
 			add_stability = 0.05
-			add_political_power = 100
 		}
 	
 	}
@@ -1057,8 +947,8 @@ focus_tree = {
 		id = DCM_isaunproductiveworkingclass
 		icon = uk_workers_revolution
 		cost =5
-		x = 3
-		y = 11
+		x = 2
+		y = 9
 		prerequisite = { focus = DCM_middleground }
 		completion_reward = {
 			add_ideas = idea_dis_productivity
@@ -1069,8 +959,8 @@ focus_tree = {
 		id = DCM_sopleasestopfighting
 		icon = focus_crisis_in_government
 		cost = 5
-		x = 2
-		y = 12
+		x = 1
+		y = 10
 		prerequisite = { focus = DCM_isaunproductiveworkingclass }
 			prerequisite = { focus = DCM_adividedworkingclass }
 		completion_reward = {
@@ -1082,8 +972,8 @@ focus_tree = {
 		id = DCM_fullandcompleteliberation
 		icon = focus_syria_woman_fighters
 		cost = 5
-		x = 6
-		y = 10
+		x = 5
+		y = 8
 		prerequisite = { focus = DCM_socialprogress }
 		mutually_exclusive = { focus = DCM_middleground}
 		available = {NOT = {has_country_flag = xie_chosen }}
@@ -1096,8 +986,8 @@ focus_tree = {
 		id = DCM_shutupbrocialists
 		icon = focus_demand_assads_resignation
 		cost = 5
-		x = 5
-		y = 11
+		x = 4
+		y = 9
 		prerequisite = { focus = DCM_fullandcompleteliberation }
 		completion_reward = {
 			add_popularity = {
@@ -1110,10 +1000,10 @@ focus_tree = {
 	}
 	focus = {
 		id = DCM_transrights
-		icon = trans_rights
+		icon = focus_freedom_of_demonstration
 		cost = 3
-		x = 7
-		y = 11
+		x = 6
+		y = 9
 		prerequisite = { focus = DCM_fullandcompleteliberation }
 		completion_reward = {
 			add_stability = 0.05
@@ -1128,9 +1018,9 @@ focus_tree = {
 	focus = {
 		id = DCM_ifihadahammeridsmashthepatriarchy
 		icon = focus_workers_self_management
-		cost = 10
-		x = 6
-		y = 12
+		cost = 5
+		x = 5
+		y = 10
 		prerequisite = { focus = DCM_transrights }
 		prerequisite = { focus = DCM_shutupbrocialists }
 		completion_reward = {

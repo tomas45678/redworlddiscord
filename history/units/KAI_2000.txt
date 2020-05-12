@@ -1,0 +1,48 @@
+﻿division_template = {
+	name = "Infantry Division"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+units = {
+
+	division = {
+		name = "Kaiser's Infantry"
+		location = 12910
+		division_template = "Infantry Division"
+		start_experience_factor = 0.7
+	}
+	
+	division = {
+		name = "Kaiser's Infantry"
+		location = 12910
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "Kaiser's Infantry"
+		location = 12910
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Kaiser's Infantry"
+		location = 12910
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+}
