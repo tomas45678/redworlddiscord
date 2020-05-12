@@ -4517,7 +4517,7 @@
 	shared_focus = {
 		id = DCO_suspendtheconstitution
 		icon = comrade_al
-		cost = 8
+		cost = 1
 		x = 3
 		y = 4
 		mutually_exclusive = { focus = DCO_chancelloral }
@@ -4787,21 +4787,21 @@
 	shared_focus = {
 		id = DCO_chancelloral
 		icon = chancellor_al
-		cost = 8
+		cost = 2
 		x = 5
 		y = 4
 		mutually_exclusive = { focus = DCO_suspendtheconstitution }
 		available = {
+		OR = {
 		has_country_leader = { ruling_only = yes name = "al."}
+		has_country_flag = comrade_al_good
+		}
+		NOT = { has_country_flag = comrade_al_bad }
 		} 
 		bypass = {
-		OR = {
-		has_country_flag = comrade_al_good
-		has_country_leader = { ruling_only = yes name = "al."}
-		}
 		}
 		completion_reward = {
-		custom_effect_tooltip = bypass_if_al_good
+		add_political_power = 10
 		}
 	}
 	shared_focus = {
@@ -5605,24 +5605,36 @@
 	shared_focus = {
 		id = DCO_a_bastion_of_the_center
 		icon = shaking_hands_1
-		cost = 8
+		cost = 4
 		x = 15
 		y = 8
 		prerequisite = { focus = DCO_anti_nnrp_propaganda }
 		prerequisite = { focus = DCO_strike_socialist_manifestos }
 		completion_reward = {
-	
+		add_stability = 0.025
+		add_popularity = {
+		ideology = new_democrat
+		popularity = 0.05
+		}
+		add_popularity = {
+		ideology = moderate_socialist
+		popularity = 0.05
+		}
+		add_popularity = {
+		ideology = liberal
+		popularity = 0.025
+		}
 		}
 	}
 	shared_focus = {
 		id = DCO_commonwealth
 		icon = reform_the_commonwealth
-		cost = 8
+		cost = 3
 		x = 16
 		y = 9
 		prerequisite = { focus = DCO_a_bastion_of_the_center }
 		completion_reward = {
-	
+		add_ideas = idea_eng_commonwealth_member
 		}
 	}
 	shared_focus = {
@@ -5668,7 +5680,7 @@
 		prerequisite = { focus = DCO_taxesforthewealthy }
 		prerequisite = { focus = DCO_questionofreligion }
 		completion_reward = {
-	
+		add_ideas = idea_dis_welfare1
 		}
 	}
 	shared_focus = {
@@ -5680,7 +5692,20 @@
 		prerequisite = { focus = DCO_wardoffextremists }
 		prerequisite = { focus = DCO_questionofreligion }
 		completion_reward = {
-	
+			 add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 1
+				uses = 1
+				category = construction_tech
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	shared_focus = {
@@ -5698,13 +5723,21 @@
 	shared_focus = {
 		id = DCO_questionofreligion
 		icon = putins_inauguration
-		cost = 8
+		cost = 5
 		x = 18
 		y = 7
 		prerequisite = { focus = DCO_taxesforthewealthy }
 		prerequisite = { focus = DCO_wardoffextremists }
 		completion_reward = {
-		
+		add_stability = 0.05
+		add_popularity = {
+		ideology = national_bolshevik
+		popularity = -0.05
+		}
+		add_popularity = {
+		ideology = national_conservative
+		popularity = -0.05
+		}
 		}
 	}
 	shared_focus = {
@@ -5716,7 +5749,12 @@
 		prerequisite = { focus = DCO_protectminorities }
 		prerequisite = { focus = DCO_stopracismandsexism }
 		completion_reward = {
-	
+		add_stability = 0.05
+		add_political_power = 50
+		add_popularity = {
+		ideology = liberal
+		popularity = 0.05
+		}
 		}
 	}
 	shared_focus = {
@@ -5745,12 +5783,12 @@
 	shared_focus = {
 		id = DCO_questionofsocialprogress
 		icon = focus_gain_support_of_governors
-		cost = 8
+		cost = 4
 		x = 21
 		y = 6
 		prerequisite = { focus = DCO_newdempolitics focus = DCO_monarchistpolitics }
 		completion_reward = {
-		
+		add_ideas = idea_dis_debates
 		}
 	}
 	shared_focus = {
@@ -5779,7 +5817,7 @@
 		prerequisite = { focus = DCO_socdemwelfarestate }
 		prerequisite = { focus = DCO_increase_regulations }
 		completion_reward = {
-		
+		add_ideas = idea_dis_new_labour_new_economics
 		}
 	}
 	shared_focus = {

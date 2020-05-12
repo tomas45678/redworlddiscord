@@ -2936,6 +2936,25 @@ ideas = {
 				line_change_production_efficiency_factor = 0.075
 			}
 		}
+		idea_dis_new_labour_new_economics = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.03
+				production_factory_max_efficiency_factor = 0.075
+				line_change_production_efficiency_factor = 0.075
+			}
+		}
 		idea_dis_rehabilitation_through_labor = {
 			allowed = {
 				always = no
