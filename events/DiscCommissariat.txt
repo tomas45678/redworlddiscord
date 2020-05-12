@@ -538,7 +538,7 @@ country_event = {
 		}
 		load_focus_tree = discord_otto_tree
 	}
-	option = { 
+	#option = { 
 		name = comm.9.f
 		add_popularity = {
 			    ideology = national_conservative
@@ -557,7 +557,7 @@ country_event = {
 	        ideology = reactionary
         		}
 		}
-	}
+	#}
 }
 country_event = {
 	id = comm.8
@@ -643,6 +643,16 @@ country_event = {
 	option = { 
 		name = comm.21.a
 		add_political_power = 25
+		create_country_leader = {
+	        name = "al."
+	        picture = "Portrait_DIS_Al.dds"
+	        ideology = progressive
+        		}
+		create_country_leader = {
+	        name = "al."
+	        picture = "Portrait_DIS_Al.dds"
+	        ideology = new_democrat_ideology
+        		}
 		hidden_effect = { country_event = { id = comm.22 days = 4 } }
 	}
 	option = { 
@@ -691,7 +701,7 @@ country_event = {
 		elections_allowed = no 
 		}
 	}
-	option = { 
+	#option = { 
 		name = comm.23.b
 		add_popularity = {
 			    ideology =  centrist
@@ -701,7 +711,7 @@ country_event = {
  		ruling_party = centrist
 		elections_allowed = no 
 		}
-	}
+	#}
 	option = { 
 		name = comm.23.c
 		add_popularity = {
@@ -712,8 +722,9 @@ country_event = {
  		ruling_party = national_bolshevik
 		elections_allowed = no 
 		}
+		load_focus_tree = discord_otto_tree
 	}
-	option = { 
+	#option = { 
 		name = comm.23.e
 		add_popularity = {
 			    ideology = revolutionary_socialist
@@ -723,7 +734,7 @@ country_event = {
  		ruling_party = revolutionary_socialist
 		elections_allowed = no 
 		}
-	}
+	#}
 }
 country_event = {
 	id = comm.24
@@ -795,6 +806,16 @@ country_event = {
 			    ideology = moderate_socialist
 			    popularity = 0.05
 		    }	
+		create_country_leader = {
+	        name = "al."
+	        picture = "Portrait_DIS_Al.dds"
+	        ideology = progressive
+        		}
+		create_country_leader = {
+	        name = "al."
+	        picture = "Portrait_DIS_Al.dds"
+	        ideology = new_democrat_ideology
+        		}
 		set_country_flag = comrade_al_good
 	}
 }
@@ -1123,6 +1144,63 @@ country_event = {
 	        picture = "Portrait_DIS_Leol.dds"
 	        ideology = nationalist_ideology
         		}
+	}
+}
+country_event = {
+	id = comm.118
+	title = comm.118.t
+	desc = comm.118.d
+	picture = eugene_debs_day
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.118.a
+		add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = 0.05
+		    }	
+		add_stability = 0.05
+	}
+}
+country_event = {
+	id = comm.119
+	title = comm.119.t
+	desc = comm.119.d
+	picture = white_house_protests
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.119.a
+		add_popularity = {
+			    ideology = national_conservative
+			    popularity = -0.05
+		    }
+		add_popularity = {
+			    ideology = nationalist
+			    popularity = -0.05
+		    }
+	}
+}
+country_event = {
+	id = comm.120
+	title = comm.120.t
+	desc = comm.120.d
+	picture = uk_labour_party
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = comm.120.a
+		add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = -0.05
+		    }	
+		add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = -0.05
+		    }
 	}
 }
 country_event = {

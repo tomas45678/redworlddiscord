@@ -252,7 +252,7 @@ country_event = {
 	id = discord.1
 	title = discord.1.t
 	desc = discord.1.d
-	picture = amy_winehouse_dead
+	picture = assad_refuses_to_leave_palace
 	trigger = {
 	date > 2010.6.1
 	date < 2010.6.13
@@ -1265,13 +1265,13 @@ country_event = {
 	picture = government_prepares_for_war_with_south
 	is_triggered_only = yes
 	
-	option = {  
-		name =  discord.190.a
-		ai_chance = {
-			factor = 100
-		}
-		country_event = discord.19
-		}
+	#option = {  
+	#	name =  discord.190.a
+	#	ai_chance = {
+	#		factor = 100
+	#	}
+	#	country_event = discord.19
+	#	}
 	option = {  
 		name =  discord.190.b
 		ai_chance = {
@@ -2380,32 +2380,6 @@ country_event = {
 		hidden_effect = { country_event = { id = discord.602 days = 26 } } #start of crusade event chain
 		
 		}
-	
-	option = {  
-		name =  discord.110.b
-		ai_chance = {
-			factor = 49
-		}
-		add_political_power = -60
-		add_popularity = {
-			    ideology = national_bolshevik
-			    popularity = 0.03
-		    }
-		hidden_effect = { country_event = { id = discord.600 days = 13 } }
-		hidden_effect = { country_event = { id = discord.601 days = 13 } } #Oskar becomes commissar
-		hidden_effect = { country_event = { id = discord_flavor.1 days = 18 } } #Quartz-Twiggierjet debate
-		hidden_effect = { country_event = { id = discord.602 days = 26 } } #start of crusade event chain
-		}
-	
-	option = {  
-		name =  discord.110.c
-		ai_chance = {
-			factor = 1
-		}
-		add_political_power = 50
-		revome_unit_leader = 9902
-		hidden_effect = { country_event = { id = discord.113 days = 3 } } 
-		}
 	}
 country_event = {
 	id = discord.113
@@ -3224,7 +3198,7 @@ country_event = {
 			    ideology = nationalist
 			    popularity = -0.04
 		    }
-		hidden_effect = { country_event = { id = discord.603 days = 10 } }
+		#hidden_effect = { country_event = { id = discord.603 days = 10 } }
 		
 	}
 }

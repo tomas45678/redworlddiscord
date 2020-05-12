@@ -322,6 +322,63 @@ ideas = {
 				political_power_gain = 0.15
 			}
 		}	
+		idea_dis_centralized_government = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.15
+			}
+		}	
+		idea_dis_centralized_government2 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.25
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}	
+		idea_dis_centralized_government3 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.25
+				national_bolshevik_drift = 0.03
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}	
 		idea_dis_rejecting_the_agrarian_platform = {
 			allowed = {
 				always = no
@@ -472,8 +529,44 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 			
 			modifier = {
-				production_speed_industrial_complex_factor = 0.07
-				consumer_goods_factor = -0.05
+				production_speed_infrastructure_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		idea_dis_local_cooperatives2 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
+		idea_dis_free_speech = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.15
 			}
 		}
 		idea_dis_navy_purged = {
@@ -698,6 +791,64 @@ ideas = {
 			modifier = {
 				stability_factor = 0.05
 				political_power_gain = 0.15
+				research_time_factor = -0.1
+			}
+		}
+		idea_dis_welfare1 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = the_war_to_end_all_wars
+			
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.05
+				research_time_factor = -0.05
+			}
+		}
+		idea_dis_welfare2 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = the_war_to_end_all_wars
+			
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.1
+				research_time_factor = -0.1
+			}
+		}
+		idea_dis_welfare3 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = the_war_to_end_all_wars
+			
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.15
+				industrial_capacity_factory = 0.1
 				research_time_factor = -0.1
 			}
 		}
@@ -1835,6 +1986,45 @@ ideas = {
 				
 			}
 		}
+		idea_dis_welfare_state2 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.025
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				political_power_gain = 0.05
+				
+			}
+		}
+		idea_dis_housing = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				industrial_capacity_factory = 0.04
+				production_speed_industrial_complex_factor = 0.06
+			}
+		}
 		idea_dis_soviet_democracy = {
 			allowed = {
 				always = no
@@ -1932,7 +2122,25 @@ ideas = {
 				
 			}
 		}
-		
+		idea_dis_there_is_only_al = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_national_mobilization_focus
+			
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				drift_defence_factor = 0.25
+			}
+		}
 		
 		idea_dis_catholic_charity = {
 			allowed = {
@@ -1952,6 +2160,24 @@ ideas = {
 				industrial_capacity_factory = 0.05
 
 				
+			}
+		}
+		idea_dis_redistribution = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = -0.05
 			}
 		}
 		idea_dis_stabilization = {
