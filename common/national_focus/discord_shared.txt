@@ -3028,6 +3028,13 @@
 			has_focus_tree = discord_commissar_tree
 		}
 		}
+		offset = {
+		x = -8
+		y = -1
+		trigger = {
+			has_focus_tree = discord_nnrp_tree
+		}
+		}
 		mutually_exclusive = { focus = DIS_leavethecoop }
 		available = {
 		is_in_faction = yes
@@ -3402,6 +3409,13 @@
 			has_focus_tree = discord_commissar_tree
 		}
 		}
+		offset = {
+		x = -8
+		y = -1
+		trigger = {
+			has_focus_tree = discord_nnrp_tree
+		}
+		}
 		mutually_exclusive = { focus = DIS_reaffirmthecoop }
 		available = {
 		date > 2012.1.1
@@ -3547,6 +3561,13 @@
 		y = -1
 		trigger = {
 			has_focus_tree = discord_commissar_tree
+		}
+		}
+		offset = {
+		x = -4
+		y = -1
+		trigger = {
+			has_focus_tree = discord_nnrp_tree
 		}
 		}
 		prerequisite = { focus = DIS_integrateconqueredterritories focus = DIS_operationeuthanasia focus = DIS_operationredscare }
@@ -6404,7 +6425,16 @@
 		y = 1
 		prerequisite = { focus = DCO_longlivethennrp }
 		completion_reward = {
-		country_event = nnrp.1
+		#country_event = nnrp.1
+		add_political_power = 50
+		random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	shared_focus = {
@@ -6415,7 +6445,12 @@
 		y = 1
 		prerequisite = { focus = DCO_longlivethennrp }
 		completion_reward = {
-		country_event = nnrp.2
+		#country_event = nnrp.2
+		add_political_power = 100
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.05
+		}
 		}
 	}
 	shared_focus = {
@@ -7057,9 +7092,13 @@
 		cost = 7
 		x = 20
 		y = 8
-		prerequisite = { focus = DCO_reaching_out_to_the_gang focus = DCO_bring_in_rain }
+		prerequisite = { focus = DCO_reaching_out_to_the_gang focus = DCO_slash_corruption }
 		completion_reward = {
-			
+		add_stability = 0.05
+			add_popularity = {
+			ideology = fascist
+			popularity = -0.1
+		}
 		}
 	}
 	shared_focus = {
@@ -7079,27 +7118,34 @@
 	shared_focus = {
 		id = DCO_no_roleism_with_a_human_face
 		icon = focus_humanity_for_all
-		cost = 8
+		cost = 4
 		x = 21
 		y = 9
-		prerequisite = { focus = DCO_bring_in_rain }
+		prerequisite = { focus = DCO_slash_corruption }
 		completion_reward = {
 		add_ideas = idea_dis_oswaldist_thought
 		}
 	}
 	shared_focus = {
-		id = DCO_bring_in_rain
-		icon = flags_red
-		cost = 3
+		id = DCO_slash_corruption
+		icon = crown_chains
+		cost = 8
 		x = 21
 		y = 7
 		prerequisite = { focus = DCO_oswald }
 		completion_reward = {
-			add_political_power = 50
-			add_popularity = {
-			ideology = revolutionary_socialist
-			popularity = 0.05
-			}
+			add_ideas = idea_dis_root_out_corruption
+		}
+	}
+	shared_focus = {
+		id = DCO_revise_the_anti_progressive_platforms
+		icon = focus_demand_assads_resignation
+		cost = 8
+		x = 23
+		y = 7
+		prerequisite = { focus = DCO_oswald }
+		completion_reward = {
+			add_ideas = idea_dis_social_revision
 		}
 	}
 	shared_focus = {

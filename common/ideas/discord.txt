@@ -551,6 +551,45 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.15
 			}
 		}
+		idea_dis_root_out_corruption = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				political_power_gain = 0.15
+				production_speed_infrastructure_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		idea_dis_oswaldist_thought = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				stability_factor = 0.05
+				revolutionary_socialist_drift = 0.01
+				moderate_socialist_drift = 0.01
+				national_bolshevik_drift = 0.01
+			}
+		}
 		idea_dis_free_speech = {
 			allowed = {
 				always = no
@@ -2758,6 +2797,25 @@ ideas = {
 				political_power_gain = 0.07
 				conscription = 0.02
 			
+		}
+		}
+		idea_dis_social_revision = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.05
+				army_morale_factor = 0.05
 		}
 		}
 		idea_dis_hate_speech_banned = {
