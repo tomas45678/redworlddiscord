@@ -447,7 +447,7 @@ country_event = {
 		hidden_effect = { country_event = { id = comm.6 days = 4 } }
 	}
 	option = { 
-		name = comm.5.d
+		name = comm.5.e
 		create_country_leader = {
 	        name = "Limonade"
 	        picture = "Portrait_DIS_Limonade.dds"
