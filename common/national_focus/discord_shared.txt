@@ -5192,9 +5192,11 @@
 		y = 4
 		available = {
 		has_country_leader = { ruling_only = yes name = "Limonade" } 
+		has_country_flag = labour_elected
 		} 
 		bypass = {
 		has_country_leader = { ruling_only = yes name = "Limonade" } 
+		has_country_flag = labour_elected
 		}
 		completion_reward = {
 		custom_effect_tooltip = bypass_if_limonade
