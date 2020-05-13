@@ -858,6 +858,7 @@ country_event = {
  		ruling_party = monarchist
 		elections_allowed = no 
 		}
+		load_focus_tree=discord_kaiser_legochiel_tree
 	}
 }
 country_event = {
