@@ -362,7 +362,7 @@
 		prerequisite = { focus = DIS_thosewhomustdie }
 		prerequisite = { focus = DIS_revolutionaryzeal }
 		available = {
-		has_completed_focus = DIS_ensurepoliticalpower
+		has_completed_focus = DIS_stabilization
 		}
 		mutually_exclusive = {
 		focus = DIS_shatter_the_coalition
@@ -474,7 +474,7 @@
 		cost = 5
 		x = 14
 		y = 14
-		prerequisite = { focus = DIS_dealwithparytbrocialists}
+		prerequisite = { focus = DIS_dealwithpartybrocialists}
 		available = { has_country_flag = otto_dead }
 		completion_reward = {
 		country_event = { id = discord.125 }
@@ -631,7 +631,7 @@
 
 	}
 	shared_focus = {
-		id = DIS_preparetoliberateaustralia
+		id = DIS_everything_for_the_state
 		icon = australia_attack
 		cost = 8
 		x = 7
@@ -2523,7 +2523,7 @@
 		prerequisite = { focus = DIS_votesfornoroles }
 		completion_reward = {
 		add_war_support = 0.05
-		add_stabiity = 0.025
+		add_stability = 0.025
 		  add_popularity = {
 			    ideology = revolutionary_socialist
 			    popularity = -0.07
@@ -4282,7 +4282,7 @@
 		x = 8
 		y = 6
 		prerequisite = { focus = DCO_statusquodebates focus = DCO_endthedebates  }
-		mutuly_exclusive = { focus = DCO_endthedebates }
+		mutually_exclusive = { focus = DCO_endthedebates }
 		select_effect = {
 			country_event = { id = comm.107 days = 3 }
 		}
@@ -5192,9 +5192,11 @@
 		y = 4
 		available = {
 		has_country_leader = { ruling_only = yes name = "Limonade" } 
+		has_country_flag = labour_elected
 		} 
 		bypass = {
 		has_country_leader = { ruling_only = yes name = "Limonade" } 
+		has_country_flag = labour_elected
 		}
 		completion_reward = {
 		custom_effect_tooltip = bypass_if_limonade
@@ -5520,7 +5522,22 @@
 			    ideology = new_democrat
 			    popularity = 0.1
 		    }
+		if {
+			limit = { has_completed_focus = DCO_chancellorlim }
+				create_country_leader = {
+				name = "Limonade"
+				picture = "Portrait_DIS_Limonade.dds"
+				ideology = new_democrat_ideology
+					}
 		}
+		else {
+			create_country_leader = {
+			name = "Chancellor Al"
+	        picture = "Portrait_DIS_Albert.dds"
+	        ideology = new_democrat_ideology
+			}
+	}
+	}
 	}
 	shared_focus = {
 		id = DCO_newdempolitics
