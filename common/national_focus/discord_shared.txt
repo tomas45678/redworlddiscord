@@ -89,6 +89,7 @@
 		mutually_exclusive = { focus = DIS_thethotpatrolconvenesoncemore focus = DIS_alsplot }
 		prerequisite = { focus = DIS_deathofkaiser }
 		completion_reward = {
+			load_focus_tree = discord_kaiser_legochiel_tree
 		   country_event = comm.102
 		   custom_effect_tooltip = new_focus_tree
 		}
@@ -1650,7 +1651,7 @@
 		id = DIS_owliechosen
 		icon = owlie
 		cost = 3
-		x = 12
+		x = 26
 		y = 0
 		available = {
 		}
@@ -1660,12 +1661,261 @@
 
 	}
 	shared_focus = {
+		id = DIS_embrace_the_fanfork_league
+		icon = meet_with_the_queen
+		cost = 5
+		x = 40
+		y = 1
+		prerequisite = { focus = DIS_owliechosen }
+		mutually_exclusive = { focus = DIS_support_republicanism }
+		completion_reward = {
+		country_event = discord.603
+		set_party_name = { ideology = monarchist name = DIS_kaiserist_party long_name = DIS_kaiserist_party }
+		}
+
+	}
+	shared_focus = {
+		id = DIS_bring_in_new_advisors
+		icon = one_coalition
+		cost = 5
+		x = 39
+		y = 2
+		prerequisite = { focus = DIS_embrace_the_fanfork_league }
+		completion_reward = {
+		country_event = discord.604
+		}
+
+	}
+	shared_focus = {
+		id = DIS_infiltrate_the_fanfork_league
+		icon = empower_the_house_of_lords
+		cost = 5
+		x = 41
+		y = 2
+		prerequisite = { focus = DIS_embrace_the_fanfork_league }
+		completion_reward = {
+		add_stability = -0.05
+		swap_ideas = {
+		remove_idea = idea_dis_the_discordian_oligarchy
+		add_idea = idea_dis_new_advisors
+		}
+		}
+
+	}
+	shared_focus = {
+		id = DIS_in_kaisers_name
+		icon = kaisers_letter
+		cost = 5
+		x = 40
+		y = 3
+		prerequisite = { focus = DIS_bring_in_new_advisors }
+		prerequisite = { focus = DIS_infiltrate_the_fanfork_league }
+		completion_reward = {
+		add_ideas = idea_dis_in_kaisers_name
+		}
+
+	}
+	shared_focus = {
+		id = DIS_stir_up_monarchist_support
+		icon = democracy
+		cost = 5
+		x = 39
+		y = 4
+		prerequisite = { focus = DIS_bring_in_new_advisors }
+		prerequisite = { focus = DIS_in_kaisers_name }
+		completion_reward = {
+		add_timed_idea = { idea = idea_dis_monarchist_surge days = 80 }
+		}
+
+	}
+	shared_focus = {
+		id = DIS_form_new_commissariat
+		icon = royal_institutions
+		cost = 5
+		x = 41
+		y = 4
+		prerequisite = { focus = DIS_infiltrate_the_fanfork_league }
+		prerequisite = { focus = DIS_in_kaisers_name }
+		completion_reward = {
+		country_event = discord.605
+		
+		}
+
+	}
+	shared_focus = {
+		id = DIS_begin_national_reconstruction
+		icon = focus_crown_the_new_king
+		cost = 8
+		x = 40
+		y = 5
+		prerequisite = { focus = DIS_stir_up_monarchist_support }
+		prerequisite = { focus = DIS_form_new_commissariat }
+		completion_reward = {
+		country_event = discord.606
+		random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	shared_focus = {
+		id = DIS_elections_for_pm
+		icon = focus_coalition_with_populists
+		cost = 8
+		x = 40
+		y = 6
+		prerequisite = { focus = DIS_begin_national_reconstruction }
+		completion_reward = {
+		country_event = discord.607
+		add_popularity = {
+		ideology = monarchist
+		popularity = -0.15
+		}
+		hidden_effect = {
+		set_party_name = { ideology = moderate_socialist name = DIS_ms_fanfork_party long_name = DIS_ms_fanfork_party_long }
+		set_party_name = { ideology = nationalist name = DIS_ns_fanfork_party long_name = DIS_ns_fanfork_party_long }
+		set_party_name = { ideology = national_conservative name = DIS_nc_fanfork_party long_name = DIS_nc_fanfork_party_long }
+		}
+		}
+	}
+	shared_focus = {
+		id = DIS_president_georgeki5
+		icon = flags_light_blue
+		cost = 5
+		x = -7
+		y = 1
+		relative_position_id = DIS_elections_for_pm
+		prerequisite = { focus = DIS_elections_for_pm }
+		completion_reward = {
+		add_political_power = 45
+		add_popularity = {
+		ideology = national_conservative
+		popularity = 0.07
+		}
+		}
+	}
+	shared_focus = {
+		id = DIS_anti_communist_foreign_policy
+		icon = focus_arrest_the_communist_party
+		cost = 4
+		x = -9
+		y = 2
+		relative_position_id = DIS_elections_for_pm
+		prerequisite = { focus = DIS_president_georgeki5 }
+		completion_reward = {
+		add_war_support = 0.05
+		add_popularity = {
+		ideology = communist
+		popularity = -0.05
+		}
+		add_popularity = {
+		ideology = revolutionary_socialist
+		popularity = -0.05
+		}
+		}
+	}
+	shared_focus = {
+		id = DIS_support_royalist_movements
+		icon = foreign_office
+		cost = 6
+		x = -10
+		y = 3
+		relative_position_id = DIS_elections_for_pm
+		prerequisite = { focus = DIS_anti_communist_foreign_policy }
+		completion_reward = {
+		
+		}
+	}
+	shared_focus = {
+		id = DIS_meet_with_generals
+		icon = tanks
+		cost = 8
+		x = -8
+		y = 3
+		relative_position_id = DIS_elections_for_pm
+		prerequisite = { focus = DIS_anti_communist_foreign_policy }
+		completion_reward = {
+		
+		}
+	}
+	shared_focus = {
+		id = DIS_arms_factory_program
+		icon = scottish_military_industry
+		cost = 8
+		x = -9
+		y = 4
+		relative_position_id = DIS_elections_for_pm
+		prerequisite = { focus = DIS_support_royalist_movements }
+		prerequisite = { focus = DIS_meet_with_generals }
+		completion_reward = {
+		
+		}
+	}
+	shared_focus = {
+		id = DIS_president_thugbagel
+		icon = flags_orange
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = DIS_elections_for_pm
+		prerequisite = { focus = DIS_elections_for_pm }
+		completion_reward = {
+		add_political_power = 45
+		add_popularity = {
+		ideology = nationalist
+		popularity = 0.07
+		}
+		}
+	}
+	shared_focus = {
+		id = DIS_president_cacticer
+		icon = flags_purple
+		cost = 5
+		x = 7
+		y = 1
+		relative_position_id = DIS_elections_for_pm
+		prerequisite = { focus = DIS_elections_for_pm }
+		completion_reward = {
+		add_political_power = 45
+		add_popularity = {
+		ideology = nationalist
+		popularity = 0.07
+		}
+		}
+	}
+	shared_focus = {
+		id = DIS_support_republicanism
+		icon = focus_commonwealth_democratic_rule
+		cost = 5
+		x = 12
+		y = 1
+		prerequisite = { focus = DIS_owliechosen }
+		mutually_exclusive = { focus = DIS_embrace_the_fanfork_league }
+		completion_reward = {
+		add_stability = 0.05
+		}
+
+	}
+	shared_focus = {
 		id = DIS_democracyofthecommissariat
 		icon = focus_american_house_bill
 		cost = 5
 		x = 11
-		y = 1
-		prerequisite = { focus = DIS_owliechosen }
+		y = 2
+		prerequisite = { focus = DIS_support_republicanism }
 		mutually_exclusive = { focus = DIS_democracyofthepeople }
 		completion_reward = {
 		add_political_power = 100
@@ -1681,8 +1931,8 @@
 		icon = focus_enforce_1990_constitution
 		cost = 5
 		x = 13
-		y = 1
-		prerequisite = { focus = DIS_owliechosen }
+		y = 2
+		prerequisite = { focus = DIS_support_republicanism }
 		mutually_exclusive = { focus = DIS_democracyofthecommissariat }
 		completion_reward = {
 		add_political_power = -100
@@ -1698,7 +1948,7 @@
 		icon = ideology_fist
 		cost = 5
 		x = 11
-		y = 2
+		y = 3
 		prerequisite = { focus = DIS_democracyofthecommissariat }
 		completion_reward = {
 		add_ideas = idea_dis_strong_judicial_system
@@ -1710,7 +1960,7 @@
 		icon = democracy
 		cost = 5
 		x = 13
-		y = 2
+		y = 3
 		prerequisite = { focus = DIS_democracyofthepeople }
 		completion_reward = {
 		add_ideas = idea_dis_pink_name_support
@@ -1722,7 +1972,7 @@
 		icon = focus_solidarity_front_government
 		cost = 8
 		x = 12
-		y = 3
+		y = 4
 		prerequisite = { focus = DIS_strengthenthejusticesystem focus = DIS_unbanpoliticalprisoners }
 		completion_reward = {
 		add_ideas = idea_dis_civil_rights
@@ -1734,7 +1984,7 @@
 		icon = focus_gain_support_of_governors
 		cost = 4
 		x = 14
-		y = 3
+		y = 4
 		prerequisite = { focus = DIS_restorefreedomofspeech}
 		completion_reward = {
 		add_ideas = idea_dis_debates
@@ -1746,7 +1996,7 @@
 		icon = dangerous_deal
 		cost = 5
 		x = 16
-		y = 3
+		y = 4
 		prerequisite = { focus = DIS_restorefreedomofspeech}
 		completion_reward = {
 		add_popularity = {
@@ -1766,7 +2016,7 @@
 		icon = abolish_workers_party
 		cost = 5
 		x = 8
-		y = 3
+		y = 4
 		prerequisite = { focus = DIS_acoalitionofcommissars }
 		completion_reward = {
 		add_popularity = {
@@ -1785,7 +2035,7 @@
 		icon = focus_spread_democracy
 		cost = 5
 		x = 10
-		y = 3
+		y = 4
 		prerequisite = { focus = DIS_acoalitionofcommissars}
 		completion_reward = {
 		add_popularity = {
@@ -1804,7 +2054,7 @@
 		icon = laws
 		cost = 8
 		x = 12
-		y = 4
+		y = 5
 		prerequisite = { focus = DIS_restorecivilrights }
 		prerequisite = { focus = DIS_freeandopendebate focus = DIS_meetwiththennrp focus = DIS_challengethecathbols focus = DIS_challengetheextremists }
 		completion_reward = {
@@ -1818,7 +2068,7 @@
 		icon = focus_freedom_of_demonstration
 		cost = 5
 		x = 15
-		y = 2
+		y = 3
 		prerequisite = { focus = DIS_democracyofthepeople }
 		completion_reward = {
 		add_stability = 0.05
@@ -1830,7 +2080,7 @@
 		icon = manipulate_swedish_banks
 		cost = 4
 		x = 9
-		y = 2
+		y = 3
 		prerequisite = { focus = DIS_democracyofthecommissariat }
 		completion_reward = {
 		country_event = discord_flavor.504
@@ -2163,7 +2413,7 @@
 		icon = flags_yellow
 		cost = 5
 		x = 12
-		y = 6
+		y = 7
 		prerequisite = { focus = DIS_holdthefirstelections }
 		available = {has_government = new_democrat}
 		completion_reward = {

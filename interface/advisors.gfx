@@ -2177,4 +2177,20 @@ spriteTypes = {
     name = "GFX_idea_discord_idea_jack_hoxha"
     texturefile = "gfx/interface/ideas/advisors/discord/discord_idea_jack_hoxha.dds"
   }
+  spriteType = {
+    name = "GFX_idea_discord_idea_tinjim"
+    texturefile = "gfx/interface/ideas/advisors/discord/discord_idea_tinjim.dds"
+  }
+  spriteType = {
+    name = "GFX_idea_discord_idea_durnell"
+    texturefile = "gfx/interface/ideas/advisors/discord/discord_idea_durnell.dds"
+  }
+  spriteType = {
+    name = "GFX_idea_discord_idea_brutus_mars"
+    texturefile = "gfx/interface/ideas/advisors/discord/discord_idea_brutus_mars.dds"
+  }
+  spriteType = {
+    name = "GFX_idea_dis_owlgustus_i"
+    texturefile = "gfx/interface/ideas/advisors/discord/idea_dis_owlgustus_i.dds"
+  }
 }

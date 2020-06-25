@@ -1839,6 +1839,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		load_focus_tree = kaiser_legochiel_tree
 		add_stability = -0.12
 		set_politics = {
  		ruling_party = nationalist
@@ -1898,7 +1899,7 @@ country_event = {
 			}
 			set_country_flag = wilf_chosen
 			custom_effect_tooltip = wilf_leads
-			country_event = { id = discord.116 days = 1 }
+			country_event = { id = discord.117 days = 1 }
 		}
 		if = {
 			limit = {
@@ -1907,7 +1908,7 @@ country_event = {
 			}
 			set_country_flag = owlie_chosen
 			custom_effect_tooltip = owlie_leads
-			country_event = { id = discord.117 days = 1 }	
+			country_event = { id = discord.116 days = 1 }	
 		}
 		if = {
 			limit = {
@@ -3187,7 +3188,6 @@ country_event = {
 			    ideology = nationalist
 			    popularity = -0.04
 		    }
-		#hidden_effect = { country_event = { id = discord.603 days = 10 } }
 		
 	}
 }
@@ -3195,7 +3195,7 @@ country_event = {
 	id = discord.603
 	title = discord.603.t
 	desc = discord.603.d
-	picture = india_dem_for_tibet_exile
+	picture = egypt_meeting
 	is_triggered_only = yes
 	
 	option = {  
@@ -3203,17 +3203,19 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		
-		hidden_effect = { country_event = { id = discord.604 days = 2 } }
+		add_stability = 0.025
+		add_popularity = {
+			    ideology = monarchist
+			    popularity = 0.05
+		    }
 		
 	}
-
 }
 country_event = {
 	id = discord.604
 	title = discord.604.t
 	desc = discord.604.d
-	picture = india_dem_for_tibet_exile
+	picture = india_corruption_cabinet_on_trial
 	is_triggered_only = yes
 	
 	option = {  
@@ -3221,26 +3223,131 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		add_political_power = -50
 		add_popularity = {
-			    ideology = nationalist
-			    popularity = 0.04
+			    ideology = national_bolshevik
+			    popularity = 0.03
+		    }
+		add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = 0.03
+		    }
+		add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = 0.03
 		    }
 		
-		
 	}
+}
+country_event = {
+	id = discord.605
+	title = discord.605.t
+	desc = discord.605.d
+	picture = sanders_resigns_as_governor
+	is_triggered_only = yes
+	
 	option = {  
-		name =  discord.604.b
+		name =  discord.605.a
 		ai_chance = {
 			factor = 100
 		}
-		add_stability = -0.05
-		add_political_power = 50
+		add_political_power = 100
 		add_popularity = {
-			    ideology = nationalist
-			    popularity = -0.04
-		    }
+		ideology = moderate_socialist
+		popularity = 0.05
+		}
+		add_popularity = {
+		ideology = monarchist
+		popularity = 0.05
+		}
 		
-		
+	}
+}
+country_event = {
+	id = discord.606
+	title = discord.606.t
+	desc = discord.606.d
+	picture = victor_emmanuel_iv_coronation
+	is_triggered_only = yes
+	
+	option = {  
+		name =  discord.606.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = idea_dis_owlgustus_i
+		set_politics = {
+		ruling_party = monarchist
+		}
+		add_popularity = {
+		ideology = monarchist
+		popularity = 0.1
+		}
+		create_country_leader = {
+	        name = "P.M. ThugBagel"
+	        picture = "Portrait_DIS_ThugBagel.dds"
+	        ideology = absolute_monarchist
+        		}
+	}
+}
+country_event = {
+	id = discord.607
+	title = discord.607.t
+	desc = discord.607.d
+	picture = syndicates_leader_election
+	is_triggered_only = yes
+	
+	option = {  
+		name =  discord.607.a
+		ai_chance = {
+			factor = 100
+		}
+		set_politics = {
+		ruling_party = nationalist
+		}
+		add_popularity = {
+		ideology = nationalist
+		popularity = 0.1
+		}
+		create_country_leader = {
+	        name = "P.M. ThugBagel"
+	        picture = "Portrait_DIS_ThugBagel.dds"
+	        ideology = nationalist_ideology
+        		}
+	}
+	option = {  
+		name =  discord.607.b
+		ai_chance = {
+			factor = 100
+		}
+		set_politics = {
+		ruling_party = moderate_socialist
+		}
+		add_popularity = {
+		ideology = moderate_socialist
+		popularity = 0.1
+		}
+		create_country_leader = {
+	        name = "P.M. Cacticer"
+	        picture = "Portrait_DIS_Cacticer.dds"
+	        ideology = democratic_socialist
+        		}
+	}
+	option = {  
+		name =  discord.607.c
+		ai_chance = {
+			factor = 100
+		}
+		set_politics = {
+		ruling_party = national_conservative
+		}
+		add_popularity = {
+		ideology = national_conservative
+		popularity = 0.1
+		}
+		create_country_leader = {
+	        name = "P.M. Georgeki5"
+	        picture = "Portrait_DIS_Georgeki5.dds"
+	        ideology = european_conservative
+        		}
 	}
 }

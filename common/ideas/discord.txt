@@ -1846,6 +1846,43 @@ ideas = {
 				industrial_capacity_factory = 0.05
 				}
 		}
+		idea_dis_in_kaisers_name = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				army_org_factor = 0.05
+				war_support_factor = 0.05
+				industrial_capacity_factory = 0.05
+				}
+		}
+		idea_dis_monarchist_surge = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				liberal_drift = -0.03
+				monarchist_drift = 0.05
+				}
+		}
 		idea_dis_the_discordian_oligarchy = {
 			allowed = {
 				always = no
@@ -1864,6 +1901,44 @@ ideas = {
 				political_power_gain = 0.12
 				consumer_goods_factor = 0.05
 				industrial_capacity_factory = 0.05
+				}
+		}
+		idea_dis_new_advisors = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				monarchist_drift = 0.03
+				stability_factor = 0.05
+				political_power_gain = 0.12
+				industrial_capacity_factory = 0.05
+				}
+		}
+		idea_dis_owlgustus_i = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = dis_owlgustus_i
+			
+			modifier = {
+				monarchist_drift = 0.01
+				stability_factor = 0.04
 				}
 		}
 		idea_dis_cathbol_control = {
@@ -3404,13 +3479,30 @@ second_in_command = {
 			
 			available = {
 			    OR = {
-					has_completed_focus = DCO_economicministerjackhoxha
 					has_government = national_bolshevik
 					has_government = communist
 				} 
 			}
 			
 			traits = { administrative_genius }			
+		}
+		discord_idea_durnell = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			     OR = {
+				    	has_government = revolutionary_socialist
+				    	has_government = moderate_socialist
+				    	has_government = new_democrat
+				    	has_government = liberal
+				    	has_government = centrist
+				} 
+			}
+			
+			traits = { ambitious_union_boss }			
 		}
 	    discord_sic_megakiller = {
 		
@@ -3475,7 +3567,24 @@ second_in_command = {
 			
 			traits = { novice_mastermind }			
 		}
+		discord_idea_tinjim = {
 		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			   OR = {
+				    	has_government = revolutionary_socialist
+				    	has_government = moderate_socialist
+				    	has_government = new_democrat
+				    	has_government = liberal
+				    	has_government = centrist
+				} 
+			}
+			
+			traits = { novice_mastermind }			
+		}
 	 discord_idea_mossy = {
 		
 		    allowed = {
@@ -3553,6 +3662,24 @@ second_in_command = {
 			available = {
 			    OR = {
 				    	has_government = national_bolshevik
+				} 
+			}
+			
+			traits = { political_protege }			
+		}
+		 discord_idea_brutus_mars = {
+		
+		    allowed = {
+			    original_tag = DIS
+			}
+			
+			available = {
+			    OR = {
+				    	has_government = revolutionary_socialist
+				    	has_government = moderate_socialist
+				    	has_government = new_democrat
+				    	has_government = liberal
+				    	has_government = centrist
 				} 
 			}
 			
