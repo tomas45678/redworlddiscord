@@ -35,48 +35,26 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		fascist = {
-			popularity = 4
-		}
-		nationalist = {
-			popularity = 18
-		}
-		monarchist = {
-			popularity = 14
-		}
-		national_bolshevik = {
-			popularity = 13
-		}
-		national_conservative = {
-			popularity = 4
-		}
-		centrist = {
-			popularity = 0
-		}
-		liberal = {
-			popularity = 5
-		}
-		new_democrat = {
-			popularity = 6
-		}
-		moderate_socialist = {
-			popularity = 12
-		}
-		revolutionary_socialist = {
-			popularity = 16
-		}
-		communist = {
-			popularity = 8
-		}
-	}
-	
 	ruling_party = monarchist
 	last_election = "1997.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
+set_popularities = {
+		fascist = 4
+		nationalist = 18
+		monarchist = 14
+		national_bolshevik = 13
+		national_conservative = 4
+		centrist = 0
+		liberal = 5
+		new_democrat = 6
+		moderate_socialist = 12
+		revolutionary_socialist = 16
+		communist = 8
+	}
+	
+	
 
 add_ideas = {
 	idea_dis_fascist_underground
