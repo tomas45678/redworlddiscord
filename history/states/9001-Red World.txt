@@ -1,6 +1,6 @@
 state={
-	id=973
-	name="STATE_973"
+	id=1047
+	name="STATE_1047"
 	history={
 		owner = DIS
 		add_core_of = DIS

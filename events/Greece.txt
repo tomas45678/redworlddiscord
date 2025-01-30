@@ -145,7 +145,7 @@ country_event = {
 			factor = 100
 		}
 		hidden_effect = { country_event = { id = commiechat.5 days = 5 } } 
-
+	}
 	option = {  
 		name =  commiechat.4.b
 		ai_chance = {
@@ -153,7 +153,6 @@ country_event = {
 		}
 		hidden_effect = { country_event = { id = commiechat.6 days = 5 } } 
 		}
-}
 }
 country_event = {
 	id = commiechat.5
@@ -163,7 +162,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {  
-		name =  commiechat.5.a
+		name = commiechat.5.a
 		ai_chance = {
 			factor = 100
 		}
@@ -186,7 +185,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {  
-		name =  commiechat.3.a
+		name = commiechat.3.a
 		ai_chance = {
 			factor = 100
 		}
