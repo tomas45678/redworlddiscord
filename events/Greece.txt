@@ -2029,7 +2029,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Merox"
 	        picture = "Portrait_DIS_Merox.dds"
-	        ideology = marxism
+	        ideology = marxist
         		}
 		add_stability = -0.07
 		add_political_power = -50	
@@ -2042,7 +2042,7 @@ country_event = {
 		create_country_leader = {
 	        name = "Zandrax"
 	        picture = "Portrait_DIS_Zandrax.dds"
-	        ideology = marxism
+	        ideology = marxist
         		}
 		add_stability = -0.07
 		add_political_power = 50	

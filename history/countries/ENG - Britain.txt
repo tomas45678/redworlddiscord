@@ -76,7 +76,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Richard Paul Astley"
 	picture = "Portrait_ENG_Rick_Astley.dds"
-	ideology = hoxhaist
+	ideology = stalinist
 }
 
 create_country_leader = {
