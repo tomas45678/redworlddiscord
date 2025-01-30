@@ -2,6 +2,106 @@ ideas = {
 
 	#### Generic ####
 	country = {
+		idea_war_reparations_pos = {
+		picture = consumer_goods_pos
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+				political_power_gain = 0.10
+			}
+		}
+		idea_war_reparations_neg = {
+		picture = consumer_goods_neg
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+				political_power_gain = -0.10
+			}
+		}
+		received_attache = {
+		picture = send_attache
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.02
+				planning_speed = 0.10
+			}
+		}
+
+		military_intervention = {
+		picture = combined_army
+			
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_offensive_war = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				cannot_call_allies_or_join_wars = 1
+				trade_opinion_factor = -0.1
+			}
+		}
+
+		idea_empowered_militias = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = combined_army
+
+			modifier = {
+				stability_factor = -0.035
+				army_morale_factor = 0.05
+				training_time_army_factor = -0.10
+				modifier_army_sub_unit_militia_defence_factor = 0.035
+				modifier_army_sub_unit_militia_attack_factor = 0.035
+			}
+		}
+
 		idea_weapons_for_the_resistance = {
 
 			allowed = {
@@ -21,6 +121,92 @@ ideas = {
 				resistance_damage_to_garrison_on_our_occupied_states = 0.25 
 			}
 		}
+		idea_america_neutrality = {
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+	
+			picture = isolation_usa
+			
+			modifier = {
+				custom_modifier_tooltip = idea_america_neutrality_tt
+			}
+		}
+		idea_america_neutrality_statelet = {
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+	
+			picture = isolation_usa_statelet
+			
+			modifier = {
+				custom_modifier_tooltip = idea_america_neutrality_statelet_tt
+			}
+		}
+		special_project_consumer_costs_high = { 
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			picture = generic_industrial_concern_1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		special_project_consumer_costs_medium = { 
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			picture = generic_industrial_concern_1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		special_project_consumer_costs_low = { 
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			picture = generic_industrial_concern_1
+			
+			modifier = {
+				consumer_goods_factor = 0.025
+			}
+		}
 	}
 
     #### Organisations #### 
@@ -35,10 +221,252 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_gain = -0.6
+				political_power_gain = -0.3
 				industrial_capacity_factory = 0.2
 				production_speed_industrial_complex_factor = 0.05
 				
+			}
+		}
+          idea_eu_observer = {
+            picture = eu_observer
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.3
+				industrial_capacity_factory = 0.1
+				production_speed_industrial_complex_factor = 0.05
+				
+			}
+		}
+		idea_comecon_member = {
+        
+            removal_cost = -1
+            
+            allowed = {
+                always = no # Added via focus
+            }
+
+            allowed_civil_war = {
+            }
+            
+			available = {
+				country_exists = SOV
+				SOV = {
+					has_government = communist
+				}
+				NOT = {
+					has_war_with = SOV
+				}
+			}
+			
+            modifier = {
+                industrial_capacity_factory = 0.15
+                production_factory_efficiency_gain_factor = -0.05
+            }
+        }
+        idea_comecon_cooperant = {
+        
+            removal_cost = -1
+            
+            allowed = {
+                always = no # Added via focus
+            }
+
+            allowed_civil_war = {
+            }
+            
+			available = {
+				country_exists = SOV
+				SOV = {
+					has_government = communist
+				}
+				NOT = {
+					has_war_with = SOV
+				}
+			}
+			
+            modifier = {
+                industrial_capacity_factory = 0.1
+            }
+        }
+		idea_comecon_observer = {
+        
+            removal_cost = -1
+            
+            allowed = {
+                always = no # Added via focus
+            }
+
+            allowed_civil_war = {
+            }
+            
+			available = {
+				country_exists = SOV
+				SOV = {
+					has_government = communist
+				}
+				NOT = {
+					has_war_with = SOV
+				}
+			}
+			
+            modifier = {
+                industrial_capacity_factory = 0.05
+            }
+        }
+		idea_east_african_community = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = EAC
+
+			modifier = {
+				political_power_gain = -0.2
+				industrial_capacity_factory = 0.1
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		idea_ASEAN = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ASEAN
+
+			modifier = {
+				political_power_gain = -0.2
+				industrial_capacity_factory = 0.1
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		idea_caribbean_community = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = carribean_community
+
+			modifier = {
+				political_power_gain = -0.2
+				industrial_capacity_factory = 0.1
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		idea_andean_community = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = andean_community
+
+			modifier = {
+				political_power_gain = -0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		idea_pacific_islands_forum = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = pacific_islands_forum
+
+			modifier = {
+				political_power_gain = -0.15
+				industrial_capacity_factory = 0.05
+				send_volunteer_factor = 0.5
+			}
+		}
+		idea_organization_of_african_unity = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = african_union
+
+			modifier = {
+				political_power_gain = -0.05
+				send_volunteer_factor = 0.5
+				embargo_threshold_factor = -0.5
+			}
+		}
+		idea_southern_african_customs_union = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = idea_SACU
+
+			modifier = {
+				political_power_gain = -0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		idea_economic_community_of_west_african_states = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ECOWAS
+
+			modifier = {
+				political_power_gain = -0.25
+				industrial_capacity_factory = 0.1
+				production_speed_industrial_complex_factor = 0.05
+				send_volunteer_factor = 0.5
 			}
 		}
 	}
@@ -69,15 +497,115 @@ ideas = {
 			}
 		}
 	}
-	
-	
 
     #### Country #### 
 	
 	country = {
-	    
+		
+		idea_nationalism_promoted = {
+			picture = nationalist_military
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				nationalist_drift = 0.04
+			}
+		}
+
+		idea_fascism_promoted = {
+			picture = new_order
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				fascist_drift = 0.04
+			}
+		}
+
+		idea_monarchism_promoted = {
+			picture = royal_rule
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				monarchist_drift = 0.04
+			}
+		}
+
+		idea_revsoc_promoted = {
+			picture = generic_worker
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				revolutionary_socialist_drift = 0.04
+			}
+		}
+
+		idea_communism_promoted = {
+			picture = red_economy
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				communist_drift = 0.04
+			}
+		}
+
+		idea_nazbol_promoted = {
+			picture = national_bolshevism
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				national_bolshevik_drift = 0.04
+			}
+		}
+		
 		idea_supply_focus = {
-			picture = self_sufficiency
+			picture = supplies
 			allowed = {
 				always = no
 			}
@@ -114,7 +642,7 @@ ideas = {
 		}
 		
 		idea_strengthening_our_borders = {
-			picture = building_defences
+			picture = strong_borders
 			allowed = {
 				always = no
 			}
@@ -131,7 +659,7 @@ ideas = {
 		}
 		
 		idea_corporate_cooperation = {
-			picture = mafia_crime
+			picture = corporate
 			allowed = {
 				always = no
 			}
@@ -143,11 +671,12 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.10
 			}
 		}
 		
 		idea_government_knows_best = {
+			picture = government_knows_best
 			allowed = {
 				always = no
 			}
@@ -164,7 +693,7 @@ ideas = {
 		}
 		
 		idea_output_focus = {
-			picture = rapid_development
+			picture = output_focus
 			allowed = {
 				always = no
 			}
@@ -181,8 +710,13 @@ ideas = {
 		}
 		
 		idea_traditional_values = {
+			picture = trad_values
 			allowed = {
 				always = no
+			}
+
+			available = {
+				has_government = national_conservative
 			}
 
 			allowed_civil_war = {
@@ -199,9 +733,13 @@ ideas = {
 		}
 		
 		idea_strengthened_military = {
-			picture = proud_army
+			picture = strong_military
 			allowed = {
 				always = no
+			}
+
+			available = {
+				has_government = national_conservative
 			}
 
 			allowed_civil_war = {
@@ -211,16 +749,20 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_org_factor = 0.04
-				army_morale_factor = 0.04
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
 				training_time_army_factor = -0.05
 			}
 		}
 		
 		idea_fiscal_economics = {
-			picture = minimal_taxation
+			picture = fiscal_economics
 			allowed = {
 				always = no
+			}
+
+			available = {
+				has_government = national_conservative
 			}
 
 			allowed_civil_war = {
@@ -230,14 +772,18 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.20
 			}
 		}
 		
 		idea_corporate_aid = {
-			picture = support_local_factories
+			picture = corporate_aid
 			allowed = {
 				always = no
+			}
+
+			available = {
+				has_government = national_conservative
 			}
 
 			allowed_civil_war = {
@@ -247,13 +793,19 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = 0.3
+				industrial_capacity_factory = 0.20
+				political_power_gain = 0.15
 			}
 		}
 		
 		idea_united_centre = {
+			picture = united_centre
 			allowed = {
 				always = no
+			}
+
+			available = {
+				has_government = centrist
 			}
 
 			allowed_civil_war = {
@@ -268,9 +820,13 @@ ideas = {
 		}
 		
 		idea_economic_liberalism = {
-			picture = minimal_taxation
+			picture = economic_liberalism
 			allowed = {
 				always = no
+			}
+
+			available = {
+				has_government = centrist
 			}
 
 			allowed_civil_war = {
@@ -284,8 +840,9 @@ ideas = {
 				production_speed_arms_factory_factor = 0.2 
 			}
 		}
-		
-		idea_moral_government = {
+
+		idea_nationalistic_bolshevism = {
+			picture = national_pride
 			allowed = {
 				always = no
 			}
@@ -297,13 +854,63 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = 0.03
+				stability_factor = 0.02
+				research_speed_factor = 0.04
+				justify_war_goal_time = -0.05
+			}
+		}
+
+		idea_glorious_leader = {
+			picture = glory_of_the_state
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.025
+				army_core_defence_factor = 0.05
+				army_morale	= 0.2
+				surrender_limit = 0.05
+				political_power_gain = 0.1
+				
+			}
+		}
+		
+		idea_moral_government = {
+			picture = moral_gov
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = centrist
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
 			}
 		}
 		
 		idea_social_liberalism = {
+			picture = social_liberalism
 			allowed = {
 				always = no
+			}
+
+			available = {
+				has_government = centrist
 			}
 
 			allowed_civil_war = {
@@ -313,13 +920,20 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				conscription = 0.01
+				conscription = 0.015
+				stability_factor = 0.05
+				political_power_gain = 0.05
 			}
 		}
 		
 		idea_welfare_lite = {
+			picture = welfare_lite
 			allowed = {
 				always = no
+			}
+
+			available = {
+				has_government = liberal
 			}
 
 			allowed_civil_war = {
@@ -329,15 +943,20 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.03
-				production_speed_buildings_factor = 0.1
-				MONTHLY_POPULATION = 0.02
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.15
+				MONTHLY_POPULATION = 0.05
 			}
 		}
 		
 		idea_economic_centrism = {
+			picture = economic_centrism
 			allowed = {
 				always = no
+			}
+
+			available = {
+				has_government = liberal
 			}
 
 			allowed_civil_war = {
@@ -347,15 +966,19 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_industrial_complex_factor = 0.4
+				production_speed_industrial_complex_factor = 0.20
 				industrial_capacity_factory = 0.1
 			}
 		}
 		
 		idea_stronger_free_market = {
-			picture = revived_resources
+			picture = free_market
 			allowed = {
 				always = no
+			}
+
+			available = {
+				has_government = liberal
 			}
 
 			allowed_civil_war = {
@@ -370,8 +993,13 @@ ideas = {
 		}
 		
 		idea_united_nation = {
+			picture = united_nation
 			allowed = {
 				always = no
+			}
+
+			available = {
+				has_government = liberal
 			}
 
 			allowed_civil_war = {
@@ -382,13 +1010,18 @@ ideas = {
 			
 			modifier = {
 				stability_factor = 0.05
-				research_speed_factor = 0.02
+				research_speed_factor = 0.05
 			}
 		}
 		
 		idea_promoting_equality = {
+		picture = promoting_equality
 			allowed = {
 				always = no
+			}
+
+			available = {
+				has_government = new_democrat
 			}
 
 			allowed_civil_war = {
@@ -400,12 +1033,18 @@ ideas = {
 			modifier = {
 				army_morale_factor = 0.1
 				political_power_gain = 0.1
+				MONTHLY_POPULATION = 0.025
 			}
 		}
 		
 		idea_soft_nationalisation = {
+			picture = soft_nationalisation
 			allowed = {
 				always = no
+			}
+
+			available = {
+				has_government = new_democrat
 			}
 
 			allowed_civil_war = {
@@ -421,8 +1060,13 @@ ideas = {
 		}
 		
 		idea_social_programs = {
+			picture = social_programs
 			allowed = {
 				always = no
+			}
+
+			available = {
+				has_government = new_democrat
 			}
 
 			allowed_civil_war = {
@@ -432,16 +1076,20 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = -0.05
-				MONTHLY_POPULATION = 0.01
+				stability_factor = 0.05
+				MONTHLY_POPULATION = 0.05
 				conscription = 0.005
 			}
 		}
 		
 		idea_welfare_state = {
-			picture = universal_healthcare
+			picture = generic_welfare_state
 			allowed = {
 				always = no
+			}
+
+			available = {
+				has_government = new_democrat
 			}
 
 			allowed_civil_war = {
@@ -451,15 +1099,20 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				MONTHLY_POPULATION = 0.02
-				political_power_gain = -0.4
-				research_speed_factor = 0.01
+				MONTHLY_POPULATION = 0.05
+				political_power_gain = -0.15
+				research_speed_factor = 0.10
 			}
 		}
 		
 		idea_significant_nationalisation = {
+			picture = significant_nationalisation
 			allowed = {
 				always = no
+			}
+
+			available = {
+				has_government = moderate_socialist
 			}
 
 			allowed_civil_war = {
@@ -469,15 +1122,21 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_buildings_factor = 0.6
-				MONTHLY_POPULATION = -0.03
-				conscription = -0.004
+				production_speed_buildings_factor = 0.25
+				MONTHLY_POPULATION = -0.15
+				conscription = -0.005
+				consumer_goods_factor = -0.05
 			}
 		}
 		
 		idea_socialist_welfare_state = {
+			picture = socialist_welfare_state
 			allowed = {
 				always = no
+			}
+
+			available = {
+				has_government = moderate_socialist
 			}
 
 			allowed_civil_war = {
@@ -488,14 +1147,19 @@ ideas = {
 			
 			modifier = {
 				MONTHLY_POPULATION = 0.08
-				research_speed_factor = 0.05
+				research_speed_factor = 0.08
 				
 			}
 		}
 		
 		idea_promotion_of_science = {
+			picture = promote_science
 			allowed = {
 				always = no
+			}
+
+			available = {
+				has_government = moderate_socialist
 			}
 
 			allowed_civil_war = {
@@ -505,13 +1169,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				research_speed_factor = 0.04
+				research_speed_factor = 0.1
 				
 			}
 		}
 		
 		idea_nationalist_education = {
-			picture = disciplinary_education
+			picture = nationalist_education
 			allowed = {
 				always = no
 			}
@@ -529,7 +1193,7 @@ ideas = {
 		}
 		
 		idea_jingoism = {
-			picture = idea_bastion_of_european_democracy
+			picture = jingoism
 			allowed = {
 				always = no
 			}
@@ -542,12 +1206,12 @@ ideas = {
 			
 			modifier = {
 				justify_war_goal_time = -0.15
-				
+				army_attack_factor = 0.05
 			}
 		}
 		
 		idea_nationalist_military = {
-			picture = proud_army
+			picture = nationalist_military
 			allowed = {
 				always = no
 			}
@@ -561,13 +1225,13 @@ ideas = {
 			modifier = {
 				nationalist_drift = 0.01
 				army_org_factor = 0.05
-				army_morale_factor = 0.02
+				army_morale_factor = 0.05
 				
 			}
 		}
 		
 		idea_all_for_the_nation = {
-			picture = military_governance
+			picture = all_for_nation
 			allowed = {
 				always = no
 			}
@@ -587,7 +1251,7 @@ ideas = {
 		}
 		
 		idea_restored_military_prowess = {
-			picture = proud_army
+			picture = restored_military_prowess
 			allowed = {
 				always = no
 			}
@@ -604,9 +1268,30 @@ ideas = {
 				
 			}
 		}
+
+		idea_neo_imperialism = {
+			picture = restored_military_prowess
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.1
+				justify_war_goal_time = -0.25
+				non_core_manpower = 0.04
+				resistance_growth = 0.15
+				invasion_preparation = -0.35
+			}
+		}
 		
 		idea_pure_nation = {
-			picture = international_isolation
+			picture = pure_nation
 			allowed = {
 				always = no
 			}
@@ -626,7 +1311,7 @@ ideas = {
 		}
 		
 		idea_age_of_glory = {
-			picture = military_governance
+			picture = glory_age
 			allowed = {
 				always = no
 			}
@@ -645,6 +1330,7 @@ ideas = {
 		}
 		
 		idea_royal_institutions = {
+		picture = royal_institutions_castle
 			allowed = {
 				always = no
 			}
@@ -656,14 +1342,14 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				research_speed_factor = 0.02 
-				stability_factor = 0.03
+				research_speed_factor = 0.035
+				stability_factor = 0.035
 				conscription = 0.002
 			}
 		}
 		
 		idea_royal_army = {
-			picture = proud_army
+			picture = army_crown
 			allowed = {
 				always = no
 			}
@@ -675,13 +1361,14 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_org_factor = 0.2
+				army_org_factor = 0.10
 				army_morale_factor = 0.1
 				drift_defence_factor = 0.2
 			}
 		}
 		
 		idea_enforced_royal_rule = {
+			picture = royal_rule
 			allowed = {
 				always = no
 			}
@@ -699,7 +1386,7 @@ ideas = {
 		}
 		
 		idea_working_for_the_crown = {
-			picture = support_workers
+			picture = crown_work
 			allowed = {
 				always = no
 			}
@@ -717,7 +1404,7 @@ ideas = {
 		}
 		
 		idea_strengthened_unions = {
-			picture = support_workers
+			picture = strong_unions
 			allowed = {
 				always = no
 			}
@@ -729,15 +1416,15 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_morale_factor = 0.02
+				army_morale_factor = 0.035
 				industrial_capacity_factory = 0.1
-				stability_factor = 0.02
+				stability_factor = 0.035
 				
 			}
 		}
 		
 		idea_rapid_nationalisation = {
-			picture = workers_self_management
+			picture = rapid_nationalisation
 			allowed = {
 				always = no
 			}
@@ -756,6 +1443,7 @@ ideas = {
 		}
 		
 		idea_fighting_on_two_fronts = {
+			picture = two_fronts
 			allowed = {
 				always = no
 			}
@@ -775,7 +1463,7 @@ ideas = {
 		}
 		
 		idea_glory_of_the_state = {
-			picture = state_media
+			picture = glory_of_the_state
 			allowed = {
 				always = no
 			}
@@ -794,7 +1482,7 @@ ideas = {
 		}
 		
 		idea_loyal_military = {
-			picture = defence_of_the_people
+			picture = generic_loyal_military
 			allowed = {
 				always = no
 			}
@@ -812,6 +1500,7 @@ ideas = {
 		}
 		
 		idea_enforced_quotas = {
+		picture = enforced_quotas
 			allowed = {
 				always = no
 			}
@@ -831,6 +1520,7 @@ ideas = {
 		}
 		
 		idea_socialist_science = {
+		picture = socialist_science
 			allowed = {
 				always = no
 			}
@@ -847,7 +1537,7 @@ ideas = {
 		}
 		
 		idea_national_pride = {
-			picture = renewed_patriotism
+			picture = national_pride
 			allowed = {
 				always = no
 			}
@@ -865,7 +1555,7 @@ ideas = {
 		}
 		
 		idea_red_economy = {
-			picture = military_industrial_complex
+			picture = red_economy
 			allowed = {
 				always = no
 			}
@@ -877,13 +1567,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = 0.5 
+				industrial_capacity_factory = 0.25
 				
 			}
 		}
 		
 		idea_new_order = {
-			picture = security_agency
+			picture = new_order
 			allowed = {
 				always = no
 			}
@@ -908,7 +1598,7 @@ ideas = {
 		}
 		
 		idea_spreading_the_glory = {
-			picture = idea_bastion_of_european_democracy
+			picture = spreading_glory
 			allowed = {
 				always = no
 			}
@@ -927,6 +1617,7 @@ ideas = {
 		}
 		
 		idea_dockyard_project = {
+			picture = dockyard_project
 			allowed = {
 				always = no
 			}
@@ -944,9 +1635,13 @@ ideas = {
 		}
 		
 		idea_liberal_command = {
-			picture = disciplinary_education
+			picture = liberal_command
 			allowed = {
 				always = no
+			}
+
+			available = {
+				has_government = liberal
 			}
 
 			allowed_civil_war = {
@@ -956,10 +1651,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_org_factor = 0.2
+				army_org_factor = 0.10
 				liberal_drift = 0.01
-				political_power_gain = -0.5
-				
+				political_power_gain = -0.25
+				army_attack_factor = 0.035
 			}
 		}
 	}
@@ -1001,11 +1696,11 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				fighter_equipment = {
+				small_plane_airframe = {
 					instant = yes
 					build_cost_ic = -0.20
 				}
-				cv_fighter_equipment = {
+				cv_small_plane_airframe = {
 					instant = yes
 					build_cost_ic = -0.20
 				}
@@ -1013,19 +1708,19 @@ ideas = {
 					instant = yes
 					build_cost_ic = -0.20
 				}
-				cv_CAS_equipment = {
+				cv_small_plane_cas_airframe = {
 					instant = yes
 					build_cost_ic = -0.20
 				}
-				CAS_equipment = {
+				small_plane_cas_airframe = {
 					instant = yes
 					build_cost_ic = -0.20
 				}
-				nav_bomber_equipment = {
+				small_plane_naval_bomber_airframe = {
 					instant = yes
 					build_cost_ic = -0.20
 				}
-				cv_nav_bomber_equipment = {
+				cv_small_plane_naval_bomber_airframe = {
 					instant = yes
 					build_cost_ic = -0.20
 				}
@@ -1033,7 +1728,7 @@ ideas = {
 					instant = yes
 					build_cost_ic = -0.20
 				}
-				tac_bomber_equipment = {
+				medium_plane_airframe = {
 					instant = yes
 					build_cost_ic = -0.20
 				}
@@ -1045,11 +1740,11 @@ ideas = {
 					instant = yes
 					build_cost_ic = -0.20
 				}
-				heavy_fighter_equipment = {
+				medium_plane_fighter_airframe = {
 					instant = yes
 					build_cost_ic = -0.20
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					instant = yes
 					build_cost_ic = -0.20
 				}
@@ -1069,14 +1764,13 @@ ideas = {
 	# TECHNOLOGY
 	tank_manufacturer = { 
 	
-		designer = yes
 		
 		generic_tank_manufacturer = {
 
 			picture = generic_tank_manufacturer_1
 			
 			allowed = {
-			    NOT = { OR { tag = SOV tag = USA tag = ENG } }
+			    NOT = { tag = SOV tag = USA tag = ENG tag = SPR tag = SPN tag = GAL }
 				NOT = {
 					has_available_idea_with_traits = { idea = tank_manufacturer limit = 1 }
 				}
@@ -1086,7 +1780,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				armor = -0.10
+				armor = 0.10
 			}
 			
 			traits = { tank_manufacturer }
@@ -1095,14 +1789,13 @@ ideas = {
 	
 	naval_manufacturer = { 
 	
-		designer = yes
 	
 		generic_naval_manufacturer = {
 			
 			picture = generic_naval_manufacturer_1
 
 			allowed = {
-			    NOT = { OR { tag = SOV tag = USA tag = ENG } }
+			    NOT = { tag = SOV tag = USA tag = ENG tag = GER }
 				NOT = {
 					has_available_idea_with_traits = { idea = naval_manufacturer limit = 1 }
 				}
@@ -1112,7 +1805,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				naval_equipment = -0.10
+				naval_equipment = 0.10
 			}
 			
 			traits = { naval_manufacturer }
@@ -1121,14 +1814,13 @@ ideas = {
 
 	aircraft_manufacturer = { 
 	
-		designer = yes
 	
 		generic_light_aircraft_manufacturer = {
 			
 			picture = generic_air_manufacturer_1
 
 			allowed = {
-			    NOT = { OR { tag = SOV tag = USA tag = ENG } }
+			    NOT = { tag = SOV tag = USA tag = ENG tag = CEA tag = CUB tag = UAR tag = EGY tag = SYR tag = RAJ }
 				NOT = {
 					has_available_idea_with_traits = { idea = light_aircraft_manufacturer limit = 1 }
 				}
@@ -1138,7 +1830,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				air_equipment = -0.10
+				air_equipment = 0.10
 			}
 			
 			traits = { light_aircraft_manufacturer }
@@ -1149,7 +1841,7 @@ ideas = {
 			picture = generic_air_manufacturer_3
 
 			allowed = {
-			    NOT = { OR { tag = SOV tag = USA tag = ENG } }
+			    NOT = { tag = SOV tag = USA tag = ENG tag = CEA tag = CUB tag = UAR tag = EGY tag = SYR tag = RAJ }
 				NOT = {
 					has_available_idea_with_traits = { idea = medium_aircraft_manufacturer limit = 1 }
 				}
@@ -1159,7 +1851,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				air_equipment = -0.10
+				air_equipment = 0.10
 			}
 			
 			traits = { medium_aircraft_manufacturer }
@@ -1170,7 +1862,7 @@ ideas = {
 			picture = generic_air_manufacturer_2
 			
 			allowed = {
-			    NOT = { OR { tag = SOV tag = USA tag = ENG } }
+			    NOT = { tag = SOV tag = USA tag = ENG tag = CEA tag = CUB tag = UAR tag = EGY tag = SYR tag = RAJ }
 				NOT = {
 					has_available_idea_with_traits = { idea = heavy_aircraft_manufacturer limit = 1 }
 				}
@@ -1180,7 +1872,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				air_equipment = -0.10
+				air_equipment = 0.10
 			}
 			
 			traits = { heavy_aircraft_manufacturer }
@@ -1191,7 +1883,7 @@ ideas = {
 			picture = generic_naval_manufacturer_2
 
 			allowed = {
-			    NOT = { OR { tag = SOV tag = USA tag = ENG } }
+			    NOT = { tag = SOV tag = USA tag = ENG tag = CEA tag = SPR tag = SPN tag = CUB tag = PCA tag = UAR tag = EGY tag = SYR tag = RAJ }
 				NOT = {
 					has_available_idea_with_traits = { idea = naval_aircraft_manufacturer limit = 1 }
 				}
@@ -1201,7 +1893,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				air_equipment = -0.10
+				air_equipment = 0.10
 			}
 			
 			traits = { naval_aircraft_manufacturer }
@@ -1215,7 +1907,7 @@ ideas = {
 			picture = generic_industrial_concern_1
 
 			allowed = {
-			    NOT = { OR { tag = SOV tag = USA tag = ENG } }
+			    NOT = { tag = SOV tag = USA tag = ENG }
 				NOT = {
 					has_available_idea_with_traits = { idea = industrial_concern limit = 1 }
 				}
@@ -1225,7 +1917,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				industry = -0.10
+				industry = 0.10
 			}
 			
 			traits = { industrial_concern }
@@ -1236,7 +1928,7 @@ ideas = {
 			picture = generic_electronics_concern_1
 
 			allowed = {
-			    NOT = { OR { tag = SOV tag = USA tag = ENG } }
+			    NOT = { tag = SOV tag = USA tag = ENG tag = YAR }
 				NOT = {
 					has_available_idea_with_traits = { idea = electronics_concern limit = 1 }
 				}
@@ -1246,7 +1938,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				electronics = -0.10
+				electronics = 0.10
 			}
 			
 			traits = { electronics_concern }
@@ -1254,15 +1946,14 @@ ideas = {
 	}
 
 	materiel_manufacturer = {
-	
-		designer = yes
+
 	
 		generic_motorized_equipment_manufacturer = {
 			
 			picture = generic_motorized_equipment_manufacturer_3
 
 			allowed = {
-			    NOT = { OR { tag = SOV tag = USA tag = ENG } }
+			    NOT = { tag = SOV tag = USA tag = ENG }
 				NOT = {
 					has_available_idea_with_traits = { idea = motorized_equipment_manufacturer limit = 1 }
 				}
@@ -1272,7 +1963,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				motorized_equipment = -0.10
+				motorized_equipment = 0.10
 			}
 			
 			traits = { motorized_equipment_manufacturer }
@@ -1283,7 +1974,7 @@ ideas = {
 			picture = generic_infantry_equipment_manufacturer_2
 
 			allowed = {
-			    NOT = { OR { tag = SOV tag = USA tag = ENG } }
+			    NOT = { tag = SOV tag = USA tag = ENG }
 				NOT = {
 					has_available_idea_with_traits = { idea = infantry_equipment_manufacturer limit = 1 }
 				}
@@ -1293,7 +1984,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				infantry_weapons = -0.10
+				infantry_weapons = 0.10
 			}
 			
 			traits = { infantry_equipment_manufacturer }
@@ -1304,7 +1995,7 @@ ideas = {
 			picture = generic_artillery_manufacturer_2
 
 			allowed = {
-			    NOT = { OR { tag = SOV tag = USA tag = ENG } }
+			    NOT = { tag = SOV tag = USA tag = ENG }
 				NOT = {
 					has_available_idea_with_traits = { idea = artillery_manufacturer limit = 1 }
 				}
@@ -1314,7 +2005,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				artillery = -0.10
+				artillery = 0.10
 			}
 			
 			traits = { artillery_manufacturer }
@@ -1331,7 +2022,14 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
-						tag = DIS
+						tag = CSD
+						tag = USA
+						tag = GRL
+						tag = PCA
+						tag = NEA
+						tag = CEA
+						tag = AMC
+						tag = BSQ
 					}
 				}
 			}
@@ -1347,7 +2045,14 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
-						tag = DIS
+						tag = CSD
+						tag = USA
+						tag = GRL
+						tag = PCA
+						tag = NEA
+						tag = CEA
+						tag = AMC
+						tag = BSQ
 					}
 				}
 			}
@@ -1366,7 +2071,14 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
-						tag = DIS
+						tag = CSD
+						tag = USA
+						tag = GRL
+						tag = PCA
+						tag = NEA
+						tag = CEA
+						tag = AMC
+						tag = BSQ
 					}
 				}
 			}
@@ -1382,7 +2094,14 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
-						tag = DIS
+						tag = CSD
+						tag = USA
+						tag = GRL
+						tag = PCA
+						tag = NEA
+						tag = CEA
+						tag = AMC
+						tag = BSQ
 					}
 				}
 			}
@@ -1401,7 +2120,14 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
-						tag = DIS
+						tag = CSD
+						tag = USA
+						tag = GRL
+						tag = PCA
+						tag = NEA
+						tag = CEA
+						tag = AMC
+						tag = BSQ
 					}
 				}
 			}
@@ -1417,7 +2143,14 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
-						tag = DIS
+						tag = CSD
+						tag = USA
+						tag = GRL
+						tag = PCA
+						tag = NEA
+						tag = CEA
+						tag = AMC
+						tag = BSQ
 					}
 				}
 			}
@@ -1429,6 +2162,7 @@ ideas = {
 	high_command = {
 
 		generic_army_art = {
+		ledger = army
 		
 		    allowed = {
 			    NOT = {
@@ -1436,7 +2170,14 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
-						tag = DIS
+						tag = CSD
+						tag = USA
+						tag = GRL
+						tag = PCA
+						tag = NEA
+						tag = CEA
+						tag = AMC
+						tag = BSQ
 					}
 				}
 			}
@@ -1445,6 +2186,7 @@ ideas = {
 		}
 		
 		generic_army_log = {
+		ledger = army
 		
 		    allowed = {
 			    NOT = {
@@ -1452,7 +2194,14 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
-						tag = DIS
+						tag = CSD
+						tag = USA
+						tag = GRL
+						tag = PCA
+						tag = NEA
+						tag = CEA
+						tag = AMC
+						tag = BSQ
 					}
 				}
 			}
@@ -1461,6 +2210,7 @@ ideas = {
 		}
 
 		generic_navy_fleet_log = {
+		ledger = navy
 		
 		    allowed = {
 			    NOT = {
@@ -1468,7 +2218,14 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
-						tag = DIS
+						tag = CSD
+						tag = USA
+						tag = GRL
+						tag = PCA
+						tag = NEA
+						tag = CEA
+						tag = AMC
+						tag = BSQ
 					}
 				}
 			}
@@ -1477,6 +2234,7 @@ ideas = {
 		}
 
 		generic_air_air_combat_trainer = {
+		ledger = air
 		
 		    allowed = {
 			    NOT = {
@@ -1484,7 +2242,21 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
-						tag = DIS
+						tag = CSD
+						tag = USA
+						tag = GRL
+						tag = PCA
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = BSQ
+						tag = NEA
+						tag = CEA
+						tag = AMC
+						tag = BSQ
 					}
 				}
 			}
@@ -1506,6 +2278,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -1534,6 +2328,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -1553,6 +2369,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -1570,6 +2408,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -1587,6 +2447,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -1604,6 +2486,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -1621,6 +2525,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -1638,6 +2564,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -1655,6 +2603,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -1672,6 +2642,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -1689,6 +2681,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -1706,6 +2720,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -1735,6 +2771,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -1766,6 +2824,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -1801,7 +2881,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
-						tag = DIS
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 					}
 				}
 			}
@@ -1818,7 +2919,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
-						tag = DIS
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 					}
 				}
 			}
@@ -1835,7 +2957,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
-						tag = DIS
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 					}
 				}
 			}
@@ -1852,7 +2995,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
-						tag = DIS
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 					}
 				}
 			}
@@ -1869,7 +3033,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
-						tag = DIS
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 					}
 				}
 			}
@@ -1886,6 +3071,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -1906,6 +3113,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -1923,6 +3152,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -1931,7 +3182,7 @@ ideas = {
 			traits = { resource_industrialist }			
 		}
 
-		generic_libertarian_capitalist = {
+		generic_entrepreneurial_fink = {
 		    picture = advisor3
 		
 		    allowed = {
@@ -1940,6 +3191,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -1954,7 +3227,7 @@ ideas = {
 				}
 			}
 			
-			traits = { libertarian_capitalist }			
+			traits = { entrepreneurial_fink }			
 		}
 
 		generic_former_scientist = {
@@ -1966,6 +3239,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -1983,6 +3278,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -2000,6 +3317,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -2017,12 +3356,72 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
 			}
 			
 			traits = { extreme_regulator }			
+		}
+		generic_political_planner = {
+		    picture = advisor11
+		
+		    allowed = {
+			    NOT = {
+				    OR = {
+					    tag = SOV
+						tag = UAR
+						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
+						tag = DIS
+					}
+				}
+			}
+			
+			traits = { political_planner }			
 		}
 	}
 	
@@ -2037,6 +3436,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -2054,6 +3475,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -2071,6 +3514,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -2098,6 +3563,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -2126,12 +3613,148 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
 			}
 			
 			traits = { isolationist }			
+		}
+		generic_kind_hearted_activistt = {
+		    picture = advisor7
+		
+		    allowed = {
+			    NOT = {
+				    OR = {
+					    tag = SOV
+						tag = UAR
+						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
+						tag = DIS
+					}
+				}
+			}
+			
+			traits = { kind_hearted_activist }			
+		}
+		generic_paranoid_tyrant = {
+		    picture = advisor4
+		
+		    allowed = {
+			    NOT = {
+				    OR = {
+					    tag = SOV
+						tag = UAR
+						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
+						tag = DIS
+					}
+				}
+			}
+			
+			traits = { paranoid_tyrant }			
+		}
+		generic_compromise_choice = {
+		    picture = advisor4
+		
+		    allowed = {
+			    NOT = {
+				    OR = {
+					    tag = SOV
+						tag = UAR
+						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
+						tag = DIS
+					}
+				}
+			}
+			
+			traits = { compromise_choice }			
 		}
 	}
 	
@@ -2146,6 +3769,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -2163,6 +3808,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -2180,6 +3847,28 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
@@ -2197,12 +3886,72 @@ ideas = {
 					    tag = SOV
 						tag = UAR
 						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
 						tag = DIS
 					}
 				}
 			}
 			
 			traits = { politician_with_connections }			
+		}
+		generic_military_intelligence_expert = {
+		    picture = advisor8
+		
+		    allowed = {
+			    NOT = {
+				    OR = {
+						tag = DIS
+					    tag = SOV
+						tag = UAR
+						tag = CAN
+						tag = NEA
+						tag = AMC
+						tag = USA
+						tag = ENG
+						tag = CSD
+						tag = PCA
+						tag = JAS
+						tag = PDY
+						tag = YAR
+						tag = YEM
+						tag = GRL
+						tag = GAU
+						tag = GAL
+						tag = SPR
+						tag = SPN
+						tag = BSQ
+						tag = RAJ
+						tag = RUB
+						tag = PUI
+						tag = CEA
+						tag = SYR
+						tag = CUB
+					}
+				}
+			}
+			
+			traits = { military_intelligence_expert }			
 		}
 	}
 	
