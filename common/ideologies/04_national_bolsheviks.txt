@@ -6,10 +6,72 @@ ideologies = {
 			
 			national_bolshevik_ideology = {
 			}
+			
 			catholic_bolshevik = {
 			}
 			
+			baathist = {
+			}
+
+			neo_baathist = {
+			}
 			
+			third_international_theory = {
+			}
+			
+			national_syndicalist = {
+			}
+			
+			revolutionary_nazi = {
+			}
+
+			larouche = {
+			}
+
+			moldovenist = {
+			}
+
+			socialist_nationalist = {
+			}
+
+			khmer_rouge = {
+			}
+
+			revolutionary_junta = {
+			}
+
+			shariatist = {
+			}
+
+			duginism = {
+			}
+
+			neo_bolshevik = {
+			}
+
+			burmese_socialist = {
+			}
+
+			limonovite = {
+			}
+			
+			mobutist = {
+			}
+			
+			young_socialist = {
+			}
+
+			gonzalo_thought = {
+			}
+
+			dengist = {
+			}
+
+			pierceist_spencerist = {
+			}
+
+			new_right = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -28,14 +90,20 @@ ideologies = {
 		
 		rules = {
 			can_guarantee_other_ideologies = yes
-			can_force_government = yes
+			can_force_government = no
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
 			can_lower_tension = yes
+			can_join_factions = no
+			can_create_factions = no
 		}
 		
 		modifiers = {
-			join_faction_tension = 0.5
+			join_faction_tension = 0.3
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
 		}
 		
 	}

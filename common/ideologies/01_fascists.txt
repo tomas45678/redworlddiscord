@@ -7,6 +7,12 @@ ideologies = {
 			national_socialist = {	
 			}
 			
+			anti_communism = {
+			}
+			
+			imperialist = {	
+			}
+			
 			fascist_ideology = {	
 			}
 			
@@ -18,22 +24,69 @@ ideologies = {
 			
 			imperial_japanese = {				
 			}
-
-			anti_communism = {				
-			}
-
-			imperialist = {				
-			}
-
-			populist_militarism = {				
-			}
-
-			white_nationalism = {				
-			}
-
-			american_cultism = {				
+			
+			synarchist = {				
 			}
 			
+			austrofascist = {				
+			}
+			
+			jihadist = {				
+			}
+			
+			corporate = {				
+			}
+			
+			social_nationalist = {				
+			}
+			
+            afrikaner_nationalist = {
+			}
+			
+            buddhist_nationalist = {
+			}
+			
+		    clerical_fascist = {
+			}
+
+			military_dictatorship = {
+			}
+
+			hutu_power = {
+			}
+
+			shiv_sena = {
+			}
+			
+			francoist = {
+			}
+			
+			costa_rican_nationalist = {
+			}
+
+			russian_socialist = {
+			}
+
+			kahanist = {
+			}
+
+			klan_doctrine = {
+			}
+
+			american_fascist = {
+			}
+
+			neo_confederate = {
+			}
+
+			national_populist = {
+			}
+
+			patriot_movement = {
+			}
+
+			kaichogunate = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -52,14 +105,20 @@ ideologies = {
 		
 		rules = {
 			can_guarantee_other_ideologies = yes
-			can_force_government = yes
+			can_force_government = no
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
 			can_lower_tension = yes
+			can_join_factions = no
+			can_create_factions = no
 		}
 		
 		modifiers = {
 			join_faction_tension = 0.25
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
 		}
 		
 	}

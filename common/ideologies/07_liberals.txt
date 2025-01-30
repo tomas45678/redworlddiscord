@@ -12,14 +12,25 @@ ideologies = {
 			
 			old_american_democrats = {
 			}
-
-			liberal_urbanist = {
+			
+			liberal_urbanist = {			
 			}
-
+			
 			national_liberal = {
 			}
 			
+			owenist = {
+			}
+
+			religious_nationalist = {
+			}
+
+			wilsonist = {
+			}
 			
+			green_liberal = {
+			
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -38,14 +49,22 @@ ideologies = {
 		
 		rules = {
 			can_guarantee_other_ideologies = yes
-			can_force_government = yes
+			can_force_government = no
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
 			can_lower_tension = yes
+			can_join_factions = no
+			can_create_factions = no
 		}
 		
 		modifiers = {
-			join_faction_tension = 0.5
+			generate_wargoal_tension = 0.25
+			guarantee_tension = 0.15
+			join_faction_tension = 0.3
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
 		}
 		
 	}

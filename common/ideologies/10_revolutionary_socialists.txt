@@ -37,31 +37,44 @@ ideologies = {
 			islamic_socialism = {
 			}
 			
-			titoism = {
+			titoist = {
 			}
 
-			franconian_socialism = {
+			national_communist = {
 			}
 
-			cyber_socialism = {
+			democratic_confederalist = {
 			}
-
-			doreism = {
-			}
-
-			anarcha_feminism = {
-			}
-
-			green_anarchism = {
-			}
-
-			anti_fascism = {
-			}
-
-			queer_anarchism = {
-			}
-
 			
+			trotskyist = {
+			}
+			
+			african_socialist = {
+			}
+
+			left_maoist = {
+			}
+
+			orthodox_leninist = {
+			}
+
+			left_communist = {
+			}
+
+			ujamaa = {
+			}
+
+			otelist = {
+			}
+			
+			gandhian_socialist = {
+			}
+
+			anarcho_communist = {
+			}
+
+			libertarian_socialist = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -73,21 +86,27 @@ ideologies = {
 			"FACTION_NAME_REVOLUTIONARY_SOCIALIST_6"
 		}
 		
-		color = { 155 18 20  }
+		color = { 155 18 20 }
 		
 		war_impact_on_world_tension = 2
 		faction_impact_on_world_tension = 2
 		
 		rules = {
 			can_guarantee_other_ideologies = yes
-			can_force_government = yes
+			can_force_government = no
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
 			can_lower_tension = yes
+			can_join_factions = no
+			can_create_factions = no
 		}
 		
 		modifiers = {
-			join_faction_tension = 0.5
+			join_faction_tension = 0.3
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
 		}
 		
 	}

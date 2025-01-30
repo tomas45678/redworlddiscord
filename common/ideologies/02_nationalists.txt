@@ -4,22 +4,80 @@ ideologies = {
 		
 		types = {
 		
-			ultranationalist = {
-			}
-			
 			nationalist_ideology = {
+			}
+
+			ultranationalist = {
 			}
 		
 			american_nationalist = {
 			}
-
+			
 			national_autocrat = {
 			}
+			
+			saddamist = {
+			}
 
-			militia = {
+			paleoconservative = {
 			}
 			
+			fujimorist = {
+			}
 			
+			peronist  = {
+			}
+
+			hindutva  = {
+			}
+			
+			dominionist = {
+			}
+			
+			national_liberal = {
+			}
+
+			military_junta = {
+			}
+
+			islamic_nationalist = {
+			}
+
+			pancasila = {
+			}
+
+			militia_ideology = {
+			}
+
+			russian_nationalist = {
+			}
+
+			metaxist = {				
+			}
+
+			neoconservative = {				
+			}
+			
+			neofrancoist = {
+			}
+			
+			african_nationalist = {
+			}
+			
+			ulster_unionist = {
+			}
+
+			herrerist = {
+			}
+
+			neo_nationalist = {
+			}
+
+			post_fascist = {
+			}
+
+			national_paternalist = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -38,14 +96,20 @@ ideologies = {
 		
 		rules = {
 			can_guarantee_other_ideologies = yes
-			can_force_government = yes
+			can_force_government = no
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
 			can_lower_tension = yes
+			can_join_factions = no
+			can_create_factions = no
 		}
 		
 		modifiers = {
-			join_faction_tension = 0.5
+			join_faction_tension = 0.3
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
 		}
 		
 	}

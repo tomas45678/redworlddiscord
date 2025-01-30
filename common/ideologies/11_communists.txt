@@ -22,9 +22,47 @@ ideologies = {
 			juche = {
 			}
 
-			hoxhaist = {
+			goulash_communist = {
+			}
+
+			meliorist = {
+			}
+
+			neocommunist = {
 			}
 			
+			sandinist = {
+			}
+
+			islamic_marxist = {
+			}
+
+			ho_chi_minh_thought = {
+			}
+
+			smiling_communist = {
+			}
+			
+			bolivarian = {
+			}
+			
+			b_o_r_communist = {
+			}
+
+			new_synthesis = {
+			}
+
+			neoauthoritarian = {
+			}
+
+			marhaenist = {
+			}
+
+			marxist_leninist_maoist = {
+			}
+
+			prachanda_path = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -43,14 +81,20 @@ ideologies = {
 		
 		rules = {
 			can_guarantee_other_ideologies = yes
-			can_force_government = yes
+			can_force_government = no
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
 			can_lower_tension = yes
+			can_join_factions = no
+			can_create_factions = no
 		}
 		
 		modifiers = {
 			join_faction_tension = 0.25
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
 		}
 		
 	}
