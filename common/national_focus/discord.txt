@@ -3,7 +3,7 @@
 	country = {
 		factor = 0
 		modifier = {
-			add = 20
+			add = 30
 			tag = DIS
 		}
 	}
@@ -113,7 +113,7 @@
 	country = {
 		factor = 0
 		modifier = {
-			add = 21
+			add = 20
 			tag = DIS
 		}
 	}
@@ -133,5 +133,6 @@
 	}
 	shared_focus = DCO_purgeremaininganarchists
 	shared_focus = DCO_thepeacefultransition
+	shared_focus = DCO_thehostiletakeover
 	continuous_focus_position = { x = 50 y = 5000 }
 	}

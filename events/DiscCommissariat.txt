@@ -161,7 +161,7 @@ country_event = {
 			popularity = 0.05
 		}
 		add_popularity = {
-			ideology = communism
+			ideology = communist
 			popularity = 0.05
 		}
 		set_politics = {
@@ -181,7 +181,7 @@ country_event = {
 			popularity = 0.05
 		}
 		add_popularity = {
-			ideology = fascism
+			ideology = fascist
 			popularity = 0.05
 		}
 		set_politics = {

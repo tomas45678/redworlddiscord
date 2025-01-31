@@ -3499,6 +3499,7 @@
 		prerequisite = { focus = DIS_reaffirmthecoop focus = DIS_leavethecoop }
 		mutually_exclusive = { focus = DIS_expansionism }
 		mutually_exclusive = { focus = DIS_interventionism }
+		mutually_exclusive = { focus = DIS_aligndarwinreich }
 		completion_reward = {
 		add_ideas = idea_dis_isolationism
 		}
@@ -3677,6 +3678,7 @@
 		prerequisite = { focus = DIS_reaffirmthecoop }
 		mutually_exclusive = { focus = DIS_pacifism }	
 		mutually_exclusive = { focus = DIS_expansionism }
+		mutually_exclusive = { focus = DIS_aligndarwinreich }
 		relative_position_id = DIS_reaffirmthecoop
 		completion_reward = {
 		add_ideas = idea_dis_interventionism
@@ -4228,12 +4230,31 @@
 	
 	}
 	shared_focus = {
+		id = DCO_thehostiletakeover
+		icon = support_monarchy
+		cost = 8
+		x = 7
+		y = 3
+		available = { NOT = { 
+		has_country_flag = legochiel_peaceful }
+		}
+		completion_reward = {
+		remove_ideas = idea_dis_political_turmoil
+		add_stability = 0.05
+		}
+	
+	}
+	shared_focus = {
 		id = DCO_supportfromthepeople
 		icon = national_unity
 		cost = 8
 		x = 6
 		y = 4
-		prerequisite = { focus = DCO_thenewkaiser focus = DCO_thepeacefultransition }
+		prerequisite = { 
+		focus = DCO_thenewkaiser 
+		focus = DCO_thepeacefultransition
+		focus = DCO_thehostiletakeover
+		}
 		completion_reward = {
 		add_stability = 0.05
 		add_popularity = {
@@ -4249,7 +4270,11 @@
 		cost = 8
 		x = 8
 		y = 4
-		prerequisite = { focus = DCO_thenewkaiser focus = DCO_thepeacefultransition }
+		prerequisite = { 
+		focus = DCO_thenewkaiser 
+		focus = DCO_thepeacefultransition
+		focus = DCO_thehostiletakeover
+		}
 		completion_reward = {
 		country_event = comm.112
 		}
@@ -4408,7 +4433,11 @@
 		cost = 8
 		x = 10
 		y = 4
-		prerequisite = { focus = DCO_thenewkaiser focus = DCO_thepeacefultransition }
+		prerequisite = { 
+		focus = DCO_thenewkaiser 
+		focus = DCO_thepeacefultransition
+		focus = DCO_thehostiletakeover
+		}
 		completion_reward = {
 		add_ideas = idea_dis_puppet_commissariat
 		add_political_power = 40
@@ -4463,6 +4492,7 @@
 		prerequisite = { focus = DCO_puppetthecommissariat  }
 		prerequisite = { focus = DCO_supportfromthepeople }
 		mutually_exclusive = { focus = DCO_statusquodebates }
+		mutually_exclusive = { focus = DCO_releasethehotfix }
 		completion_reward = {
 		add_ideas = idea_dis_debates_banned
 		add_stability = -0.05
@@ -5774,18 +5804,18 @@
 		    }
 		if {
 			limit = { has_completed_focus = DCO_chancellorlim }
-				create_country_leader = {
-				name = "Limonade"
-				picture = "Portrait_DIS_Limonade.dds"
-				ideology = new_democrat_ideology
-					}
-		}
+			create_country_leader = {
+			name = "Limonade"
+			picture = "Portrait_DIS_Limonade.dds"
+			ideology = new_democrat_ideology
+			}
 		else {
 			create_country_leader = {
 			name = "Chancellor Al"
 	        picture = "Portrait_DIS_Albert.dds"
 	        ideology = new_democrat_ideology
 			}
+		}
 	}
 	}
 	}
@@ -7448,7 +7478,7 @@
 		popularity = 0.05
 		}
 		add_popularity = {
-		ideology = fascism
+		ideology = fascist
 		popularity = 0.05
 		}
 		add_popularity = {
