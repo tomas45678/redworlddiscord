@@ -74,10 +74,12 @@ country_event = {
 	
 	option = { 
 		name = equestria.5.a
+		EQS = {
 		create_country_leader = {
 	        name = "Jaspy"
 	        picture = "Portrait_EQS_Jaspy.dds"
 	        ideology = absolute_monarchist
         		}
+			}
 	}
 }
