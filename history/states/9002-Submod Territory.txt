@@ -4,6 +4,12 @@ state={
 	provinces={
 		1514 1557 5206 10336 10936 10955 12957 
 	}
+	resources={
+		tungsten = 11
+		chromium = 7
+		oil = 8
+		steel = 10
+	}
 	history={
 		owner = DIS
 		add_core_of = DIS
