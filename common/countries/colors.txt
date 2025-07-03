@@ -992,11 +992,6 @@ D15 = {
 	color_ui = rgb { 115 115 115 }
 }
 
-PRS = {
-	color = rgb { 39 44 107 }
-	color_ui = rgb { 115 115 115 }
-}
-
 BAV = {
 	color = rgb { 68 228 239 }
 	color_ui = rgb { 115 115 115 }
