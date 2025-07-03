@@ -2058,6 +2058,26 @@ ideas = {
 				industrial_capacity_factory = 0.03
 				}
 		}
+		idea_dis_the_discordian_oligarchy3 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_gain = 0.10
+				consumer_goods_factor = 0.02
+				stability_factor = 0.01
+				industrial_capacity_factory = 0.05
+				}
+		}
 		idea_dis_tense_coop_relationship = {
 			allowed = {
 				always = no
