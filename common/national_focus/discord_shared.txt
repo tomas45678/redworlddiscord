@@ -6949,10 +6949,10 @@
 		x = 66
 		y = 4
 		available = {
-		has_country_leader = { ruling = yes name = Crusade }
+		has_country_leader = { ruling_only  = yes name = Crusade }
 		} 
 		bypass = {
-		has_country_leader = { ruling = yes name = Crusade }
+		has_country_leader = { ruling_only  = yes name = Crusade }
 		}
 		completion_reward = {
 		add_popularity = {

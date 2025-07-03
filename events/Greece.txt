@@ -367,7 +367,7 @@ country_event = {
 		}
 		set_country_flag = kaiser_loved
 		add_popularity = {
-			    ideology = monarchism
+			    ideology = monarchist
 			    popularity = 0.03
 		    }
 		add_popularity = {
