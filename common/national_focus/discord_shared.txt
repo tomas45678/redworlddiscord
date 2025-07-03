@@ -5802,14 +5802,14 @@
 			    ideology = new_democrat
 			    popularity = 0.1
 		    }
-		if {
+		if = {
 			limit = { has_completed_focus = DCO_chancellorlim }
 			create_country_leader = {
 			name = "Limonade"
 			picture = "Portrait_DIS_Limonade.dds"
 			ideology = new_democrat_ideology
 			}
-		else {
+		else = {
 			create_country_leader = {
 			name = "Chancellor Al"
 	        picture = "Portrait_DIS_Albert.dds"

@@ -3397,7 +3397,7 @@ second_in_command = {
 				} 
 			}
 			
-			traits = { revolution_spreader }			
+			traits = { ideological_crusader }			
 		}
 		discord_idea_zandrax_2 = {
 		
@@ -3413,7 +3413,7 @@ second_in_command = {
 				} 
 			}
 			
-			traits = { driven_pacifist }			
+			traits = { isolationist }			
 		}
 		discord_idea_merox_2 = {
 		
@@ -3538,7 +3538,7 @@ second_in_command = {
 				} 
 			}
 			
-			traits = { libertarian_capitalist }			
+			traits = { entrepreneurial_fink }			
 		}
 	discord_idea_gerbbro = {
 		
