@@ -997,16 +997,6 @@ BAV = {
 	color_ui = rgb { 115 115 115 }
 }
 
-HAN = {
-	color = rgb { 239 216 68 }
-	color_ui = rgb { 115 115 115 }
-}
-
-SAX = {
-	color = rgb { 60 115 51 }
-	color_ui = rgb { 115 115 115 }
-}
-
 WUR = {
 	color = rgb { 112 8 64 }
 	color_ui = rgb { 115 115 115 }

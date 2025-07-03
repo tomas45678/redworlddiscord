@@ -539,24 +539,24 @@ country_event = {
 		load_focus_tree = discord_otto_tree
 	}
 	#option = { 
-		name = comm.9.f
-		add_popularity = {
-			    ideology = national_conservative
-			    popularity = 0.15
-		    }
-		set_politics = {
- 		ruling_party = national_conservative
-		elections_allowed = no 
-		}
-		set_country_flag = nnrp_democratic
-		load_focus_tree = discord_cringe_tree
-		hidden_effect = {
-		create_country_leader = {
-	        name = "Anthony03"
-	        picture = "Portrait_DIS_Anthony.dds"
-	        ideology = reactionary
-        		}
-		}
+#		name = comm.9.f
+#		add_popularity = {
+#			    ideology = national_conservative
+#			    popularity = 0.15
+#		    }
+#		set_politics = {
+ #		ruling_party = national_conservative
+#		elections_allowed = no 
+#		}
+#		set_country_flag = nnrp_democratic
+#		load_focus_tree = discord_cringe_tree
+#		hidden_effect = {
+#		create_country_leader = {
+#	        name = "Anthony03"
+#	        picture = "Portrait_DIS_Anthony.dds"
+#	        ideology = reactionary
+ #       		}
+#		}
 	#}
 }
 country_event = {
@@ -702,15 +702,15 @@ country_event = {
 		}
 	}
 	#option = { 
-		name = comm.23.b
-		add_popularity = {
-			    ideology =  centrist
-			    popularity = 0.15
-		    }
-		set_politics = {
- 		ruling_party = centrist
-		elections_allowed = no 
-		}
+#		name = comm.23.b
+#		add_popularity = {
+#			    ideology =  centrist
+#			    popularity = 0.15
+#		    }
+#		set_politics = {
+# 		ruling_party = centrist
+#		elections_allowed = no 
+#		}
 	#}
 	option = { 
 		name = comm.23.c
@@ -725,15 +725,15 @@ country_event = {
 		load_focus_tree = discord_otto_tree
 	}
 	#option = { 
-		name = comm.23.e
-		add_popularity = {
-			    ideology = revolutionary_socialist
-			    popularity = 0.15
-		    }
-		set_politics = {
- 		ruling_party = revolutionary_socialist
-		elections_allowed = no 
-		}
+#		name = comm.23.e
+#		add_popularity = {
+#			    ideology = revolutionary_socialist
+#			    popularity = 0.15
+#		    }
+#		set_politics = {
+# 		ruling_party = revolutionary_socialist
+#		elections_allowed = no 
+#		}
 	#}
 }
 country_event = {

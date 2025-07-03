@@ -1,6 +1,4 @@
-PLB = "countries/People's Legion of the Bay.txt"
 DIS = "countries/Discord.txt"
-FLA = "countries/Florida.txt"
 DRR = "countries/Darwinreich.txt"
 YOU = "countries/Youtube.txt"
 EQS = "countries/Equestria.txt"
