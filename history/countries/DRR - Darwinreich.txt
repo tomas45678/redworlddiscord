@@ -36,7 +36,7 @@ set_technology = {
 
 set_popularities = {
 		fascist = 1
-		nationalist = 1
+		nationalist = 4
 		monarchist = 41
 		national_bolshevik = 1
 		national_conservative = 23

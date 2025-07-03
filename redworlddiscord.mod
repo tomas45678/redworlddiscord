@@ -5,6 +5,6 @@ tags={
 	"National Focuses"
 }
 dependencies = {
- 	"Red World Dev Build"
+ 	"Red World Fan Fork"
 }
-supported_version="1.13.4"
+supported_version="1.16.*"

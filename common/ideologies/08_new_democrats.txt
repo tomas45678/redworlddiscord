@@ -45,6 +45,9 @@ ideologies = {
 
 			labor_zionist = {
 			}
+
+			christian_left = {
+			}
 		}
 		
 		dynamic_faction_names = {

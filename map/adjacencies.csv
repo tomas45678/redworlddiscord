@@ -92,7 +92,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13041;13044;sea;7287;-1;-1;-1;-1;;Carolines 1
 13042;13043;sea;2414;-1;-1;-1;-1;;Carolines 2
 10276;7669;sea;5263;-1;-1;-1;-1;;Tiwi-Darwin
-12910;7567;sea;5771;-1;-1;-1;-1;;Adelaide-Kangaroo Island
 4526;153;sea;2571;-1;-1;-1;-1;;Curacao-Zulia
 10767;3284;sea;2597;-1;-1;-1;-1;;Miranda-Trinidad
 13012;3284;sea;2597;-1;-1;-1;-1;;Tobago-Trinidad
@@ -542,4 +541,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13420;13402;impassable;-1;-1;-1;-1;-1;;Mýrdalsjökull
 13420;13481;impassable;-1;-1;-1;-1;-1;;Mýrdalsjökull
 316;3206;sea;2506;-1;-1;-1;-1;;Limfjord
+7387;13372;sea;2857;-1;-1;-1;-1;;Brunei
+4969;13829;impassable;-1;-1;-1;-1;-1;;Darien-Gap
+4969;13828;impassable;-1;-1;-1;-1;-1;;Darien-Gap
+8051;13204;sea;2691;-1;-1;-1;-1;;Bahrain-Qatar
 -1;-1;;-1;-1;-1;-1;-1;-1

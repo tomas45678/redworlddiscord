@@ -1821,7 +1821,7 @@ country_event = {
 			set_country_flag = destroyed_bomber 
 			else = {
 			hidden_effect = { country_event = { id = goldcoast.3 days = 12 } }
-			has_country_flag = damaged_bomber
+			set_country_flag = damaged_bomber
 			}
 		}
 		}
@@ -2290,6 +2290,7 @@ country_event = {
 	title = discord.107.t
 	desc = discord.107.d
 	picture = surgery_on_a_grape
+	fire_only_once = yes
 	trigger = {
 	date > 2010.11.17
 	date < 2010.11.29

@@ -92,7 +92,6 @@ bookmarks = {
 			    idea_queen_elizabeth_ii
 				idea_bastion_of_european_democracy
 				idea_scottish_tensions
-				idea_prime_minister_owen
 			}
 			focuses = {
 				ENG_the_phoenix_front_craze

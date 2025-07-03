@@ -75,6 +75,9 @@ ideologies = {
 
 			libertarian_socialist = {
 			}
+			
+			new_system_socialism = {
+			}
 		}
 		
 		dynamic_faction_names = {

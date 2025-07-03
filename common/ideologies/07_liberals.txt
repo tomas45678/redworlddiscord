@@ -31,6 +31,12 @@ ideologies = {
 			green_liberal = {
 			
 			}
+
+			managerial_liberalism = {
+			}
+
+			liberal_populist = {
+			}
 		}
 		
 		dynamic_faction_names = {

@@ -15,12 +15,13 @@ ideologies = {
 			
 			piracism = {
 			}
+			
 			european_moderate_socialist = {
 			}
-
+			
 			jeffersonian = {
 			}
-			
+
 			peoples_socialist_democracy = {
 			}
 

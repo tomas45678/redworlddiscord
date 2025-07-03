@@ -36,6 +36,9 @@ ideologies = {
 			
 			semi_constitutional_monarchist = {
 			}
+
+			traditional_theocrat = {
+			}
 		}
 		
 		dynamic_faction_names = {
