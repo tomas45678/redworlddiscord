@@ -1,4 +1,4 @@
-﻿capital = 972
+﻿capital = 1047
 
 oob = "DIS_2000"
 
